@@ -75,7 +75,7 @@ Race conditions
 - **check-then-act** : you observe something to be true (file X doesn’t exist) and then take action based on that observation (create X); but in fact the observation could have become invalid between the time you observed it and the time you acted on it (someone else created X in the meantime), causing a problem (unexpected exception, overwritten data, file corruption).
 
 **Example: race conditions in lazy initialization**
- ```
+ ```java
 @NotThreadSafe
 public class LazyInitRace {
     private ExpensiveObject instance = null;
