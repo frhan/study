@@ -70,3 +70,29 @@ Atomicity
 ---
 Race conditions
 ---
+- A **race condition** occurs when the correctness of a computation depends on the relative timing or interleaving of multiple threads by the runtime; in other words, when getting the right answer relies on lucky timing
+
+- **check-then-act** : you observe something to be true (file X doesn’t exist) and then take action based on that observation (create X); but in fact the observation could have become invalid between the time you observed it and the time you acted on it (someone else created X in the meantime), causing a problem (unexpected exception, overwritten data, file corruption).
+
+**Example: race conditions in lazy initialization**
+ ```
+@NotThreadSafe
+public class LazyInitRace {
+    private ExpensiveObject instance = null;
+    public ExpensiveObject getInstance() {
+      if(instance == null)
+        instance = new ExpensiveObject();
+      return instance;
+   }
+}
+ ```
+ Say that threads A and B execute getInstance at the same time.
+
+ Read-modify-write operations, like incrementing a counter, define a transformation of an object’s state in terms of its previous state.
+
+ To increment a counter, you have to know its previous value and make sure no one else changes or uses that value while you are in mid-update.
+
+ race conditions don’t always result in failure:
+
+ Compound actions
+ ---
