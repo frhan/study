@@ -1,0 +1,72 @@
+
+
+Java Concurrency In Practice
+==
+
+Introduction
+==
+motivating factors led to the development of operating systems -
+ * Resource utilization : Programs sometimes have to wait
+ * Fairness : time slicing
+ * Convenience : program coordination
+
+-  Threads allow multiple streams of program control flow to coexist within a proc- ess.
+- They share process-wide resources such as memory and file handles, but each thread has its own program counter, stack, and local variables.
+- multiple threads within the same program can be scheduled simultaneously on multiple CPUs
+
+Benefits of threads
+--
+ - improve the performance of complex applications
+ - reduce development and maintenance costs
+
+Exploiting multiple processors
+--
+- When properly designed, multithreaded programs can improve throughput by utilizing available processor resources more effectively.
+
+Risks of threads
+--
+* Safety hazards
+* Liveness hazards
+ - use of threads introduces additional forms of liveness failure that do not occur in single-threaded programs.
+ - A liveness failure occurs when an activity gets into a state such that it is permanently unable to make forward progress
+* Performance hazards
+ - Context switches—when the scheduler suspends the active thread temporarily so another thread can run—are more frequent in applications with many threads, and have significant costs: saving and restoring execution context, loss of lo- cality, and CPU time spent scheduling threads instead of running them.
+
+Threads are everywhere
+--
+- Every Java application uses threads.
+-  When the JVM starts, it creates threads for JVM housekeeping tasks (garbage collection,finalization) and a main thread for running the main method.
+
+Chapter 2 : Thread Safety
+==
+- Writing thread-safe code is, at its core, about managing access to state, and in particular to shared, mutable state.
+- Whether an object needs to be thread-safe depends on whether it will be accessed from multiple threads.
+- an object’s state is its data, stored in state variables such as instance or static fields.
+- shared, we mean that a variable could be accessed by multiple threads;
+- by mutable, we mean that its value could change during its lifetime.
+- The primary mechanism for synchronization in Java is the *synchronized* keyword, which pro- vides exclusive locking, but the term “synchronization” also includes the use of volatile variables, explicit locks, and atomic variables.
+
+here are three ways to fix broken programs:
+* Don’t share the state variable across threads;
+* Make the state variable immutable; or
+* Use synchronization whenever accessing the state variable.
+
+It is far easier to design a class to be thread-safe than to retrofit it for thread safety later.
+
+the better encapsulated your program state, the easier it is to make your program thread-safe and to help maintainers keep it that way.
+
+When designing thread-safe classes, good object-oriented techniques— encapsulation, immutability, and clear specification of invariants—are your best friends.
+
+What is thread safety?
+---
+ - A class is thread-safe if it behaves correctly when accessed from multiple threads, regardless of the scheduling or interleaving of the execution of those threads by the runtime environment, and with no additional synchronization or other coordination on the part of the calling code.
+
+ - Thread-safe classes encapsulate any needed synchronization so that clients need not provide their own.
+
+ - Stateless objects are always thread-safe.
+
+
+Atomicity
+---
+Race conditions
+---
