@@ -96,3 +96,42 @@ public class LazyInitRace {
 
  Compound actions
  ---
+*Operations A and B are atomic with respect to each other if, from the perspective of a thread executing A, when another thread executes B, either all of B has executed or none of it has. An atomic operation is one that is atomic with respect to all operations, including itself, that operate on the same state*
+
+- **compound actions**: sequences of operations that must be executed atomically in order to remain thread-safe.
+
+```java
+@ThreadSafe
+public class CountingFactorizer implements Servlet {
+  private final AtomicLong count = new AtomicLong(0);
+  public long getCount() { return count.get(); }
+  public void service(ServletRequest req, ServletResponse resp) {
+    BigInteger i = extractFromRequest(req);
+    BigInteger[] factors = factor(i);
+    count.incrementAndGet();
+    encodeIntoResponse(resp, factors);
+  }
+}
+```
+
+The **java.util.concurrent.atomic** package contains atomic variable classes for effecting atomic state transitions on numbers and object references.
+
+Locking
+---
+
+- To preserve state consistency, update related state variables in a single atomic operation.
+
+  Intrinsic locks
+  ---
+  - Java provides a built-in locking mechanism for enforcing atomicity: the *synchronized block*.
+  - A synchronized block has two parts: a reference to an object that will serve as the *lock*, and a block of code to be guarded by that lock.
+  - A synchronized method is a shorthand for a synchronized block that spans an entire method body, and whose lock is the object on which the method is being invoked.
+
+  ```java
+  synchronized (lock) {
+      // Access or modify shared state guarded by lock
+  }
+
+  ```
+   - Every Java object can implicitly act as a lock for purposes of synchronization; these built-in locks are called intrinsic locks or monitor locks.
+   - Intrinsic locks in Java act as mutexes (or mutual exclusion locks), which means that at most one thread may own the lock.
