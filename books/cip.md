@@ -16,7 +16,7 @@ motivating factors led to the development of operating systems -
 
 Benefits of threads
 --
- - improve the performance of complex applications
+ - improve the performance of complex applicationsÂ
  - reduce development and maintenance costs
 
 Exploiting multiple processors
@@ -135,3 +135,17 @@ Locking
   ```
    - Every Java object can implicitly act as a lock for purposes of synchronization; these built-in locks are called intrinsic locks or monitor locks.
    - Intrinsic locks in Java act as mutexes (or mutual exclusion locks), which means that at most one thread may own the lock.
+
+Reentrancy
+---
+ - intrinsic locks are reentrant, if a thread tries to acquire a lock that it already holds, the request succeeds. Reentrancy means that locks are acquired on a per-thread rather than per-invocation basis.
+ - Reentrancy is implemented by associating with each lock an acquisition count and an owning thread.
+
+Guarding state with locks
+---
+- For each mutable state variable that may be accessed by more than one thread, all accesses to that variable must be performed with the same lock held. In this case, we say that the variable is guarded by that lock.  
+- The fact that every object has a built-in lock is just a convenience so that you needn’t explicitly create lock objects.
+- ***Every shared, mutable variable should be guarded by exactly one lock. Make it clear to maintainers which lock that is.***
+
+
+A common locking convention is to encapsulate all mutable state within an object and to protect it from concurrent access by synchronizing any code path that accesses mutable state using the object’s intrinsic lock.
