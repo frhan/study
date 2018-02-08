@@ -1,0 +1,22 @@
+http://www.wikihow.com/Install-Oracle-Java-on-Ubuntu-Linux
+jdk-7u7-linux-x64.tar.gz
+sudo -s cp -r jdk-7u7-linux-x64.tar.gz /usr/local/java
+
+ | sudo tee -a /etc/environment
+
+ echo 'JAVA_HOME=”/usr/local/java/jdk1.7.0_07"'| sudo tee -a /etc/environment
+echo ‘JAVA_HOME=”/usr/lib/jvm/java-6-sun”‘ | sudo tee -a /etc/environment
+
+source /etc/environmentaa
+
+
+echo ‘JAVA_HOME=”/usr/local/java/jdk1.7.0_07”‘ | sudo tee -a /etc/environment
+
+JAVA_HOME=/usr/local/java/java/jdk1.7.0_07
+export JAVA_HOME
+PATH=$PATH:$JAVA_HOME/bin
+export PATH 
+
+To install Oracle/Sun Java please refer to How to install Java in Ubuntu post.
+
+
