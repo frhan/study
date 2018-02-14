@@ -105,6 +105,7 @@ Concept
 * Design Patterns
 * reactive, actor-based systems
 * Multithreading
+* map-reduce
 
 
 Scheduling
