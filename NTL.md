@@ -9,7 +9,7 @@ Java
 * Guice
 * JPA
 * Hibernate
-* Spring Data 
+* Spring Data
 * NIO
 * JMS
 * JDBC
@@ -50,7 +50,6 @@ Search
 --------
 * Elastic Search
 * Lucene
-* Elasticsearch
 
 Queue
 ------
@@ -66,15 +65,13 @@ DEV-OPS
 * Docker
 * Kubernetes
 * Ansible
-* Kubernetes 
-* Docker
-* Hystrix 
+* Hystrix
 * AspectJ
 * Eureka
 * Ribbon
 * Puppet
 * Git
-* Jenkins
+* Zookeeper
 
 Data Science
 ------------
@@ -83,7 +80,7 @@ Data Science
 
 Concept
 -------
-* Cache 
+* Cache
 * Dependency injection
 * Encoding
 * How database indexing works
@@ -114,7 +111,6 @@ Scheduling
 Tx
 DI
 Security
-Hibernate
 jOOQ
 JMX
 JMS
@@ -124,16 +120,11 @@ Guice
 JUnit
 Reflection API
 UNIX
-NoSQL 
+NoSQL
 Couchbase
-Hadoop 
-Redis
-Database
-DevOps
-Gradle
-Maven
+Hadoop
+
 Swarm
-Kubernetes
  Mesos
 Swagger
 HATEOS
@@ -147,7 +138,6 @@ TestNG
 Mockito
  JMeter
 Search
-Elastic Search
 Solr
 
 
@@ -156,4 +146,4 @@ Concept
 FrontEnd
 —
 JavaScript
-ReactJS / Redux / AngularJS 
+ReactJS / Redux / AngularJS
