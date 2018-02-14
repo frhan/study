@@ -39,18 +39,18 @@ Define Classes
 * import and package statements apply to all classes within a source code file.
 * A file can have more than one nonpublic class.
 
-** Compiling with javac**
+**Compiling with javac**
 ```java
 javac [options] [source files]
 ```
-** Launching Applications with java **
+**Launching Applications with java**
 
 ```java
 java [options] class [args]
 java -version MyClass x 1
 ```
 
-** Using _public static void main(String[ ] args)_ **
+**Using _public static void main(String[ ] args)_**
 
 _main()_ is the method that the JVM uses to start execution of a Java program.
 
@@ -67,11 +67,11 @@ static public void main(String bang_a_gong[])
 main() can be overloaded
 ```
 
-** Import Statements and the Java API **
+**Import Statements and the Java API**
 
 If you see a reference to a class you're not sure of, you can look through the entire package for that class
 
-** Static Import Statements **
+**Static Import Statements**
 
 Static imports can be used when you want to "save typing" while using a class's static members.
 
