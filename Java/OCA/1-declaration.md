@@ -58,7 +58,7 @@ __public static void main(String[] args)__
 
 Other versions of _main()_ with other signatures are perfectly legal, but they're treated as normal methods.
 
-** The following are all legal declarations for the "special" main() : **
+**The following are all legal declarations for the "special" main() :**
 
 ```java
 static public void main(String[] args)
@@ -88,7 +88,7 @@ public class TestStaticImport {
 }
 ```
 
-** Here are a couple of rules for using static imports: **
+**Here are a couple of rules for using static imports:**
 
 * You must say import static ; you can't say static import .
 * Watch out for ambiguously named static members.Integer class and the Long class, referring to MAX_VALUE will cause a compiler error
@@ -100,6 +100,7 @@ sometimes you can use the wildcard character * to do some simple searching for y
 import java.*; // Legal, but this WILL NOT search across packages.
 ```
 
-** Class Declarations and Modifiers **
+**Class Declarations and Modifiers**
 * every class, method, and instance variable you declare has an access control, whether you explicitly type one or not
+
 * a class can be declared with only public or default access; the other two access control levels don't make sense for a class
