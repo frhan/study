@@ -57,3 +57,53 @@ after java 8 -
 ```java
   File[] hiddenFiles = new File(".").listFiles(File::isHidden);
 ```
+
+**LAMBDAS—ANONYMOUS FUNCTIONS**
+
+What’s a Predicate?
+
+The word predicate is often used in mathematics to mean something functionlike that takes a value for an argument and returns true or false.
+
+** From passing methods to lambdas**
+
+```java
+ filterApples(inventory, (Apple a) -> "green".equals(a.getColor()) );
+```
+
+**Multithreading is difficult**
+
+* exploiting parallelism by writing multithreaded code (using the Threads API from previous versions of Java) is difficult.
+* `Streams` is mostly about describing computations on data.
+* `Streams` allows and encourages the elements within a Stream to be processed in parallel.
+
+Sequential processing:
+```java
+  import static java.util.stream.Collectors.toList;
+  List<Apple> heavyApples = inventory.stream()
+                                      .filter((Apple a) -> a.getWeight() > 150)
+                                      .collect(toList());
+```
+
+Parallel processing:
+```java
+  import static java.util.stream.Collectors.toList;
+  List<Apple> heavyApples = inventory.parallelStream()
+                                    .filter((Apple a) -> a.getWeight() > 150)
+                                    .collect(toList());
+```
+
+**Parallelism in Java and no shared mutable state**
+
+Java 8:
+* First, the library handles partitioning—breaking down a big stream into several smaller streams to be processed in parallel for you.
+* Second, this parallelism almost for free from streams works only if the methods passed to library methods like filter don’t interact, for example, by having mutable shared objects
+
+**Default methods**
+
+* an interface can now contain method signatures for which an implementing class doesn’t provide an implementation!
+
+
+
+* In Java 8 there’s an `Optional<T>` class that, if used consistently, can help you avoid NullPointer exceptions.
+
+* `Optional<T>` includes methods to explicitly deal with the case where a value is absent, and as a result you can avoid NullPointer exceptions.
