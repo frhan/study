@@ -20,7 +20,7 @@ The Unix pipes (|)
   cat file1 file2  |  tr "[A-Z]"  "[a-z]"  |  sort  |  tail -3
 ```
 
-Java 8 adds a **Streams API** (note the uppercase S) in _java.util.stream_ based on this idea; Stream<T> is a sequence of items of type T.
+Java 8 adds a **Streams API** (note the uppercase S) in `java.util.stream` based on this idea; Stream<T> is a sequence of items of type T.
 
 * Java 8 can transparently run your pipeline of Stream operations on several CPU cores on disjoint parts of the input—this is parallel- ism almost for free instead of hard work using Threads.
 
@@ -64,7 +64,7 @@ What’s a Predicate?
 
 The word predicate is often used in mathematics to mean something functionlike that takes a value for an argument and returns true or false.
 
-** From passing methods to lambdas**
+**From passing methods to lambdas**
 
 ```java
  filterApples(inventory, (Apple a) -> "green".equals(a.getColor()) );
