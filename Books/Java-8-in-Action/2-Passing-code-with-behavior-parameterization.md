@@ -73,9 +73,9 @@ Fifth attempt: using an anonymous class
 ```java
   List<Apple> redApples = filterApples(inventory, new ApplePredicate() {
       public boolean test(Apple apple){
+        return "red".equals(apple.getColor());
       });
   }
-  return "red".equals(apple.getColor());
 ```
 
 Sixth attempt: using a lambda expression
