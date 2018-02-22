@@ -47,5 +47,8 @@ public interface Runnable{
 
 Function descriptor
 ---
+* The signature of the abstract method of the functional interface essentially describes the signature of the lambda expression
 
-Page 74
+The notation ```() -> void``` represents a function with an empty list of parameters returning ```void```.
+
+```(Apple, Apple) -> int``` denotes a function taking two Apples as parameters and returning an ```int```.
