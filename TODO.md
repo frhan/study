@@ -1,7 +1,7 @@
 Now
 ---
 BOOK: java 8 in Action
-Project: Springceller
+Project: Springceller - react part
 Concept: Java Annotatios
 
 Project Ideas
