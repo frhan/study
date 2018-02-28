@@ -49,6 +49,23 @@ Function descriptor
 ---
 * The signature of the abstract method of the functional interface essentially describes the signature of the lambda expression
 
-The notation ```() -> void``` represents a function with an empty list of parameters returning ```void```.
+* The notation ```() -> void``` represents a function with an empty list of parameters returning ```void```.
 
-```(Apple, Apple) -> int``` denotes a function taking two Apples as parameters and returning an ```int```.
+* ```(Apple, Apple) -> int``` denotes a function taking two Apples as parameters and returning an ```int```.
+
+* a lambda expression can be assigned to a variable or passed to a method expecting a functional interface as argument, provided the lambda expression has the same signature as the abstract method of the functional interface.
+
+* functional interfaces are annotated with ```@FunctionalInterface```
+
+
+Four-step process to apply the execute around pattern
+---
+```java
+public static String processFile() throws IOException { 
+    try (BufferedReader br =
+                    new BufferedReader(new FileReader("data.txt"))){
+        return br.readLine();
+    }
+    
+
+```

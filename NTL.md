@@ -107,7 +107,6 @@ Concept
 * Multithreading
 * map-reduce
 
-
 Scheduling
 Tx
 DI
@@ -116,7 +115,7 @@ jOOQ
 JMX
 JMS
 Visual VM.
- Servlet
+Servlet
 Guice
 JUnit
 Reflection API
@@ -126,7 +125,7 @@ Couchbase
 Hadoop
 
 Swarm
- Mesos
+Mesos
 Swagger
 HATEOS
 MessageQueue
@@ -137,7 +136,7 @@ RabbitMQ
 Testing
 TestNG
 Mockito
- JMeter
+JMeter
 Search
 Solr
 
@@ -145,6 +144,6 @@ Solr
 Concept
 —---------
 FrontEnd
-—
+—--
 JavaScript
 ReactJS / Redux / AngularJS
