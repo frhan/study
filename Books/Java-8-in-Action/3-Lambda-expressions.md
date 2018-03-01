@@ -317,9 +317,6 @@ inventory.sort(comparing(Apple::getWeight));
 Composing Comparators
 ----
 
-Composing Comparators
----------
-
 REVERSED ORDER
 ------
 
@@ -336,3 +333,39 @@ inventory.sort(comparing(Apple::getWeight)
          .thenComparing(Apple::getCountry));
 
 ```
+
+Composing Predicates
+---
+
+```java
+
+Predicate<Apple> redAndHeavyAppleOrGreen =
+    redApple.and(a -> a.getWeight() > 150)
+            .or(a -> "green".equals(a.getColor()));
+
+```
+
+Composing Functions
+----
+
+```andThen```
+
+```java
+Function<Integer, Integer> f = x -> x + 1;
+Function<Integer, Integer> g = x -> x * 2;
+Function<Integer, Integer> h = f.andThen(g);
+int result = h.apply(1);
+```
+f(x)
+g(f(x)) or (g o f)
+
+```compose```
+
+```java
+Function<Integer, Integer> f = x -> x + 1;
+Function<Integer, Integer> g = x -> x * 2;
+Function<Integer, Integer> h = f.compose(g);
+int result = h.apply(1);
+```
+f(x)
+f(g(x)) or (f o g)
