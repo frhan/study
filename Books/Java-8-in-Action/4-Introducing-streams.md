@@ -1,0 +1,71 @@
+Introducing streams
+===
+
+* Nearly every Java application _makes_ and _processes_ collections.
+
+What are streams?
+---
+
+* _Streams_ are an update to the Java API that lets you manipulate collections of data in a declarative way
+
+* _streams_ can be processed in parallel transparently, without you having to write any multithreaded code!
+
+ the names of dishes that are low in calories, Java 7:
+
+```java 
+List<Dish> lowCaloricDishes = new ArrayList<>();
+for(Dish d: menu){
+    if(d.getCalories() < 400){
+        lowCaloricDishes.add(d);
+    }
+}
+
+Collections.sort(lowCaloricDishes, new Comparator<Dish>() {
+    public int compare(Dish d1, Dish d2){
+        return Integer.compare(d1.getCalories(), d2.getCalories());
+        }
+});
+
+List<String> lowCaloricDishesName = new ArrayList<>();
+for(Dish d: lowCaloricDishes){
+    lowCaloricDishesName.add(d.getName());
+}
+
+```
+After (Java 8):
+
+```java
+List<String> lowCaloricDishesName = menu.stream()
+                                        .filter(d -> d.getCalories() <400)
+                                        .sorted(sorting(Dish::getCalories))
+                                        .map(Dish::getName())
+                                        .collect(toList());
+```
+
+Parallel:
+
+
+```java
+List<String> lowCaloricDishesName = menu.parallelStream()
+                                        .filter(d -> d.getCalories() <400)
+                                        .sorted(sorting(Dish::getCalories))
+                                        .map(Dish::getName())
+                                        .collect(toList());
+```
+
+benefits from a software engineering point of view:
+
+* The code is written in a _declarative_ way
+* chain together several building-block operations to express a complicated data processing pipeline while keeping your code readable and its intent clear
+
+what exactly is a stream?
+---
+
+*  _Sequence_ of elements : Collections are about data; streams are about computa- tions.
+* _Source_ 
+* _Data processing operations_
+
+stream operations have two important characteristics:
+
+* Pipelining
+* Internal iteration
