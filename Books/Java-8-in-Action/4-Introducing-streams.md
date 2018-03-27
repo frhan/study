@@ -99,5 +99,58 @@ s.forEach(System.out::println); //java.lang.IllegalStateException: stream has al
 External vs. internal iteration
 ---
 
+Collections: external iteration with a for-each loop :
+
+```java 
+List<String> names = new ArrayList<>();
+for(Dish d: menu){
+    names.add(d.getName());
+}
+```
+
+Streams: internal iteration:
+
+```java
+List<String> names = menu.stream()
+                         .map(Dish::getName)
+                         .collect(toList());
+```
 
 
+Stream operations
+----
+
+* Stream operations that can be connected are called _intermediate operations_
+* operations that close a stream are called _terminal operations_
+
+menu -> `filter` -> `map` -> `limit` -> `collect`
+
+Intermediate operations
+---
+
+* Intermediate operations such as `filter` or `sorted` return another stream as the return type.
+
+* intermediate operations don’t perform any processing until a termi- nal operation is invoked on the stream pipeline—they’re lazy.
+
+Terminal operations
+-----
+
+* Terminal operations produce a result from a stream pipeline.
+
+* `forEach` is a terminal operation that returns void and applies a lambda to each dish in the source.
+
+```java 
+menu.stream().forEach(System.out::println);
+```
+
+Working with streams
+---
+To summarize, working with streams in general involves three items:
+
+* A data source (such as a collection) to perform a query on
+* A chain of intermediate operations that form a stream pipeline
+* A terminal operation that executes the stream pipeline and produces a result
+
+
+Intermediate operations
+---
