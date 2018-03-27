@@ -69,3 +69,35 @@ stream operations have two important characteristics:
 
 * Pipelining
 * Internal iteration
+
+`filter` : Takes a lambda to exclude certain elements from the stream.
+
+`map` : Takes a lambda to transform an element into another one or to extract information
+
+`limit` : Truncates a stream to contain no more than a given number of elements.
+
+`collect` : Converts a stream into another form
+
+Streams vs. collections
+---
+
+*  the difference between collections and streams has to do with when things are computed
+* A stream is a conceptually fixed data structure (you can’t add or remove elements from it) whose elements are computed on demand
+
+Traversable only once
+----
+ 
+ *  a stream can be traversed only once.
+
+ ```java 
+ List<String> title = Arrays.asList("Java8", "In", "Action");
+Stream<String> s = title.stream();
+s.forEach(System.out::println); 
+s.forEach(System.out::println); //java.lang.IllegalStateException: stream has already been operated                                      //upon or closed.
+ ```
+
+External vs. internal iteration
+---
+
+
+
