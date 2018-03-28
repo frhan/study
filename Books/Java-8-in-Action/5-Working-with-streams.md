@@ -447,3 +447,152 @@ Primitive stream specializations
 
 MAPPING TO A NUMERIC STREAM
 ---
+
+`mapToInt` as follows to calculate the sum of calories in the menu:
+
+```java
+int calories = menu.stream()
+                   .mapToInt(Dish::getCalories)
+                   .sum();
+```
+
+* if the stream were empty, sum would return 0 by default.
+
+CONVERTING BACK TO A STREAM OF OBJECTS
+---
+
+```java
+IntStream intStream = menu.stream().mapToInt(Dish::getCalories);
+Stream<Integer> stream = intStream.boxed();
+```
+
+DEFAULT VALUES: OPTIONALINT
+---
+
+```java
+OptionalInt maxCalories = menu.stream()
+                              .mapToInt(Dish::getCalories)
+                              .max();
+```
+
+`OptionalInt` explicitly to define a default value if there’s
+no maximum:
+
+```java
+int max = maxCalories.orElse(1);
+```
+
+Numeric ranges
+---------------
+
+* Java 8 introduces two static methods available on `IntStream` and `LongStream` to help generate ranges: `range` and `rangeClosed`
+
+* `range` is exclusive, whereas `rangeClosed` is inclusive
+
+A stream of even numbers from 1 to 100: 
+
+ ```java
+     IntStream evenNumbers = IntStream.rangeClosed(1, 100)
+                                      .filter(n -> n % 2 == 0);
+    System.out.println(evenNumbers.count());
+ ```
+
+Putting numerical streams into practice: Pythagorean triples 
+----
+
+PYTHAGOREAN TRIPLE
+------------------
+
+* certain triples of numbers `(a, b, c)` satisfy the formula `a*a+b*b=c*c` wherea,b, and c are integers.
+
+REPRESENTING A TRIPLE
+----
+
+`new int[]{3, 4, 5}` to represent the tuple `(3, 4, 5)`.
+
+FILTERING GOOD COMBINATIONS
+---
+
+```java
+    filter(b -> Math.sqrt(a*a + b*b) % 1 == 0)
+```
+
+GENERATING TUPLES
+---
+
+```java
+stream.filter(b -> Math.sqrt(a*a + b*b) % 1 == 0)
+      .map(b -> new int[]{a, b, (int) Math.sqrt(a * a + b * b)});
+```
+
+GENERATING B VALUES
+---
+
+```java
+IntStream.rangeClosed(1, 100)
+         .filter(b -> Math.sqrt(a*a + b*b) % 1 == 0)
+         .boxed()
+         .map(b -> new int[]{a, b, (int) Math.sqrt(a * a + b * b)});
+```
+
+`mapToObj` of an `IntStream`, which returns an object-valued stream:
+```java 
+IntStream.rangeClosed(1, 100)
+         .filter(b -> Math.sqrt(a*a + b*b) % 1 == 0)
+         .mapToObj(b -> new int[]{a, b, (int) Math.sqrt(a * a + b * b)});
+
+```
+
+GENERATING A VALUES
+----
+
+```java
+Stream<int[]> pythagoreanTriples =
+        IntStream.rangeClosed(1, 100)
+                 .boxed()
+                 .flatMap(a ->  IntStream.rangeClosed(a, 100)
+                                         .filter(b -> Math.sqrt(a*a + b*b) % 1 == 0) 
+                                         .mapToObj(b -> new int[]{a, b, (int)Math.sqrt(a * a + b * b)})
+                                         );
+```
+
+RUNNING THE CODE
+---
+
+```java
+pythagoreanTriples.limit(5)
+                  .forEach(t ->
+                    System.out.println(t[0] + ", " + t[1] + ", " + t[2]));
+```
+
+CAN YOU DO BETTER?
+---
+
+```java
+Stream<int[]> pythagoreanTriples =
+        IntStream.rangeClosed(1, 100)
+                 .boxed()
+                 .flatMap(a ->  IntStream.rangeClosed(a, 100)
+                                         .mapToObj(b -> new double[]{a, b, (int)Math.sqrt(a * a + b * b)})
+                                         .filter(t -> t[2] % 2 == 0)
+                                         );
+```
+
+Building streams
+--------------
+
+Streams from values
+----
+
+```java
+Stream<String> stream = Stream.of("Java 8 ", "Lambdas ", "In ", "Action");  
+stream.map(String::toUpperCase)
+      .forEach(System.out::println);
+```
+
+```java
+Stream<String> emptyStream = Stream.empty();
+```
+
+
+
