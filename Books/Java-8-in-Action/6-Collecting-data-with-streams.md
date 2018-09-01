@@ -21,12 +21,10 @@ for (Transaction transaction : transactions) {
 Java8:
 
 ```java
-
 Map<Currency, List<Transaction>> transactionsByCurrencies =
         transactions.stream().collect(groupingBy(Transaction::getCurrency));
 ```
 
 Collectors in a nutshell
 ------
-
-<PAGE-154>
+ *main advantages of functional-style programming over an imperative approach: you just have to formulate the result you want to obtain the “what” and not the steps you need to perform to obtain it—the “how.

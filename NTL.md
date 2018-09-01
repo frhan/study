@@ -5,6 +5,7 @@ Need To Learn properly
 Java
 -----
 * java 8
+* Reflection API
 * Spring (Boot)
 * Guice
 * JPA
@@ -118,7 +119,6 @@ Visual VM.
 Servlet
 Guice
 JUnit
-Reflection API
 UNIX
 NoSQL
 Couchbase
