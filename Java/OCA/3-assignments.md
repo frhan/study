@@ -19,12 +19,15 @@ Literals,assignments and variables
 Decimal literals
 ---
 `int light = 343;`
+
 Binary literals
 ---
 `int b1 = 0B10101010;`
+
 Octal Literals
 ---
-Int seven = 07
+`int seven = 07` 
+
 Hexadecimal Literals
 ---
 `int x = 0x0001`
