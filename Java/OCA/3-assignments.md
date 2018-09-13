@@ -35,8 +35,10 @@ Hexadecimal Literals
 - Accept lowercase/uppercase letters for extra digit
 - Allowed upto 16 digit in a hexadecimal number
 
+```java
 int z = 0xDeadCafe
 int z = 0xDEADCAFE
+```
 
 Floating point literals
 ---
@@ -63,7 +65,7 @@ Characters are 16 bit unsigned integer under the hood.
 
 Assignment Operators
 ---
-```Button b = new Button();```
+`Button b = new Button();`
 - A variable refering to an object is just that  - a reference variable
 - A reference variable bit holder contain bit representing a way to get to the object
 
