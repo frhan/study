@@ -269,6 +269,103 @@ Local Arrays
 
 Assigning one reference variable to another
 ---
+- If we assign an existing instance of an object to a new reference variable, then  two reference variable will hold the same bit pattern. A bit pattern reffering to a specific object on the heap.
+- Any time we make any changes at all to a String, the VM will update the reference variable to reference variable to refer to different object.
+- What happens when you use a string reference variable to modify a string
+    - A new string is created
+    - The reference used to modify the string is then assigned the brand new String object
+
+Passing Object reference variable
+---
+- Reference variable holds bits that represent (to the underlying VM) a way to get to a specific Object in memory.
+- Java is actually pass by value for all variable running within a single NM
+- It makes no difference if you’re passing primitive or reference variables; you are always passing a copy to the bits in the variable.
+- Called method can’t reassign the caller’s original reference variable and make it refer to a different `object` or `null`.
+
+```java
+void bar(){
+	Foo f = new Foo();
+	doStuff(f);
+}
+void doStuff(Foo f){
+	g = setName(“BOO”);
+	g = new Foo();
+}
+```
+
+Reaasign `g` doesn’t reaasign `f`
+
+- When a primitive variable is passed to a method,it is passed by value,which means pass-by-copy-of-the-bits-in-the-variable
+
+The Shadowy world of variables
+--
+- Shadowing invloves reusing a variable name that’s already been declared somewhere else.
+
+```java
+class Foo {
+	static int size = 7;
+ 	Static void changeIt(int size){
+	    size = size +200;
+	    System.out.println(“”+size); //207
+    }
+
+public static void main(String [] args){
+	Foo f = new Foo();
+	System.out.println(size); //7
+	changeIt(size);
+	System.out.println(size); //7
+    } 
+}
+```
+- Hiding a static variable by shadowing it with local variable
+
+Garbage Collection
+---
+- The downside of automatic garbage collection is that you can’t completely control when it runs and when it doesn’t.
+
+When does the garbage collector run?
+---
+- JVM decides when to run the garbage collector
+
+How does GC work?
+---
+- An object is eligible for garbage collection when no live thread can access it.
+- Garbage collection can not ensure that there is enough memory,only that the memory that is available will be managed as efficiently as possible
+
+Writing code that explicitly makes objects eligible for collection
+
+Nulling a reference 
+--
+```java
+public class GrabageTruck {
+    public static void main(String [] args){
+	    StringBuffer sb = new StringBuffer(“Hello”);
+	    System.out.println(sb);
+	    Sb = null;// now Stringbuffer is eligible for garbage collection
+    }
+}
+```
+Reassigning a reference variable
+---
+
+```java
+Class GarbageTruck{
+    public static void main(String [] args){
+        StringBuffer s1 = new StringBuffer(“hello”);
+    	StringBuffer s2 = new StringBuffer(“garbage”);
+  		System.out.println(s1);
+          S1 = s2; //redirects s1 and s2 refer to the goodbye object
+          // now Stringbuffer “Hello” is eligible for collection
+     }
+}
+
+```
+- If an object is returned from a method,its reference might be assigned to a reference variable in the method that called it.hence it will not be eligible for collection.
+
+
+
+
+
 
 
 
