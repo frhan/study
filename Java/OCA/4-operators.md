@@ -1,5 +1,5 @@
 Java Operators
-####
+---
 
 Assignment operators
 ---
@@ -117,7 +117,30 @@ x = boolean expression ? value to assign if true: value to assign if false;
 we can even nest conditional operators into one statement    
     `String status = numOfPets < 4 ? "Pet count OK" : (sizeOfYard > 8) ? "Pet limit on edge": "Two many pets"`
 
+
 Logical operators
+###
+short circuit logical operators
+---
+
+&& and ||
+- evaluates only boolean values
+- it doesn't waste time on pointless operation
+- the || and && operators work only with boolean operands
+
+not short circuit logical operators
+---
+& and |
+
+they aren't short circuit, they evaluates both sides
+Logical operators(^ and !)
+- ^ exclusive-OR(XOR)
+- ! boolean invert
+
+^ - non short circuit
+   - exactly one operand must true
+   
+
 
 
 
