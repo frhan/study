@@ -284,12 +284,12 @@ Encapsulation for reference variable
 ---
 
 ```java
-Class A{
-ArrayList<Object> list  = new ArrayList<Object>();
+Class A {
+	ArrayList<Object> list  = new ArrayList<Object>();
 	public Object getList(){
 		return list;
-		}
- 	}
+	}
+}
 ```
 
 is actually not encapsulation
