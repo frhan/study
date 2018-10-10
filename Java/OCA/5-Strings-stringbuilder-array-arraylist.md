@@ -263,14 +263,22 @@ int being autoboxing here to Integer object
 ArrayList methods
 ---
 `add(element)` : add elements to the end
+
 `add(index,element)` : add this element at the index point and shift the remaining element back
+
 `clear()` : removes all elements from the arraylist
+
 `boolean contains(element)`:
-`Object get(index)`
-`int indexOf(object)`
-`remove(index)`
-`remove(object)`
-`int size()`
+
+`Object get(index)`: 
+
+`int indexOf(object)`: 
+
+`remove(index)`: 
+
+`remove(object)`: 
+
+`int size()`: 
 
 Encapsulation for reference variable
 ---
