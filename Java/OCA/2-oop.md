@@ -419,11 +419,73 @@ System.out.println("TC created");
 
 ```
 
+Extra
+----
+Class initialization
+------------------------
+The order of initialization of a class is:
+1. All static constants, variables and blocks.(Among themselves the order is the order
+in which they appear in the code.)
+2. All non static constants, variables and blocks.(Among themselves the order is the
+order in which they appear in the code.)
+3. Constructor.
+
+Static and Blocks
+------------------------
+1. Static blocks of the base class (only once, in the order they appear in the class).
+2. Static blocks of the class.
+3. Non-static blocks of the base class.
+4. Constructor of the base class.
+5. Non-static blocks of the class.
+6. Constructor of the class.
+7. Derived class's static or non-static blocks are not executed if that class is not being
 
 
+Overriding
+----------------------
+```java
+class Car{
+  public int gearRatio = 8;
+}
 
+class SportsCar extends Car{
+ public int gearRatio = 9;
+}
 
+Car c = new SportsCar();
+Println c.gearRatio 
+=> 8
+```
+The concept is : variables are shadowed and methods are overridden.Method to be executed depends on the class of the actual object the variable is referencing to. Here, `c `refers to object of class `SportsCar` so `SportsCar`'s `accelerate()` is selected.
 
+Class/Interface type Initialization
+-------------------------------------------
+As per JLS 12.4.1 - A class or interface type T will be initialized immediately before
+the first occurrence of any one of the following:
+T is a class and an instance of T is created.
+T is a class and a static method declared by T is invoked.
+A static field declared by T is assigned.
+A static field declared by T is used and the field is not a constant variable.
+T is a top-level class, and an assert statement lexically nested within T is executed.
+
+```java
+class Main {
+  public static void main(String[] args) {
+  
+		System.out.println(A.V );    
+  }
+}
+
+class A{
+	 static  int V = 0;
+	static{
+		System.out.println("static A");
+	}
+}
+
+=> static A
+    0
+```
 
 
 

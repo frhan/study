@@ -287,6 +287,55 @@ void go(){
 }
 ```
 
+Extra
+---
 
+the exceptions are `RuntimeExceptions` so there is no need to catch these. But it is ok even if the method declares them explicitly
 
+```java
+public class TestClass{
+public static void main(String args[]){
+try{
+   RuntimeException re = null;
+   throw re;
+}catch(Exception e){
+   System.out.println(e);
+}
+}
+}
+```
+-- The program will compile without error and will print `java.lang.NullPointerException` when run
 
+Exception Handling
+---------------------------
+You can put a Super class in the throws clause and then you can throw any subclass exception.
+A subclass of Error cannot be caught using a catch block for Exception because `java.lang.Error` does not extend `java.lang.Exception`.
+`int i = Integer.parseInt(s); throws a NumberFormatException` because 12.3 is not an integer
+The `main(String[] args)` method is the last point in your program where any unhandled checked exception can bubble up to.
+After that the `exception` is thrown to the JVM and the JVM kills the thread.
+
+When you use `System.out.println(exception)`, a stack trace is not printed. Just the name of the exception class and the message is printed. 
+
+When you use `exception.printStackTrace()`, a complete chain of the names of the methods called, along with the line numbers, is printed from the point where the exception was thrown and up to the point where the exception was caught and `printStackTrace()` was called.
+
+You can declare anything that is a `Throwable` or a subclass of `Throwable`, in the
+throws clause.
+
+Fundamental concept:
+The `Exception` that is thrown in the last, is the `Exception` that is thrown by the
+method to the caller
+
+`Exception` thrown by a catch cannot be caught by the following catch blocks at the same level.
+
+The `catch` argument type declares the type of exception that the handler can
+handle and must be the name of a class that extends Throwable or Throwable
+Itself.
+
+Compilation Error
+-------
+```java
+class TestClass {
+String m1(int[] i) { return ""+i.length; }
+String m1(int... i) { return ""+i.length; } // Compiler determines that both array
+}
+```

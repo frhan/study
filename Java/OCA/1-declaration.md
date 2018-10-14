@@ -175,3 +175,32 @@ return "B";
  }
 }	
 ```
+
+Extra
+---
+
+Package
+-------------
+- If you are not importing a class or package of the class,you need yo use the class’s fully occupied qualified name while using it.
+- Using a fully qualified class name always works irrespective of whether you import the package or not.
+
+Dangling else Problem
+-------------------------------
+ -  the  `else` keyword always associate with the nearest possessing of keyword that does not cause a syntax error.
+
+Chained Initialization
+------------------------
+Java does not allow chained initialization in declaration.
+
+```java
+int a, b, c;
+ a = b = c = 100; // no problem
+int a = b = c = 100; // error
+```
+
+Static Import
+------------------
+Syntax for importing static fields is: 
+`import static <package>.<classname>.*`;
+ or
+`import static <package>.<classname>.<fieldname>`;

@@ -295,3 +295,17 @@ Class A {
 is actually not encapsulation
 
 
+Extra
+---
+* There is no `reverse()` method in String class.
+
+In an array creation expression, there may be one or more dimension expressions, each
+within brackets. Each dimension expression is fully evaluated before any part of any
+dimension expression to its right.
+
+```java
+int i = 4;
+int ia[][][] = new int[i][i = 3][i];
+System.out.println( ia.length + ", " + ia[0].length+", "+ ia[0][0].lenght)
+ = > 4,3,3
+```
