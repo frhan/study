@@ -397,6 +397,27 @@ int b = 4; new TestClass().probe(b); //6
 => In Integer ,In long
 ```
 
+Extras
+----
+
+The concept here is that an overriding method cannot make the overridden method more private.
+
+The access hierarchy in increasing levels of accessibility is:
+`private->'no modifier'->protected->public` ( public is accessible to all and private is accessible to none except itself.) 
+									
+private is not a valid access modifier for a top level class.			
+private can be applied to an inner class. 
+
+```java
+package p; 
+private class TC extends java.util.HashMap{					
+public TC(){
+ super(100);				
+System.out.println("TC created"); 
+}			
+}
+
+```
 
 
 

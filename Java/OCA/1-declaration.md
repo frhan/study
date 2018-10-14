@@ -104,3 +104,74 @@ import java.*; // Legal, but this WILL NOT search across packages.
 * every class, method, and instance variable you declare has an access control, whether you explicitly type one or not
 
 * a class can be declared with only public or default access; the other two access control levels don't make sense for a class
+
+Enums
+---
+`enum CoffeeSize { BIG, HUGE, OVERWHELMING } // this cannot be // private or protected`
+an `enum` that isn't enclosed in a class can be declared with only the `public` or `default` modifier, just like a non-inner class. 
+
+```java
+public class CoffeeTest1 {
+    public static void main(String[] args) {
+      enum CoffeeSize { BIG, HUGE, OVERWHELMING } // WRONG! Cannot
+       								// declare enums
+       Coffee drink = new Coffee();
+       drink.size = CoffeeSize.BIG;
+  }					
+} 
+```
+Declaring Constructors, Methods, and Variables in an `enum` 
+- an enum really is a special kind of class					
+- can add constructors, instance variables, methods, and something really strange known as a constant specific class body. 
+					
+```java
+enum CoffeeSize {
+    // 8, 10 & 16 are passed to the constructor
+    BIG(8), HUGE(10), OVERWHELMING(16);
+   CoffeeSize(int ounces) {
+      this.ounces = ounces;
+   }
+   
+    private int ounces;
+    public int getOunces() {
+      return ounces;
+    }
+} 
+```
+- Every enum has a static method, values(), that returns an array of the enum's values in the order they're declared 
+				
+- You can NEVER invoke an enum constructor directly. The enum constructor is invoked automatically, with the arguments you define after the constant value. 	
+- You can define more than one argument to the constructor, and you can overload the enum constructors .
+    `BIG(8, "A")` 
+
+you can define something really strange in an enum that looks like an anonymous inner class . It's known as a constant specific class body, and you use it when you need a particular constant to override a method defined in the enum. 
+
+```java
+enum CoffeeSize {
+     BIG(8),
+     HUGE(10),
+     OVERWHELMING(16) {
+					// start a code block that defines
+					// the "body" for this constant
+    public String getLidCode() { 
+      // override the method
+			 // defined in CoffeeSize
+ 	    return "A"; 
+   }				
+  };    // the semicolon is REQUIRED when more code follows
+					
+CoffeeSize(int ounces) {
+   this.ounces = ounces;
+}
+
+private int ounces;
+public int getOunces() {
+  return ounces;
+}
+public String getLidCode() { // the default value we want to
+				 // return for CoffeeSize constants
+return "B"; 
+			
+ }
+}	
+```
