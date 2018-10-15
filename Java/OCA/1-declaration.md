@@ -204,3 +204,67 @@ Syntax for importing static fields is:
 `import static <package>.<classname>.*`;
  or
 `import static <package>.<classname>.<fieldname>`;
+
+
+Package
+---
+
+Apparent Hierarchies of Packages
+---
+
+At first, packages appear to be hierarchical, but they are not.
+
+For example, the Java API includes a `java.awt` package, a `java.awt.color` package, a `java.awt.font` package, and many others that begin with `java.awt`. However, the `java.awt.color` package, the `java.awt.font` package, and other `java.awt.xxxx` packages are not included in the `java.awt` package. The prefix `java.awt` (the Java Abstract Window Toolkit) is used for a number of related packages to make the relationship evident, but not to show inclusion.
+
+Importing `java.awt.*` imports all of the types in the `java.awt` package, but it does not import `java.awt.color`, `java.awt.font`, or any other `java.awt.xxxx` packages. If you plan to use the classes and other types in `java.awt.color` as well as those in `java.awt`, you must import both packages with all their files:
+
+```java
+import java.awt.*;
+import java.awt.color.*;
+```
+
+Name Ambiguities
+----
+If a member in one package shares its name with a member in another package and both packages are imported, you must refer to each member by its qualified name. For example, the `graphics` package defined a class named `Rectangle`. The `java.awt` package also contains a `Rectangle` class. If both `graphics` and `java.awt` have been imported, the following is ambiguous.
+
+`Rectangle rect;`
+
+In such a situation, you have to use the member's fully qualified name to indicate exactly which Rectangle class you want. For example,
+
+`graphics.Rectangle rect;`
+
+
+The Static Import Statement
+---
+frequent access to `static final` fields (constants) and `static` methods from one or two classes. 
+
+The `java.lang.Math` class defines the `PI` constant and many static methods, including methods for calculating sines, cosines, tangents, square roots, maxima, minima, exponents, and many more. For example,
+```java
+public static final double PI 
+    = 3.141592653589793;
+public static double cos(double a)
+{
+    ...
+}
+```
+Ordinarily,
+`double r = Math.cos(Math.PI * theta);`
+
+static import statement to import the static members of `java.lang.Math`
+
+imported either individually:
+
+`import static java.lang.Math.PI;`
+
+or as a group:
+
+`import static java.lang.Math.*;`
+
+`double r = cos(PI * theta);`
+
+Obviously, you can write your own classes that contain constants and static methods that you use frequently, and then use the static import statement. For example,
+
+```java
+import static mypackage.MyConstants.*;
+double r = cos(PI * theta);
+```
