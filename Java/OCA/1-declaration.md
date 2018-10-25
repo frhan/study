@@ -202,7 +202,9 @@ Static Import
 ------------------
 Syntax for importing static fields is: 
 `import static <package>.<classname>.*`;
+
  or
+
 `import static <package>.<classname>.<fieldname>`;
 
 
