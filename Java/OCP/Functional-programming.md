@@ -39,7 +39,8 @@ You use a Consumer when you want to do something with a parameter but not return
 
 ```java
 @FunctionalInterface 
-public class Consumer<T> { void accept(T t);
+public class Consumer<T> { 
+    void accept(T t);
 }
 ```
 ```java
@@ -86,4 +87,61 @@ BiPredicate<String, String> b2 = (string, prefix) -> string.startsWith(prefix);
 
 Implementing Function and BiFunction
 ------
-A Function is responsible for turning one parameter into a value of a potentially different type and returning it. Similarly,a BiFunction is responsible for turning two parameters into a value and returning it
+A `Function` is responsible for turning one parameter into a value of a potentially different type and returning it. 
+
+Similarly,a `BiFunction` is responsible for turning two parameters into a value and returning it.
+
+```java
+@FunctionalInterface 
+public class Function<T, R> { 
+    R apply(T t);
+}
+```
+
+```java
+@FunctionalInterface 
+public class BiFunction<T, U, R> { 
+    R apply(T t, U u);
+}
+```
+
+For example, this function converts a String to the length of the String:
+
+```java
+Function<String, Integer> f1 = String::length; 
+Function<String, Integer> f2 = x -> x.length();
+```
+
+Implementing UnaryOperator and BinaryOperator
+----
+
+```java
+@FunctionalInterface 
+public class UnaryOperator<T> extends Function<T, T> { }
+
+@FunctionalInterface 
+public class BinaryOperator<T> extends BiFunction<T, T, T> { }
+```
+This means that method signatures look like this:
+
+```java
+T apply(T t);
+T apply(T t1, T t2);
+```
+
+```java
+UnaryOperator<String> u1 = String::toUpperCase; UnaryOperator<String> u2 = x -> x.toUpperCase();
+System.out.println(u1.apply("chirp")); System.out.println(u2.apply("chirp"));
+```
+
+Checking Functional Interfaces
+----
+- a Predicate returns a boolean primitive and not a Boolean object
+
+Returning an Optional
+---
+
+```java
+Optional o = Optional.ofNullable(value);
+```
+- returning an Optional is a clear statement in the API that there might not be a value in there
