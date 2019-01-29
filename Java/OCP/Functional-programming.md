@@ -48,6 +48,12 @@ public class BiConsumer<T, U> {
     void accept(T t, U u);
 }
 ```
+
+```java 
+Consumer<String> c1 = System.out::println; 
+Consumer<String> c2 = x -> System.out.println(x);
+```
+
 Implementing Predicate and BiPredicate
 --------
 ```java
@@ -61,6 +67,22 @@ public class BiPredicate<T, U> {
     boolean test(T t, U u); 
 }
 ```
+
+Example:
+===
+
+```java
+Predicate<String> p1 = String::isEmpty;
+Predicate<String> p2 = x -> x.isEmpty();
+```
+BiPredicate:
+----
+
+```java
+BiPredicate<String, String> b2 = (string, prefix) -> string.startsWith(prefix);
+```
+
+- the first parameter in the lambda is used as the instance on which to call the method
 
 Implementing Function and BiFunction
 ------
