@@ -524,5 +524,19 @@ Functional Interfaces for boolean
 BooleanSupplier b1 = () -> true;
 System.out.println(b1.getAsBoolean());
 ```
+
 Functional Interfaces for double, int, and long
 ---
+
+
+![alt text]
+(https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.54.51%20PM.png)
+
+![alt text]
+(https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.54.59%20PM.png)
+
+![alt text]
+(https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.55.06%20PM.png)
+
+![alt text]
+(https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.55.13%20PM.png)
