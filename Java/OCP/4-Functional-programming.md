@@ -485,3 +485,7 @@ IntStream rangeClosed = IntStream.rangeClosed(1, 5);
 
 
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.08.21%20PM.png )
+
+![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.08.33%20PM.png)
+
+![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.18.48%20PM.png)
