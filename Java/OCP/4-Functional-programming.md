@@ -555,3 +555,35 @@ Linking Streams to the Underlying Data
 
 Chaining Optionals
 ----
+
+```java
+private static void threeDigit(Optional<Integer> optional) {
+    optional.map(n -> "" + n)
+            .filter(s -> s.length() == 3) 
+            .ifPresent(System.out::println);
+}
+```
+
+the signature `static Optional<Integer> calculator(String s)`? Using `map` doesn’t work:
+
+```java
+Optional<Integer> result = optional.map(ChainingOptionals::calculator); // DOES NOT COMPILE
+```
+
+- The problem is that `calculator` returns `Optional<Integer>`. The `map()` method adds another  `Optional`, giving us `Optional<Optional<Integer>>`
+
+The solution is to call `flatMap()` instead:
+
+```java
+Optional<Integer> result = optional.flatMap(ChainingOptionals::calculator);
+```
+
+Checked exceptions and Functional interfaces
+----
+
+Collecting Results
+-------------
+
+![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2011.27.29%20PM.png)
+
+![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2011.27.36%20PM.png)
