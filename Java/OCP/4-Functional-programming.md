@@ -535,3 +535,23 @@ Functional Interfaces for double, int, and long
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.55.06%20PM.png)
 
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.55.13%20PM.png)
+
+Working with Advanced Stream Pipeline Concepts
+---
+
+Linking Streams to the Underlying Data
+---
+
+```java
+25: List<String> cats = new ArrayList<>();
+26: cats.add("Annie");
+27: cats.add("Ripley");
+28: Stream<String> stream = cats.stream();
+29: cats.add("KC");
+30: System.out.println(stream.count());
+```
+- streams are lazily evaluated. This means that the stream isn’t actually created on line 28.
+-  On line 29, the List gets a new element. On line 30, the stream pipeline actually runs.
+
+Chaining Optionals
+----
