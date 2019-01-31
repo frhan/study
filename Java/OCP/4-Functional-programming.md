@@ -171,10 +171,56 @@ Using Common Terminal Operations
 
 | Method | What Happens for Infinite Streams | Return Value | Reduction|
 |--------|-----------------------------------|---------------|---------|
-| `allMatch() /anyMatch() /noneMatch()` | Sometimes terminates | boolean | No|
-|`collect()`| Does not terminate | Varies| No|
-| `count()`|Does not terminate| long | Does not terminate|
+| `allMatch() /anyMatch() /noneMatch()` | Sometimes terminates | `boolean` | No|
+|`collect()`| Does not terminate | `Varies`| No|
+| `count()`|Does not terminate| `long` | Does not terminate|
 |`findAny() /findFirst()`| Terminates | `Optional<T>`| No|
-|`forEach()` | Does not terminate| void|No|
+|`forEach()` | Does not terminate| `void`|No|
 |`min()/max()`|Does not terminate|`Optional<T>`|Yes|
-|`reduce()`| Does not terminate | Varies| Yes|
+|`reduce()`| Does not terminate | `Varies`| Yes|
+
+
+_`count()`_
+---
+```java
+Stream<String> s = Stream.of("monkey", "gorilla", "bonobo"); System.out.println(s.count()); // 3
+```
+
+_`min() and max()`_
+---
+
+```java
+Optional<T> min(<? super T> comparator) 
+Optional<T> max(<? super T> comparator)
+```
+
+```java
+Stream<String> s = Stream.of("monkey", "ape", "bonobo");
+Optional<String> min = s.min((s1, s2) -> s1.length()—s2.length()); 
+min.ifPresent(System.out::println); // ape
+```
+
+_`findAny() and findFirst()`_
+---
+The `findAny()` and `findFirst()` methods return an element of the stream unless the stream is empty. If the stream is empty, they return an empty `Optional`.
+
+```java
+Optional<T> findAny()
+Optional<T> findFirst()
+```
+
+```java
+Stream<String> s = Stream.of("monkey", "gorilla", "bonobo"); 
+Stream<String> infinite = Stream.generate(() -> "chimp"); 
+s.findAny().ifPresent(System.out::println); // monkey 
+infinite.findAny().ifPresent(System.out::println); // chim
+```
+
+_`allMatch(), anyMatch() and noneMatch()`_
+---
+
+```java
+boolean anyMatch(Predicate <? super T> predicate) 
+boolean allMatch(Predicate <? super T> predicate) 
+boolean noneMatch(Predicate <? super T> predicate)
+```
