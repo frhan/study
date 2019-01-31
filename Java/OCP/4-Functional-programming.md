@@ -482,3 +482,4 @@ IntStream rangeClosed = IntStream.rangeClosed(1, 5);
 ```
 -  The `range()` method indicates that we want the numbers 1–6, not including the number 6
 - `rangeClosed()` an inclusive range
+
