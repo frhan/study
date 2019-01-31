@@ -218,9 +218,28 @@ infinite.findAny().ifPresent(System.out::println); // chim
 
 _`allMatch(), anyMatch() and noneMatch()`_
 ---
-
 ```java
 boolean anyMatch(Predicate <? super T> predicate) 
 boolean allMatch(Predicate <? super T> predicate) 
 boolean noneMatch(Predicate <? super T> predicate)
 ```
+```java 
+List<String> list = Arrays.asList("monkey", "2", "chimp"); 
+Stream<String> infinite = Stream.generate(() -> "chimp"); 
+Predicate<String> pred = x -> Character.isLetter(x.charAt(0)); 
+System.out.println(list.stream().anyMatch(pred)); // true 
+System.out.println(list.stream().allMatch(pred)); // false 
+System.out.println(list.stream().noneMatch(pred)); // false 
+System.out.println(infinite.anyMatch(pred)); // true
+```
+- we can reuse the same predicate, but we need a different stream each time
+ 
+ _`forEach()`_
+ ---
+
+ ```java
+ void forEach(Consumer<? super T> action)
+ ```
+
+ _`reduce()`_
+ ---
