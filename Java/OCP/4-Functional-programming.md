@@ -587,3 +587,30 @@ Collecting Results
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2011.27.29%20PM.png)
 
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2011.27.36%20PM.png)
+
+Collecting Using Basic Collectors
+----------
+
+```java
+Stream<String> ohMy = Stream.of("lions", "tigers", "bears");
+String result = ohMy.collect(Collectors.joining(", ")); 
+System.out.println(result); // lions, tigers, bears
+```
+
+```java
+Stream<String> ohMy = Stream.of("lions", "tigers", "bears");
+Double result = ohMy.collect(Collectors.averagingInt(String::length));
+System.out.println(result); // 5.333333333333333
+```
+
+To Remember
+-----------
+
+* Streams can be used only once, this throws an exception that the “stream has already been operated upon or closed.”
+
+```java
+Stream<String> stream = Stream.iterate("-", (s) -> s + s); 
+boolean b1 = stream.noneMatch(predicate);
+boolean b2 = stream.anyMatch(predicate);
+```
+* 
