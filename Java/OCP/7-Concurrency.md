@@ -66,8 +66,7 @@ Creating Threads with the _ExecutorService_
  
 ### Shutting Down a Thread Executor
 
-if you want to cancel all running and upcoming tasks?
-
+want to cancel all running and upcoming tasks?
 - The `ExecutorService` provides a method called `shutdownNow()`, which attempts to stop all running tasks and discards any that have not been started yet. Note that `shutdownNow()` attempts to stop all running tasks.
 - `shutdownNow()` returns a `List<Runnable>` of tasks that were submitted to the thread executor but that were never started.
 
