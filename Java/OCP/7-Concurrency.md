@@ -103,3 +103,22 @@ submit tasks to an `ExecutorService` instance multiple ways:
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-04%20at%209.16.52%20PM.png)
 
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-04%20at%209.16.57%20PM.png)
+
+### submitting Tasks: execute() vs submit()
+`execute()` does not support `Callable` expressions, we tend to prefer `submit()` over `execute()`, even if you don't store the `Future` reference.
+
+### Submitting Task Collections
+
+* The `invokeAll()` method executes all tasks in a provided collection and returns a `List` of ordered `Future` objects, with one `Future` object corresponding to each submitted task, in the order they were in the original collection.
+
+* The `invokeAny()` method executes a collection of tasks and returns the result of one of the tasks that successfully completes execution, cancelling all unfinished tasks.
+
+The `ExecutorService` interface also includes overloaded versions of `invokeAll()` and `invokeAny()` that take a `timeout` value and `TimeUnit` parameter.
+
+### Waiting for Results
+
+the `submit()` method returns a `java.util.concurrent.Future<V> object`, or `Future<V>` for short.
+
+```java
+Future<?> future = service.submit(() -> System.out.println("Hello Zoo"));
+```
