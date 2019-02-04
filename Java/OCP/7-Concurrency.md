@@ -63,13 +63,41 @@ Creating Threads with the _ExecutorService_
 ---
 
 ### Introducing the Single-Thread Executor
- - With a single-thread executor, results are guaranteed to be executed in the order in which they are added to the executor service.
+
+ ```java
+ ExecutorService service = null; 
+ try {
+     service = Executors.newSingleThreadExecutor();
+     System.out.println("begin");
+     service.execute(() -> System.out.println("Printing zoo inventory")); 
+     service.execute(() -> {for(int i=0; i<3; i++)
+     System.out.println("Printing record: "+i);} );
+     service.execute(() -> System.out.println("Printing zoo inventory"));
+     System.out.println("end"); 
+    } finally {
+         if(service != null) service.shutdown();
+    }         
+    } 
+}
+```
+ 
+ - With a _single-thread executor_, results are guaranteed to be executed in the order in which they are added to the executor service.
  
 ### Shutting Down a Thread Executor
 
 ![alt text ](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-04%20at%208.58.27%20PM.png)
 
+- you should be aware that shutdown() does not actually stop any tasks that have already been submitted to the thread executor
+
 want to cancel all running and upcoming tasks?
 - The `ExecutorService` provides a method called `shutdownNow()`, which attempts to stop all running tasks and discards any that have not been started yet. Note that `shutdownNow()` attempts to stop all running tasks.
 - `shutdownNow()` returns a `List<Runnable>` of tasks that were submitted to the thread executor but that were never started.
 
+### Submitting Tasks
+
+submit tasks to an `ExecutorService` instance multiple ways:
+ - `execute()`, is inherited from the `Executor` interface, which the `ExecutorService` interface extends.
+ - Java added `submit()` methods to the `ExecutorService` interface, which, like `execute()`, can be used to complete tasks asynchronously.
+- Unlike `execute()`, though, `submit()` returns a `Future` object that can be used to determine if the task is complete. 
+
+    
