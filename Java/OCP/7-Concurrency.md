@@ -27,6 +27,7 @@ A _context switch_ is the process of storing a thread’s current state and late
 
 A _thread priority_ is a numeric value associated with a thread that is taken into consideration by the thread scheduler when determining which threads should currently be executing.
 
+![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-04%20at%208.42.20%20PM.png)
 
 Introducing Runnable
 ---
@@ -65,6 +66,8 @@ Creating Threads with the _ExecutorService_
  - With a single-thread executor, results are guaranteed to be executed in the order in which they are added to the executor service.
  
 ### Shutting Down a Thread Executor
+
+![alt text ](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-04%20at%208.58.27%20PM.png)
 
 want to cancel all running and upcoming tasks?
 - The `ExecutorService` provides a method called `shutdownNow()`, which attempts to stop all running tasks and discards any that have not been started yet. Note that `shutdownNow()` attempts to stop all running tasks.
