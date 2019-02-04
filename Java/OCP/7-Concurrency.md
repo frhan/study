@@ -100,4 +100,6 @@ submit tasks to an `ExecutorService` instance multiple ways:
  - Java added `submit()` methods to the `ExecutorService` interface, which, like `execute()`, can be used to complete tasks asynchronously.
 - Unlike `execute()`, though, `submit()` returns a `Future` object that can be used to determine if the task is complete. 
 
-    
+![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-04%20at%209.16.52%20PM.png)
+
+![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-04%20at%209.16.57%20PM.png)
