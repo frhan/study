@@ -123,3 +123,48 @@ the `submit()` method returns a `java.util.concurrent.Future<V> object`, or `Fut
 Future<?> future = service.submit(() -> System.out.println("Hello Zoo"));
 ```
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-04%20at%209.26.21%20PM.png)
+
+Introducing Callable
+---
+`Callable` for short, which is similar to `Runnable` except that its `call()` method returns a value and can throw a checked exception.
+- 
+
+Ambiguous lambda expressions: Callable vs. Supplier
+---
+`Supplier` functional interface, in that they both take no arguments and return a generic type. One difference is that the method in `Callable` can `throw` a checked Exception.
+- the `get()` methods on a Future object return the matching generic type or null
+
+```java
+public static void use(Callable<Integer> expression) {}
+use(() -> {throw new IOException();}); // DOES NOT COMPILE
+use((Callable<Integer>)() -> {throw new IOException("");}); // COMPILES
+```
+
+- Since `Callable` supports a return type when used with `ExecutorService`, it is often preferred over `Runnable` when using the Concurrency API
+
+### Waiting for All Tasks to Finish
+*  we use the `awaitTermination(long timeout, TimeUnit unit)` method available for all thread.
+* The method waits the specified time to complete all tasks, returning sooner if all tasks finish or an `InterruptedException` is detected
+
+```java
+service.awaitTermination(1, TimeUnit.MINUTES);
+```
+
+Scheduling Tasks
+---
+
+* The `ScheduledExecutorService`, which is a subinterface of `ExecutorService`, can be used for just such a task.
+
+```java
+ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
+```
+
+Protecting Data with Atomic Classes
+-----------
+
+Atomic is the property of an operation to be carried out as a single unit of execution without any interference by another thread. 
+
+Any thread trying to access the sheepCount variable while an atomic operation is in process will have to wait until the atomic operation on the variable is complete
+
+Concurrency API includes numerous useful classes that are conceptually the same as our primitive classes but that support atomic operations.
+

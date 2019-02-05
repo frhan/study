@@ -247,8 +247,8 @@ System.out.println(infinite.anyMatch(pred)); // true
 The `reduce()` method combines a stream into a single object.
 
 ```java
- T reduce(T identity, BinaryOperator<T> accumulator) Optional<T> 
- reduce(BinaryOperator<T> accumulator)
+T reduce(T identity, BinaryOperator<T> accumulator) Optional<T> 
+reduce(BinaryOperator<T> accumulator)
 <U> U reduce(U identity, BiFunction<U,? super T,U> accumulator, BinaryOperator<U> combiner)
 ```
 - _identity_: The `identity` element is both the initial value of the reduction and the default result if there are no elements in the stream.
@@ -343,7 +343,9 @@ _`flatMap()`_
 ```java
 List<String> zero = Arrays.asList();
 List<String> one = Arrays.asList("Bonobo");
-List<String> two = Arrays.asList("Mama Gorilla", "Baby Gorilla"); Stream<List<String>> animals = Stream.of(zero, one, two);
+List<String> two = Arrays.asList("Mama Gorilla", "Baby Gorilla");
+
+Stream<List<String>> animals = Stream.of(zero, one, two);
 animals.flatMap(l -> l.stream()).forEach(System.out::println);
 ```
 ```
@@ -360,8 +362,9 @@ Stream<T> sorted(Comparator<? super T> comparator)
 ```
 
 ```java
-Stream<String> s = Stream.of("brown bear-", "grizzly-"); s.sorted(Comparator.reverseOrder())
-.forEach(System.out::print); // grizzly-brown bear-
+Stream<String> s = Stream.of("brown bear-", "grizzly-");
+ s.sorted(Comparator.reverseOrder())
+  .forEach(System.out::print); // grizzly-brown bear-
 ```
 
 ```java
