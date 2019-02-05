@@ -616,4 +616,12 @@ Stream<String> stream = Stream.iterate("-", (s) -> s + s);
 boolean b1 = stream.noneMatch(predicate);
 boolean b2 = stream.anyMatch(predicate);
 ```
-* 
+* The partitioningBy() operation always returns a map with two Boolean keys, even if there are no corresponding values. By contrast, groupingBy() returns only keys that are actually needed.
+
+```java
+ Stream<String> s = Stream.empty();
+ Stream<String> s2 = Stream.empty();
+ Map<Boolean, List<String>> c = s.collect(Collectors.partitioningBy(b -> b.startsWith("c")));
+ Map<Boolean, List<String>> c2 = s2.collect(Collectors.partitioningBy(b -> b.startsWith("c")));
+ System.out.println(c+" "+c2);
+```

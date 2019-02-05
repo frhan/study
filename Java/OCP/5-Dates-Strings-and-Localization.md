@@ -1,8 +1,8 @@
 Dates, Strings, and Localization
 ----
-
-Creating Dates and Times
------
+Working with Dates and Times
+---
+### Creating Dates and Times
 
 `LocalDate`: Contains just a date—no time and no time zone.
 
@@ -34,8 +34,8 @@ public static ZonedDateTime of(LocalDate date, LocalTime time, ZoneId zone)
 public static ZonedDateTime of(LocalDateTime dateTime, ZoneId zone)
 ```
 
-Manipulating Dates and Times
--------
+### Manipulating Dates and Times
+
 * The date and time classes are immutable.
 
 ```java
@@ -48,8 +48,7 @@ LocalTime time = LocalTime.of(5, 15);
 time.plusMinutes(5);
 ```
 
-Working with Periods
----
+### Working with Periods
 
 ```java
 Period annually = Period.ofYears(1);
@@ -61,7 +60,21 @@ Period everyThreeWeeks = Period.ofWeeks(3); Period everyOtherDay = Period.ofDays
 Period.of(1,2,3); //P1Y2M3D
 ```
 
-Working with Durations
------
+### Working with Durations
+
 - For `Duration`, you can specify the number of days, hours, minutes, seconds, or nanoseconds
+
+### Accounting for Daylight Savings Time
+
+Reviewing the String class
+---
+
+Adding Internationalization and Localization
+---
+
+### Picking a Locale
+### Using a Resource Bundle
+### Formatting Numbers
+### Formatting Dates and Times
+
 
