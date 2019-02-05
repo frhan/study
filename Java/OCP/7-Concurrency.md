@@ -225,5 +225,33 @@ Arrays.asList("jackal","kangaroo","lemur")
 
 #### Performing Order-Based Tasks
 
+```java
+System.out.print(Arrays.asList(1,2,3,4,5,6).parallelStream().findAny().get());
+```
+The result is that the output could be 4, 1, or really any value in the stream.
+
+- Any stream operation that is based on order, including `findFirst()`, `limit()`, or `skip()`, may actually perform more slowly in a parallel environment.
+
+- using an unordered version has no effect, but on parallel streams, the results can greatly improve performance:
+
+```java
+Arrays.asList(1,2,3,4,5,6).stream().unordered().parallel();
+```
+#### Combining Results with `reduce()`
+
+Requirements for `reduce()` Arguments:
+* The _identity_ must be defined such that for all elements in the `stream u, combiner.apply(identity, u)` is equal to u.
+* The _accumulator_ operator op must be associative and stateless such that `(a op b) op c is equal to a op (b op c)`.
+* The _combiner_ operator must also be associative and stateless and compatible with the identity, such that for all u and t `combiner.apply(u,accumulator.apply(identity,t))` is equal to `accumulator.apply(u,t)`.
+
+### Combing Results with `collect()`
+
+```java
+Stream<String> stream = Stream.of("w", "o", "l", "f").parallel();
+SortedSet<String> set = stream.collect(ConcurrentSkipListSet::new, Set::add, Set::addAll);
+System.out.println(set); // [f, l, o, w]
+```
+
+
 Identifying Threading Problems
 ---
