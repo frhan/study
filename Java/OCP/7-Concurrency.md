@@ -251,7 +251,35 @@ Stream<String> stream = Stream.of("w", "o", "l", "f").parallel();
 SortedSet<String> set = stream.collect(ConcurrentSkipListSet::new, Set::add, Set::addAll);
 System.out.println(set); // [f, l, o, w]
 ```
+ -  `ConcurrentSkipListSet` are sorted according to their natural ordering.
 
+#### Using the One-Argument collect() Method
+
+```java
+Stream<String> stream = Stream.of("w", "o", "l", "f").parallel(); 
+Set<String> set = stream.collect(Collectors.toSet());
+System.out.println(set); // [f, w, l, o]
+```
+#### Requirements for Parallel Reduction with `collect()`
+* The stream is parallel.
+* The parameter of the collect operation has the `Collector.Characteristics.CONCURRENT characteristic`.
+* Either the stream is unordered, or the collector has the characteristic `Collector.Characteristics.UNORDERED`.
+
+```java
+Stream<String> ohMy = Stream.of("lions", "tigers", "bears").parallel(); ConcurrentMap<Integer, String> map = ohMy.collect(Collectors.toConcurrentMap(String::length, k -> k, (s1, s2) -> s1 + "," + s2));
+System.out.println(map); // {5=lions,bears, 6=tigers}
+System.out.println(map.getClass()); // java.util.concurrent.ConcurrentHashMap
+```
+
+`groupingBy()` example to use a parallel stream and parallel reduction:
+
+```java
+Stream<String> ohMy = Stream.of("lions", "tigers", "bears").parallel(); ConcurrentMap<Integer, List<String>> map = ohMy.collect(
+Collectors.groupingByConcurrent(String::length)); System.out.println(map); // {5=[lions, bears], 6=[tigers]}
+```
+
+Managing Concurrent Processes
+---
 
 Identifying Threading Problems
 ---
