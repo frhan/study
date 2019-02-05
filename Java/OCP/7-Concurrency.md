@@ -124,13 +124,13 @@ Future<?> future = service.submit(() -> System.out.println("Hello Zoo"));
 ```
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-04%20at%209.26.21%20PM.png)
 
-Introducing Callable
+Introducing `Callable`
 ---
-`Callable` for short, which is similar to `Runnable` except that its `call()` method returns a value and can throw a checked exception.
-- 
 
-Ambiguous lambda expressions: Callable vs. Supplier
----
+`Callable` for short, which is similar to `Runnable` except that its `call()` method returns a value and can throw a checked exception.
+ 
+### Ambiguous lambda expressions: Callable vs. Supplier
+
 `Supplier` functional interface, in that they both take no arguments and return a generic type. One difference is that the method in `Callable` can `throw` a checked Exception.
 - the `get()` methods on a Future object return the matching generic type or null
 
