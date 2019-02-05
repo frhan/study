@@ -265,6 +265,9 @@ System.out.println(set); // [f, w, l, o]
 * The parameter of the collect operation has the `Collector.Characteristics.CONCURRENT characteristic`.
 * Either the stream is unordered, or the collector has the characteristic `Collector.Characteristics.UNORDERED`.
 
+The `Collectors` class includes two sets of methods for retrieving collectors
+that are both `UNORDERED` and `CONCURRENT`, `Collectors.toConcurrentMap()` and `Collectors.groupingByConcurrent()`, and therefore it is capable of performing parallel reductions efficiently. 
+
 ```java
 Stream<String> ohMy = Stream.of("lions", "tigers", "bears").parallel(); ConcurrentMap<Integer, String> map = ohMy.collect(Collectors.toConcurrentMap(String::length, k -> k, (s1, s2) -> s1 + "," + s2));
 System.out.println(map); // {5=lions,bears, 6=tigers}
@@ -280,6 +283,17 @@ Collectors.groupingByConcurrent(String::length)); System.out.println(map); // {5
 
 Managing Concurrent Processes
 ---
+
+### Creating a `CyclicBarrier`
+
+A synchronization aid that allows a set of threads to all wait for each other to reach a common barrier point. `CyclicBarriers` are useful in programs involving a fixed sized party of threads that must occasionally wait for each other. The barrier is called _cyclic_ because it can be re-used after the waiting threads are released.
+
+The `CyclicBarrier` takes in its constructors a limit value, indicating the number of threads to wait for. As each thread finishes, it calls the `await()` method on the cyclic barrier. Once the specified number of threads have each called `await()`, the barrier is released and all threads can continue.
+
+-  The `CyclicBarrier` class allows us to perform complex, multi-threaded tasks, while all threads stop and wait at logical barriers.
+
+### Applying the Fork/Join Framework
+
 
 Identifying Threading Problems
 ---
