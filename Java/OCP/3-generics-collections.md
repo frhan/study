@@ -1,5 +1,4 @@
-Generics and Collections
----
+# Generics and Collections
 
 # Working with Generics
 _Generics_  allow us to write and use parameterized types.
@@ -66,6 +65,7 @@ public static <T> Crate<T> ship(T t) {
 A _bounded parameter_ type is a generic type that specifies a bound for the generic.
 
 A _wildcard generic_ type is an unknown generic type represented with a question mark (?).
+
 
 ### Putting It All Together
 
