@@ -193,11 +193,25 @@ boolean contains(Object object)
 The main thing that all `List` implementations have in common is that they are ordered and allow duplicates.
 
 #### Comparing List Implementations
-An ArrayList is like a resizable array. When elements are added, the ArrayList auto- matically grows. When you aren’t sure which collection to use, use an ArrayList
 
-* The main benefit of an ArrayList is that you can look up any element in constant time.
+`ArrayList`
+
+An `ArrayList` is like a resizable array. When elements are added, the `ArrayList` auto- matically grows. When you aren’t sure which collection to use, use an `ArrayList`
+
+* The main benefit of an `ArrayList` is that you can look up any element in constant time.
 * Adding or removing an element is slower than accessing an element
-* 
+
+`LinkedList`
+
+* A `LinkedList` is special because it implements both `List` and `Queue`. It has all of the methods of a `List`. It also has additional methods to facilitate adding or removing from the beginning and/or end of the list.
+
+* The main benefits of a LinkedList are that you can access, add, and remove from the beginning and end of the list in constant time.
+
+`Vector`
+
+* `Vector` does the same thing as `ArrayList` except more slowly. The benefit to that decrease in speed is that it is thread-safe.
+
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-07%20at%205.03.32%20PM.png)
 
 ### Using the Set Interface
 ### Using the Queue Interface
