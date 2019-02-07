@@ -114,6 +114,7 @@ class Goose implements Flyer {
 
 #### Lower-Bounded Wildcards
 
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-07%20at%202.29.26%20PM.png)
 
 ### Putting It All Together
 
