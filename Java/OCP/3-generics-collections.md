@@ -118,9 +118,87 @@ class Goose implements Flyer {
 
 ### Putting It All Together
 
+```java
+class A {}
+class B extends A { }
+class C extends B { }
+```
+
+```java
+List<?> list1 = new ArrayList<A>();
+List<? extends A> list2 = new ArrayList<A>();
+List<? super A> list3 = new ArrayList<A>();
+List<? extends B> list4 = new ArrayList<A>(); // DOES NOT COMPILE
+List<? super B> list5 = new ArrayList<A>();
+List<?> list6 = new ArrayList<? extends A>(); // DOES NOT COMPILE
+```
 # Using Lists, Sets, Maps, and Queues
+There are four main interfaces in the Java Collections Framework:
+`List`: A _list_ is an ordered collection of elements that allows duplicate entries. 
+Elements in a list can be accessed by an `int` index.
+`Set`: A _set_ is a collection that does not allow duplicate entries.
+`Queue`: A _queue_ is a collection that orders its elements in a specific order for processing.
+`Map`: A _map_ is a collection that maps keys to values, with no duplicate keys allowed. The elements in a map are key/value pairs.
+
 ### Common Collections Methods
+
+#### `add()`
+
+```java
+boolean add(E element)
+```
+
+```java
+List<String> list = new ArrayList<>();
+System.out.println(list.add("Sparrow")); // true
+```
+```java
+Set<String> set = new HashSet<>();
+System.out.println(set.add("Sparrow")); // true
+System.out.println(set.add("Sparrow")); // false
+```
+- A `Set` does not allow duplicates
+
+#### `remove()`
+The `remove()` method removes a single matching value in the Collection and returns whether it was successful.
+
+```java
+boolean remove(Object object)
+```
+- Since calling remove() with an int uses the index, an index that doesn’t exist will throw an exception.  `birds.remove(100)`; throws an `IndexOutOfBoundsException`.
+
+#### `isEmpty() and size()`
+
+```java
+boolean isEmpty() 
+int size()
+```
+
+#### `clear()`
+The clear() method provides an easy way to discard all elements of the Collection. The method signature is
+
+```java
+void clear()
+```
+
+#### `contains()`
+The `contains()` method checks if a certain value is in the Collection. The method signature is
+
+```java
+boolean contains(Object object)
+```
+- This method calls `equals()` on each element of the `ArrayList` to see if there are any matches.
+
 ### Using the List Interface
+The main thing that all `List` implementations have in common is that they are ordered and allow duplicates.
+
+#### Comparing List Implementations
+An ArrayList is like a resizable array. When elements are added, the ArrayList auto- matically grows. When you aren’t sure which collection to use, use an ArrayList
+
+* The main benefit of an ArrayList is that you can look up any element in constant time.
+* Adding or removing an element is slower than accessing an element
+* 
+
 ### Using the Set Interface
 ### Using the Queue Interface
 ### Map
