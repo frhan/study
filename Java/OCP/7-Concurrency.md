@@ -287,8 +287,7 @@ Stream<String> ohMy = Stream.of("lions", "tigers", "bears").parallel(); Concurre
 Collectors.groupingByConcurrent(String::length)); System.out.println(map); // {5=[lions, bears], 6=[tigers]}
 ```
 
-Managing Concurrent Processes
----
+# Managing Concurrent Processes
 
 ### Creating a `CyclicBarrier`
 
