@@ -6,6 +6,10 @@ Designing an Interface
 
 Introducing Functional Programming
 ---
+### Defining a Functional Interface
+### Implementing Functional Interfaces with Lambdas
+### Applying the Predicate Interface
+
 
 Implementing Polymorphism
 ---
