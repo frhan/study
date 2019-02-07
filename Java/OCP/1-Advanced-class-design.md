@@ -156,3 +156,14 @@ In other words, it is like a regular class except for the following:
 
 * The enclosing class can refer to the fields and methods of the static nested class.
 
+```java
+public class Enclosing { 
+    static class Nested {
+        private int price = 6; 
+    }
+    public static void main(String[] args) { 
+    Nested nested = new Nested(); 
+    System.out.println(nested.price);
+    } 
+}
+```
