@@ -66,6 +66,54 @@ A _bounded parameter_ type is a generic type that specifies a bound for the gene
 
 A _wildcard generic_ type is an unknown generic type represented with a question mark (?).
 
+#### Unbounded Wildcards
+An unbounded wildcard represents any data type. You use ? when you want to specify that any type is OK with you
+
+```java
+public static void printList(List<?> list) { 
+    for (Object x: list) System.out.println(x);
+}
+public static void main(String[] args) {
+    List<String> keywords = new ArrayList<>(); keywords.add("java");
+    printList(keywords);
+}
+```
+- `printList()` takes any type of list as a parameter. 
+
+#### Upper-Bounded Wildcards
+
+```java
+ArrayList<Number> list = new ArrayList<Integer>(); // DOES NOT COMPILE
+```
+Instead, we need to use a wildcard:
+```java
+List<? extends Number> list = new ArrayList<Integer>();
+```
+
+```java
+static class Sparrow extends Bird { } 
+static class Bird { }
+
+List<? extends Bird> birds = new ArrayList<Bird>(); 
+birds.add(new Sparrow()); // DOES NOT COMPILE 
+birds.add(new Bird()); // DOES NOT COMPILE
+```
+
+We have an interface and two classes that implement it:
+
+```java
+interface Flyer { void fly(); }
+class HangGlider implements Flyer { 
+    public void fly() {} 
+} 
+class Goose implements Flyer { 
+    public void fly() {} 
+}
+```
+- _Upper bounds_ are like anonymous classes in that they use extends regardless of whether we are working with a class or an interface.
+
+#### Lower-Bounded Wildcards
+
 
 ### Putting It All Together
 
