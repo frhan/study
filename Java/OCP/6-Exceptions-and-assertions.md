@@ -1,7 +1,12 @@
+Exceptions and Assertions
+---
 
+Creating Custom Exceptions
+----
 
 Using Try-With-Resources
 ------
+
 
 ```java
 public void newApproach(Path path1, Path path2) throws IOException { 
@@ -14,5 +19,16 @@ public void newApproach(Path path1, Path path2) throws IOException {
 
 * The new _try-with-resources_ statement automatically closes all resources opened in the try clause. This feature is also known as automatic resource management, because Java automatically takes care of the closing.
 
-Try-With-Resources Basics
+### Try-With-Resources Basics
+### AutoCloseable
+### Suppressed Exceptions
+### Putting It Together
+
+Rethrowing Exceptions
 ---
+
+Working with Assertions
+---
+### The assert Statement
+### Enabling Assertion
+### Using Assertions

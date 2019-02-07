@@ -38,27 +38,27 @@ Generics and Collections
 
 Lambda Built-in Functional Interfaces
 ---
-* Use  the built-in interfaces included in the java.util.function package such as Predicate, Consumer, Function, and Supplier
+* Use  the built-in interfaces included in the `java.util.function` package such as `Predicate`, `Consumer`, `Function`, and `Supplier`
 * Develop code that uses primitive versions of functional interfaces
 * Develop code that uses binary versions of functional interfaces
-* Develop code that uses the UnaryOperator interface
+* Develop code that uses the `UnaryOperator` interface
 
 Java Stream API
 ----
 
-* Develop code to extract data from an object using peek() and map() methods including primitive versions of the map() method
+* Develop code to extract data from an object using `peek()` and `map()` methods including primitive versions of the `map()` method
 * Search for data by using search methods of the Stream classes including findFirst, findAny, anyMatch, allMatch, noneMatch
-* Develop code that uses the Optional class
+* Develop code that uses the `Optional` class
 * Develop code that uses Stream data methods and calculation methods
-* Sort a collection using Stream API
+* `Sort` a collection using Stream API
 * Save results to a collection using the collect method and group/partition data using the Collectors class
-* Use flatMap() methods in the Stream API
+* Use `flatMap()` methods in the Stream API
 
 
 Use Java SE 8 Date/Time API
 ---
 
-* Create and manage date-based and time-based events including a combination of date and time into a single object using LocalDate, LocalTime, LocalDateTime, Instant, Period, and Duration
+* Create and manage date-based and time-based events including a combination of date and time into a single object using `LocalDate, LocalTime, LocalDateTime, Instant, Period, and Duration`
 
 * Work with dates and times across timezones and manage changes resulting from daylight savings including Format date and times values
 

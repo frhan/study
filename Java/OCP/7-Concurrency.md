@@ -159,24 +159,33 @@ Scheduling Tasks
 ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
 ```
 
-Protecting Data with Atomic Classes
------------
 
-Atomic is the property of an operation to be carried out as a single unit of execution without any interference by another thread. 
+Synchronizing Data Access
+----
+
+### Protecting Data with Atomic Classes
+
+_Atomic_ is the property of an operation to be carried out as a single unit of execution without any interference by another thread. 
 
 Any thread trying to access the sheepCount variable while an atomic operation is in process will have to wait until the atomic operation on the variable is complete
 
 Concurrency API includes numerous useful classes that are conceptually the same as our primitive classes but that support atomic operations.
 
-Synchronizing Data Access
-----
+### Improving Access with Synchronized Blocks
+
 
 Using Concurrent Collections
 ---
 
+### Introducing Concurrent Collections
+### Understanding Memory Consistency Errors
+### Working with Concurrent Classes
+### Obtaining Synchronized Collections
+
 Working with Parallel Streams
 ---
 A _parallel stream_ is a stream that is capable of processing results concurrently, using multiple threads.
+
 ### Creating Parallel Streams
 
 #### `parallel()`
@@ -297,3 +306,6 @@ The `CyclicBarrier` takes in its constructors a limit value, indicating the numb
 
 Identifying Threading Problems
 ---
+
+### Understanding Liveness
+### Managing Race Conditions
