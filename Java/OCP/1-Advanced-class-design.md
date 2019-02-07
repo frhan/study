@@ -1,32 +1,27 @@
 Advanced Class Design
 ---
 
-Using instanceof
----
+# Reviewing OCA Concepts
 
-Understanding Virtual Method Invocation
----
+### Using instanceof
+### Understanding Virtual Method Invocation
+### Annotating Overridden Methods
 
-Annotating Overridden Methods
----
 
-Coding equals, hashCode, and toString
----
+# Coding equals, hashCode, and toString
+
 ### `toString`
 ### `equals`
 ### `hashCode`
 
-Working with Enums
----
+# Working with Enums
 ### Using Enums in Switch Statements
 ### Adding Constructors, Fields, and Methods
 
-Creating Nested Classes
-----
+# Creating Nested Classes
 
 A _nested class_ is a class that is defined within another class. 
 A _nested class_ that is not static is called an _inner class_. 
-
 
 There are four of types of nested classes:
 
