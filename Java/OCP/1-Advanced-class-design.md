@@ -168,4 +168,4 @@ public class Enclosing {
 }
 ```
 
-! [alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-07%20at%2011.22.16%20AM.png)
+![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-07%20at%2011.22.16%20AM.png)
