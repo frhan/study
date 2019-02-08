@@ -1,8 +1,7 @@
 Functional Programming
 ---
 
-Built-In Functional Interfaces
----
+# Built-In Functional Interfaces
 
 | Functional Interfaces  | # Parameters    | Return Type    |Single Abstract Method   |
 |------------------------|-----------------|----------------|-------------------------|
@@ -16,8 +15,8 @@ Built-In Functional Interfaces
 |  `UnaryOperator<T>`    | `1(T)`          |    `T`         |    `apply`              |   
 |  `UnaryOperator<T>`    | `2(T,T)`        |    `T`         |    `apply`              |   
 
-Implementing Supplier
----
+### Implementing Supplier
+
 A Supplier is used when you want to generate or supply values without taking any input.
 
 ```java
@@ -33,8 +32,8 @@ System.out.println(s1.get());
 System.out.println(s2.get());
 ```
 
-Implementing Consumer and BiConsumer
-----
+### Implementing Consumer and BiConsumer
+
 You use a Consumer when you want to do something with a parameter but not return anything.
 
 ```java
@@ -55,8 +54,8 @@ Consumer<String> c1 = System.out::println;
 Consumer<String> c2 = x -> System.out.println(x);
 ```
 
-Implementing Predicate and BiPredicate
---------
+### Implementing Predicate and BiPredicate
+
 ```java
 @FunctionalInterface
 public class Predicate<T> { 
@@ -69,15 +68,13 @@ public class BiPredicate<T, U> {
 }
 ```
 
-Example:
-===
+#### Example:
 
 ```java
 Predicate<String> p1 = String::isEmpty;
 Predicate<String> p2 = x -> x.isEmpty();
 ```
-BiPredicate:
-----
+#### BiPredicate:
 
 ```java
 BiPredicate<String, String> b2 = (string, prefix) -> string.startsWith(prefix);
@@ -85,8 +82,7 @@ BiPredicate<String, String> b2 = (string, prefix) -> string.startsWith(prefix);
 
 - the first parameter in the lambda is used as the instance on which to call the method
 
-Implementing Function and BiFunction
-------
+### Implementing Function and BiFunction
 A `Function` is responsible for turning one parameter into a value of a potentially different type and returning it. 
 
 Similarly,a `BiFunction` is responsible for turning two parameters into a value and returning it.
@@ -112,8 +108,7 @@ Function<String, Integer> f1 = String::length;
 Function<String, Integer> f2 = x -> x.length();
 ```
 
-Implementing UnaryOperator and BinaryOperator
-----
+### Implementing UnaryOperator and BinaryOperator
 `UnaryOperator` and `BinaryOperator` are a special case of a function. They require all type parameters to be the same type.
 
 ```java
@@ -135,20 +130,18 @@ UnaryOperator<String> u1 = String::toUpperCase; UnaryOperator<String> u2 = x -> 
 System.out.println(u1.apply("chirp")); System.out.println(u2.apply("chirp"));
 ```
 
-Checking Functional Interfaces
-----
+### Checking Functional Interfaces
 - a Predicate returns a `boolean` primitive and not a `Boolean` object
 
-Returning an Optional
----
+# Returning an Optional
 
 ```java
 Optional o = Optional.ofNullable(value);
 ```
 - returning an Optional is a clear statement in the API that there might not be a value in there
 
-Using Streams
-----
+# Using Streams
+
 - A _stream_ pipeline is the operations that run on a stream to produce a result. 
 
 - With _streams_, the data isn’t generated up front—it is created when needed.
@@ -158,17 +151,17 @@ There are three parts to a stream pipeline:
  - _Intermediate operations_: Transforms the stream into another one.Since streams use lazy evaluation, the intermediate operations do not run until the terminal operation runs. 
  - _Terminal operation_: Actually produces a result.Since streams can be used only once, the stream is no longer valid after a terminal operation completes.
 
- Creating Stream Sources
- ---------------
-  the _Stream_ interface is in the `java.util.stream` package.
+### Creating Stream Sources
+
+the _Stream_ interface is in the `java.util.stream` package.
+
 ```java
 Stream<String> empty = Stream.empty(); // count = 0
 Stream<Integer> singleElement = Stream.of(1); // count = 1 
 Stream<Integer> fromArray = Stream.of(1, 2, 3); // count = 2
 ```
 
-Using Common Terminal Operations
-----
+### Using Common Terminal Operations
 
 | Method | What Happens for Infinite Streams | Return Value | Reduction|
 |--------|-----------------------------------|---------------|---------|
@@ -281,12 +274,11 @@ StringBuilder word = stream.collect(StringBuilder::new,
 StringBuilder::append, StringBuilder:append)
 ```
 
-Using Common Intermediate Operations
----
+# Using Common Intermediate Operations
 
-_`filter()`_
----
-### In mathematical logic, a predicate is commonly understood to be a Boolean-valued function P: X→ {true, false}, called the predicate on X.
+### _`filter()`_
+
+#### In mathematical logic, a predicate is commonly understood to be a Boolean-valued function P: X→ {true, false}, called the predicate on X.
 ```java
 Stream<T> filter(Predicate<? super T> predicate)
 ```
@@ -296,8 +288,8 @@ Stream<String> s = Stream.of("monkey", "gorilla", "bonobo");
 s.filter(x -> x.startsWith("m")).forEach(System.out::print); // monkey
 ```
 
-_`distinct()`_
----
+### _`distinct()`_
+
 The `distinct()` method returns a stream with duplicate values removed. 
 
 ```java
@@ -306,8 +298,7 @@ s.distinct().forEach(System.out::print); // duckgoose
 ```
 - Java calls `equals()` to determine whether the objects are the same.
 
-_`limit() and skip()`_
----
+### _`limit() and skip()`_
 The `limit()` and `skip()` methods make a Stream smaller. They could make a finite stream smaller, or they could make a finite stream out of an infinite stream. 
 
 ```java
@@ -319,8 +310,8 @@ Stream<T> skip(int n)
 Stream<Integer> s = Stream.iterate(1, n -> n + 1); 
 s.skip(5).limit(2).forEach(System.out::print); // 67
 ```
-_`map()`_
----
+### _`map()`_
+
 The `map()` method creates a one-to-one mapping from the elements in the stream to the elements of the next step in the stream.
 
 ```java
@@ -332,8 +323,8 @@ Stream<String> s = Stream.of("monkey", "gorilla", "bonobo");
 s.map(String::length).forEach(System.out::print); // 676
 ```
 
-_`flatMap()`_
----
+### _`flatMap()`_
+
 - The `flatMap()` method takes each element in the stream and makes any elements it contains toplevel elements in a single stream.
 - This is helpful when you want to remove empty elements from a stream or you want to combine a stream of lists
 
@@ -352,8 +343,8 @@ animals.flatMap(l -> l.stream()).forEach(System.out::println);
 Bonobo
 Mama Gorilla Baby Gorilla
 ```
-_`sorted()`_
----
+#### _`sorted()`_
+
 - Java uses natural ordering unless we specify a comparator.
 
 ```java
@@ -375,8 +366,7 @@ s.sorted(Comparator::reverseOrder); // DOES NOT COMPILE
 
 - `Comparator::reverseOrder` doesn’t do that. It is a reference to a function that takes zero parameters and returns a `Comparator`.
 
-_`peek()`_
----
+### _`peek()`_
 
 ```java
 Stream<T> peek(Consumer<? super T> action)
@@ -390,8 +380,7 @@ long count = stream.filter(s -> s.startsWith("g"))
 System.out.println(count); // 1
 ```
 
-Putting Together the Pipeline
-------
+### Putting Together the Pipeline
 
 ```java
 List<String> list = Arrays.asList("Toby", "Anna", "Leroy", "Alex");
@@ -462,8 +451,7 @@ infinite.filter(x -> x % 2 == 1)
         .forEach(System.out::print);
 ```
 
-Working with Primitives
----
+# Working with Primitives
 
 `IntStream`: Used for the primitive types `int`, `short`, `byte`, and `char`
 
@@ -495,8 +483,8 @@ IntStream intStream = objStream.mapToInt(s -> s.length())
 ```
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.08.33%20PM.png)
 
-Using Optional with Primitive Streams
------
+### Using Optional with Primitive Streams
+
 ```java
 IntStream stream = IntStream.rangeClosed(1,10); 
 OptionalDouble optional = stream.average();
@@ -506,9 +494,9 @@ OptionalDouble optional = stream.average();
 
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.18.48%20PM.png)
 
-Summarizing Statistics
----
- `Statistic` is just a big word for a number that was calculated from data.
+### Summarizing Statistics
+
+`Statistic` is just a big word for a number that was calculated from data.
 
 ```java
 private static int range(IntStream ints) { 
@@ -518,11 +506,10 @@ private static int range(IntStream ints) {
 }
 ```
 
-Learning the Functional Interfaces for Primitives
-----
+### Learning the Functional Interfaces for Primitives
 
-Functional Interfaces for boolean
----
+#### Functional Interfaces for boolean
+
 ```java
 BooleanSupplier b1 = () -> true;
 System.out.println(b1.getAsBoolean());
@@ -539,11 +526,9 @@ Functional Interfaces for double, int, and long
 
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.55.13%20PM.png)
 
-Working with Advanced Stream Pipeline Concepts
----
+# Working with Advanced Stream Pipeline Concepts
 
-Linking Streams to the Underlying Data
----
+### Linking Streams to the Underlying Data
 
 ```java
 25: List<String> cats = new ArrayList<>();
@@ -556,8 +541,7 @@ Linking Streams to the Underlying Data
 - streams are lazily evaluated. This means that the stream isn’t actually created on line 28.
 -  On line 29, the List gets a new element. On line 30, the stream pipeline actually runs.
 
-Chaining Optionals
-----
+### Chaining Optionals
 
 ```java
 private static void threeDigit(Optional<Integer> optional) {
