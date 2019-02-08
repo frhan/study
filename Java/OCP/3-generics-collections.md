@@ -214,6 +214,25 @@ An `ArrayList` is like a resizable array. When elements are added, the `ArrayLis
 ![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-07%20at%205.03.32%20PM.png)
 
 ### Using the Set Interface
+The main thing that all Set implementa- tions have in common is that they do not allow duplicates.
+
+#### Comparing Set Implementations
+
+`HashSet`
+A `HashSet` stores its elements in a hash table. This means that it uses the `hashCode()` method of the objects to retrieve them more efficiently.
+
+The main benefit is that adding elements and checking if an element is in the set both have constant time.
+
+`TreeSet`
+A `TreeSet` stores its elements in a sorted tree structure. 
+The tradeoff is that adding and checking if an element is present are both O(log n)
+
+#### Working with Set Methods
+```java
+Set<Integer> set = new HashSet<>();
+boolean b1 = set.add(66);
+```
+
 ### Using the Queue Interface
 ### Map
 ### Comparing Collection Types
