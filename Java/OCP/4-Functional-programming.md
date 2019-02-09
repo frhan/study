@@ -339,6 +339,7 @@ List<String> two = Arrays.asList("Mama Gorilla", "Baby Gorilla");
 Stream<List<String>> animals = Stream.of(zero, one, two);
 animals.flatMap(l -> l.stream()).forEach(System.out::println);
 ```
+
 ```
 Bonobo
 Mama Gorilla Baby Gorilla
@@ -565,8 +566,8 @@ The solution is to call `flatMap()` instead:
 Optional<Integer> result = optional.flatMap(ChainingOptionals::calculator);
 ```
 
-Checked exceptions and Functional interfaces
-----
+#### Checked exceptions and Functional interfaces
+
 
 Collecting Results
 -------------
@@ -593,14 +594,14 @@ System.out.println(result); // 5.333333333333333
 To Remember
 -----------
 
-* Streams can be used only once, this throws an exception that the “stream has already been operated upon or closed.”
+* Streams can be used only once, this throws an exception that the _“stream has already been operated upon or closed.”_
 
 ```java
 Stream<String> stream = Stream.iterate("-", (s) -> s + s); 
 boolean b1 = stream.noneMatch(predicate);
 boolean b2 = stream.anyMatch(predicate);
 ```
-* The partitioningBy() operation always returns a map with two Boolean keys, even if there are no corresponding values. By contrast, groupingBy() returns only keys that are actually needed.
+* The `partitioningBy()` operation always returns a map with two Boolean keys, even if there are no corresponding values. By contrast, `groupingBy()` returns only keys that are actually needed.
 
 ```java
  Stream<String> s = Stream.empty();
