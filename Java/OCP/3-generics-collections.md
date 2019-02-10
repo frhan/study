@@ -318,6 +318,19 @@ There are three rules to know:
 
 ### Comparator
 
+```java
+Comparator<Duck> byWeight = new Comparator<Duck>() {
+    public int compare(Duck d1, Duck d2) {
+        return d1.getWeight()—d2.getWeight();
+    }
+};
+```
+
+```java
+Comparator<Duck> byWeight = (d1, d2) -> d1.getWeight()—d2.getWeight();
+```
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%208.01.37%20PM.png)
+
 # Searching and Sorting
 
 # Additions in Java 8
