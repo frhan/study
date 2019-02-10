@@ -219,22 +219,64 @@ The main thing that all Set implementa- tions have in common is that they do not
 #### Comparing Set Implementations
 
 `HashSet`
+
 A `HashSet` stores its elements in a hash table. This means that it uses the `hashCode()` method of the objects to retrieve them more efficiently.
 
 The main benefit is that adding elements and checking if an element is in the set both have constant time.
 
 `TreeSet`
+
 A `TreeSet` stores its elements in a sorted tree structure. 
 The tradeoff is that adding and checking if an element is present are both O(log n)
 
 #### Working with Set Methods
+
 ```java
 Set<Integer> set = new HashSet<>();
 boolean b1 = set.add(66);
 ```
+The `hashCode()` method is used to know which bucket to look in so that Java doesn’t have to look through the whole set to find out if an `object` is there. The best case is that hash codes are unique, and Java has to call `equals()` on only one object. 
+
+The `NavigableSet interface:
+
+`TreeSet` implements the `NavigableSet` interface.
+
+Just remember that lower and higher elements do not include the target element.
 
 ### Using the Queue Interface
+we use a queue when elements are added and removed in a specific order. Queues are typically used for sorting elements prior to processing them.
+
+#### Comparing Queue Implementations
+A double-ended queue is different from a regular queue in that you can insert and remove elements from both the front and back of the queue.
+
+The main benefit of a `LinkedList` is that it implements both the `List` and `Queue` interfaces.
+
+An `ArrayDeque` is a “pure” double-ended queue.The main benefit of an `ArrayDeque` is that it is more efficient than a `LinkedList`.
+
+
+#### Working with _`Queue`_ Methods
+
+When talking about LIFO (stack), people say `push/poll/peek`. When talking about FIFO (single-ended queue), people say `offer/poll/peek`.
+```java
+12: Queue<Integer> queue = new ArrayDeque<>();
+13: System.out.println(queue.offer(10)); // true
+14: System.out.println(queue.offer(4)); // true
+15: System.out.println(queue.peek()); // 10
+16: System.out.println(queue.poll()); // 10
+17: System.out.println(queue.poll()); // 4
+18: System.out.println(queue.peek()); // null
+```
 ### Map
+
+#### Comparing Map Implementations
+
+A `HashMap` stores the keys in a hash table. This means that it uses the `hashCode()` method of the keys to retrieve their values more efficiently.
+
+A `TreeMap` stores the keys in a sorted tree structure.
+
+A `Hashtable` is like `Vector` in that it is really old and thread-safe and that you won’t be expected to use it.
+
+
 ### Comparing Collection Types
 
 # `Comparator` vs. `Comparable`
@@ -249,3 +291,4 @@ boolean b1 = set.add(66);
 ### Updating All Elements
 ### Looping through a Collection
 ### Using New Java 8 Map APIs
+

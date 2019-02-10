@@ -516,8 +516,7 @@ BooleanSupplier b1 = () -> true;
 System.out.println(b1.getAsBoolean());
 ```
 
-Functional Interfaces for double, int, and long
----
+# Functional Interfaces for double, int, and long
 
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.54.51%20PM.png)
 
@@ -610,3 +609,4 @@ boolean b2 = stream.anyMatch(predicate);
  Map<Boolean, List<String>> c2 = s2.collect(Collectors.partitioningBy(b -> b.startsWith("c")));
  System.out.println(c+" "+c2);
 ```
+

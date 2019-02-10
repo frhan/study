@@ -43,6 +43,7 @@ LocalDate date = LocalDate.of(2014, Month.JANUARY, 20);
 date.plusDays(2);
 date.plusWeeks(1);
 ```
+
 ```java
 LocalTime time = LocalTime.of(5, 15);
 time.plusMinutes(5);
@@ -73,8 +74,11 @@ Adding Internationalization and Localization
 ---
 
 ### Picking a Locale
+
 ### Using a Resource Bundle
+
 ### Formatting Numbers
+
 ### Formatting Dates and Times
 
 
