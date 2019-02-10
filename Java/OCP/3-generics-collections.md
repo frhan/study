@@ -279,6 +279,7 @@ A `TreeMap` stores the keys in a sorted tree structure.
 A `Hashtable` is like `Vector` in that it is really old and thread-safe and that you won’t be expected to use it.
 
 #### Working with Map Methods
+
 ![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%206.58.29%20PM.png)
 
 ### Comparing Collection Types
