@@ -294,8 +294,28 @@ This means that `TreeSet` cannot contain `null` elements. It also means that `Tr
 `TreeSet` — no `null` elements
 `ArrayDeque` — no `null` elements
 
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%207.13.24%20PM.png)
+
 # `Comparator` vs. `Comparable`
+**Remember that numbers sort before letters and uppercase letters sort before lowercase letters.**
+
 ### Comparable
+
+```java
+public interface Comparable<T> { 
+    public int compareTo(T o);
+}
+```
+
+There are three rules to know:
+* The number zero is returned when the current object is equal to the argument to `compareTo()`.
+
+* A number less than zero is returned when the current object is smaller than the argument to `compareTo()`.
+
+* A number greater than zero is returned when the current object is larger than the argument to `compareTo()`.
+
+**Remember that `id – a.id` sorts in ascending order and `a.id – id` sorts in descending order.**
+
 ### Comparator
 
 # Searching and Sorting
