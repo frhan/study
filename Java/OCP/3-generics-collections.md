@@ -286,6 +286,14 @@ A `Hashtable` is like `Vector` in that it is really old and thread-safe and that
 ![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%207.07.43%20PM.png)
 ![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%207.07.49%20PM.png)
 
+The data structures that involve sorting do not allow `nulls`.
+This means that `TreeSet` cannot contain `null` elements. It also means that `TreeMap` cannot contain `null` keys.
+
+`TreeMap` — no `null` keys
+`Hashtable` — no `null` keys or values
+`TreeSet` — no `null` elements
+`ArrayDeque` — no `null` elements
+
 # `Comparator` vs. `Comparable`
 ### Comparable
 ### Comparator
