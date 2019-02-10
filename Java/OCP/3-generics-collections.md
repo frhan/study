@@ -256,6 +256,8 @@ An `ArrayDeque` is a “pure” double-ended queue.The main benefit of an `Array
 
 #### Working with _`Queue`_ Methods
 
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%205.40.17%20PM.png)
+
 When talking about LIFO (stack), people say `push/poll/peek`. When talking about FIFO (single-ended queue), people say `offer/poll/peek`.
 ```java
 12: Queue<Integer> queue = new ArrayDeque<>();
@@ -276,8 +278,12 @@ A `TreeMap` stores the keys in a sorted tree structure.
 
 A `Hashtable` is like `Vector` in that it is really old and thread-safe and that you won’t be expected to use it.
 
+#### Working with Map Methods
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%206.58.29%20PM.png)
 
 ### Comparing Collection Types
+
+
 
 # `Comparator` vs. `Comparable`
 ### Comparable
