@@ -283,8 +283,8 @@ A `Hashtable` is like `Vector` in that it is really old and thread-safe and that
 ![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%206.58.29%20PM.png)
 
 ### Comparing Collection Types
-
-
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%207.07.43%20PM.png)
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%207.07.49%20PM.png)
 
 # `Comparator` vs. `Comparable`
 ### Comparable
