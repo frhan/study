@@ -21,7 +21,8 @@ A Supplier is used when you want to generate or supply values without taking any
 
 ```java
 @FunctionalInterface 
-public class Supplier<T> { public T get();
+public class Supplier<T> { 
+    public T get();
 }
 ```
 
@@ -126,8 +127,10 @@ T apply(T t1, T t2);
 ```
 
 ```java
-UnaryOperator<String> u1 = String::toUpperCase; UnaryOperator<String> u2 = x -> x.toUpperCase();
-System.out.println(u1.apply("chirp")); System.out.println(u2.apply("chirp"));
+UnaryOperator<String> u1 = String::toUpperCase; 
+UnaryOperator<String> u2 = x -> x.toUpperCase();
+System.out.println(u1.apply("chirp"));
+System.out.println(u2.apply("chirp"));
 ```
 
 ### Checking Functional Interfaces
@@ -177,7 +180,8 @@ Stream<Integer> fromArray = Stream.of(1, 2, 3); // count = 2
 _`count()`_
 ---
 ```java
-Stream<String> s = Stream.of("monkey", "gorilla", "bonobo"); System.out.println(s.count()); // 3
+Stream<String> s = Stream.of("monkey", "gorilla", "bonobo"); 
+System.out.println(s.count()); // 3
 ```
 
 _`min() and max()`_
