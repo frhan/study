@@ -169,11 +169,10 @@ Any thread trying to access the sheepCount variable while an atomic operation is
 Concurrency API includes numerous useful classes that are conceptually the same as our primitive classes but that support atomic operations.
 
 ### Improving Access with Synchronized Blocks
+### Synchronizing Methods
+### Understanding the Cost of Synchronization
 
-
-Using Concurrent Collections
----
-
+# Using Concurrent Collections
 ### Introducing Concurrent Collections
 ### Understanding Memory Consistency Errors
 ### Working with Concurrent Classes
