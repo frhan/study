@@ -237,9 +237,11 @@ boolean b1 = set.add(66);
 ```
 The `hashCode()` method is used to know which bucket to look in so that Java doesn’t have to look through the whole set to find out if an `object` is there. The best case is that hash codes are unique, and Java has to call `equals()` on only one object. 
 
-The `NavigableSet interface:
+**The `NavigableSet` interface:**
 
 `TreeSet` implements the `NavigableSet` interface.
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%205.40.17%20PM.png)
+
 
 Just remember that lower and higher elements do not include the target element.
 
@@ -255,8 +257,6 @@ An `ArrayDeque` is a “pure” double-ended queue.The main benefit of an `Array
 
 
 #### Working with _`Queue`_ Methods
-
-![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%205.40.17%20PM.png)
 
 When talking about LIFO (stack), people say `push/poll/peek`. When talking about FIFO (single-ended queue), people say `offer/poll/peek`.
 ```java
