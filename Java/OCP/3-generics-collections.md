@@ -290,8 +290,11 @@ The data structures that involve sorting do not allow `nulls`.
 This means that `TreeSet` cannot contain `null` elements. It also means that `TreeMap` cannot contain `null` keys.
 
 `TreeMap` — no `null` keys
+
 `Hashtable` — no `null` keys or values
+
 `TreeSet` — no `null` elements
+
 `ArrayDeque` — no `null` elements
 
 ![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-10%20at%207.13.24%20PM.png)
@@ -399,3 +402,14 @@ cats.forEach(System.out::println); // method reference
 ### Using New Java 8 Map APIs
 
 
+# To Remeber
+* `HashSet` does not guarantee any iteration order, making A and D correct.
+```java
+Set<Number> set = new HashSet<>();
+set.add(null); //compile successfully
+Iterator it = set.iterator();
+while(it.hasNext())
+    System.out.println(it.next());
+```
+
+*
