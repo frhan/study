@@ -401,6 +401,20 @@ cats.forEach(System.out::println); // method reference
 ```
 ### Using New Java 8 Map APIs
 
+#### `merge`
+
+Implementation Requirements:
+The _default_ implementation is equivalent to performing the following steps for this `map`, then returning the current value or `null` if absent:
+
+```java
+ V oldValue = map.get(key);
+ V newValue = (oldValue == null) ? value :
+              remappingFunction.apply(oldValue, value);
+ if (newValue == null)
+     map.remove(key);
+ else
+     map.put(key, newValue);
+````
 
 # To Remeber
 * `HashSet` does not guarantee any iteration order, making A and D correct.
