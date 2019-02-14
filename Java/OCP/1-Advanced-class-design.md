@@ -44,8 +44,6 @@ three points:
 2. If `equals()` returns true when called with two objects, calling `hashCode()` on each of those objects must return the same result.This means hashCode() can use a subset of the variables that equals() uses.
 3. If equals() returns false when called with two objects, calling hashCode() on each of those objects does not have to return a different result.
 
-
-
 # Working with Enums
 ### Using Enums in Switch Statements
 ### Adding Constructors, Fields, and Methods
