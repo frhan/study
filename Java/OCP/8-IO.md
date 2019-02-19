@@ -28,7 +28,7 @@ System.out.println(java.io.File.separator)
 ```
 ### Working with a File Object
 
-
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-19%20at%202.55.54%20PM.png)
 
 
 # Introducing Streams
