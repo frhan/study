@@ -196,13 +196,33 @@ These methods read/write char values instead of byte values; although similar to
 ### The BufferedReader and BufferedWriter Classes
 - Unlike `FileInputStream` and `FileReader`, where we used -1 to check for file termination of an int value, with `BufferedReader`, we stop reading the file when `readLine()` returns `null`.
 
-### The ObjectInputStream and ObjectOutputStream Classes
+### The `ObjectInputStream` and `ObjectOutputStream` Classes
 - The process of converting an in-memory object to a stored data format is referred to as _serialization_, with the reciprocal process of converting stored data into an object, which is known as _deserialization_.
 
 #### The Serializable Interface
+ - The Serializable interface is a tagging or marker interface, which means that it does not have any methods associated with it.
 
+- The purpose of implementing the `Serializable` interface is to inform any process attempting to serialize the object that you have taken the proper steps to make the object serializable, which involves making sure that the classes of all instance variables within the object are also marked `Serializable`.
 
-### The PrintStream and PrintWriter Classes
+- an object will throw a `NotSerializableException` if the class or one of its contained classes does not properly implement the `Serializable` interface. 
+
+-  You can use the `transient` keyword on the reference to the object,
+which will instruct the process serializing the object to skip it and avoid throwing a NotSerializableException.
+
+#### `Serializing` and `Deserializing` Objects
+- The `ObjectOutputStream` class includes a method to serialize the object to the stream called `void writeObject(Object)`
+-  the `ObjectInputStream` class includes a deserialization method that returns an object called `readObject()`.
+
+### The `PrintStream` and `PrintWriter` Classes
+
+The `PrintStream` and `PrintWriter` classes are high-level stream classes that write formatted representation of Java objects to a text-based output stream.
+
+**`print()`**
+
+**`println()`**
+
+**`format()` and `printf()`**
+
 ### Review of Stream Classes 
 
 Interacting with Users
