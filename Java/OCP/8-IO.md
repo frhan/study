@@ -33,7 +33,10 @@ System.out.println(java.io.File.separator)
 # Introducing Streams
 
 ### Stream Fundamentals
+The contents of a file may be accessed or written via a _stream_, which is a list of data elements presented sequentially.
+
 ### Stream Nomenclature
+
 ### Common Stream Operations
 #### Closing the Stream
 * Since streams are considered resources, it is imperative that they be closed after they
@@ -74,7 +77,57 @@ The `InputStream` and `Reader` classes also include a `skip(long)` method, which
 
 # Working with **Streams**
 ### The FileInputStream and FileOutputStream Classes
+ * `FileInputStream` and `FileOutputStream`-  They are used to read bytes from a file or write bytes to a file, respectively. These classes include constructors that take a `File` object or `String`, representing a path to the file.
 
+* The data in a `FileInputStream` object is commonly accessed by successive calls to the `read()` method until a value of `-1` is returned, indicating that the end of the stream—in this case the end of the file—has been reached.
+
+* A `FileOutputStream` object is accessed by writing successive bytes using the `write(int)` method.
+
+```java
+import java.io.*;
+public class CopyFileSample {
+public static void copy(File source, File destination) throws IOException {
+    try (InputStream in = new FileInputStream(source); 
+        OutputStream out = new FileOutputStream(destination)) { 
+            int b;
+            while((b = in.read()) != -1) {
+                out.write(b); 
+            }
+    } 
+}
+public static void main(String[] args) throws IOException { 
+    File source = new File("Zoo.class");
+    File destination = new File("ZooCopy.class"); copy(source,destination);
+} 
+}
+```
+* If the destination file already exists, it will be overridden by this code.
+### The _BufferedInputStream_ and _BufferedOutputStream_ Classes
+* Instead of reading the data one byte at a time, we use the underlying `read(byte[])` method of `BufferedInputStream`, which returns the number of bytes read into the provided byte array.
+* The data is written into the `BufferedOutputStream` using the `write(byte[],int,int)` method, which takes as input a byte array, an offset, and a length value, respectively. 
+    
+    - The offset value is the number of values to skip before writing characters, and it is often set to 0. The length value is the number of characters from the byte array to write.
+
+    ```java
+    import java.io.*;
+    public class CopyBufferFileSample {
+        public static void copy(File source, File destination) throws IOException {
+            try (
+            InputStream in = new BufferedInputStream(new FileInputStream(source)); OutputStream out = new BufferedOutputStream(new FileOutputStream(destination))) {
+                byte[] buffer = new byte[1024];
+                int lengthRead;
+                while ((lengthRead = in.read(buffer)) > 0) {
+                    out.write(buffer,0,lengthRead);
+                    out.flush(); }
+            } 
+        }
+}
+```
+#### why use the buffered Classes?
+- The `Buffered` classes contain numerous performance enhancements for managing stream data in memory.
+
+#### buffer size Tuning
+It is also common to choose a power of 2 for the buffer size, since most underlying hardware is structured with file block and cache sizes that are a power of 2.
 
 ### The FileReader and FileWriter classes
 ### The BufferedReader and BufferedWriter Classes
