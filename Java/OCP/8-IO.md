@@ -36,6 +36,63 @@ System.out.println(java.io.File.separator)
 The contents of a file may be accessed or written via a _stream_, which is a list of data elements presented sequentially.
 
 ### Stream Nomenclature
+#### Byte Streams vs. Character Streams
+The `java.io` API defines two sets of classes for reading and writing streams: those with Stream in their name and those with `Reader`/`Writer` in their name.
+
+Differences between Streams and `Readers`/`Writers`:
+1. The stream classes are used for inputting and outputting all types of binary or byte data.
+2. The reader and writer classes are used for inputting and outputting only character and String data.
+
+why use Character streams?
+- There are advantages, though, to using the reader/writer classes, as they are specifically focused on managing character and string data
+- the character stream classes are sometimes referred to as convenience classes for working with text data.
+
+### Input and Output
+- Most Input stream classes have a corresponding Output class and vice versa. For example, the `FileOutputStream` class writes data that can be read by a `FileInputStream`.
+
+### Low-Level vs. High-Level Streams
+
+- A low-level stream connects directly with the source of the data, such as a file, an array, or a String.
+For example, a `FileInputStream` is a class that reads file data one byte at a time.
+- a high-level stream is built on top of another stream using wrapping. Wrapping is the process by which an instance is passed to the constructor of another class and operations on the resulting instance are filtered and applied to the original instance.
+
+```java
+try (
+BufferedReader bufferedReader = new BufferedReader(
+new FileReader("zoo-data.txt"))) { 
+    System.out.println(bufferedReader.readLine());
+}
+```
+* High-level streams can take other high-level streams as input
+
+```java
+try ( ObjectInputStream objectStream = new ObjectInputStream( new BufferedInputStrem(new FileInputStream("zoo-data.txt")))) {
+     System.out.println(objectStream.readObject());
+}
+```
+
+#### Stream Base Classes
+The `java.io` library defines four abstract classes that are the parents of all stream classes defined within the API: 
+`InputStream`, `OutputStream`, `Reader`, and `Writer`.
+
+```java
+new BufferedInputStream(new FileReader("zoo-data.txt")); // DOES NOT COMPILE 
+new BufferedWriter(new FileOutputStream("zoo-data.txt")); // DOES NOT COMPILE 
+new ObjectInputStream(new FileOutputStream("zoo-data.txt")); // DOES NOT COMPILE 
+new BufferedInputStream(new InputStream()); // DOES NOT COMPILE
+```
+
+#### Decoding Java I/O Class Names
+
+Review of java.io Class Properties:
+* A class with the word `InputStream` or `OutputStream` in its name is used for reading or writing binary data, respectively.
+
+* A class with the word `Reader` or `Writer` in its name is used for reading or writing character or string data, respectively.
+
+* Most, but not all, input classes have a corresponding output class.
+* A low-level stream connects directly with the source of the data.
+* A high-level stream is built on top of another stream using wrapping.
+* A class with Buffered in its name reads or writes data in groups of bytes or characters and often improves performance in sequential file systems.
 
 ### Common Stream Operations
 #### Closing the Stream
@@ -108,19 +165,21 @@ public static void main(String[] args) throws IOException {
     
     - The offset value is the number of values to skip before writing characters, and it is often set to 0. The length value is the number of characters from the byte array to write.
 
-    ```java
-    import java.io.*;
-    public class CopyBufferFileSample {
-        public static void copy(File source, File destination) throws IOException {
-            try (
-            InputStream in = new BufferedInputStream(new FileInputStream(source)); OutputStream out = new BufferedOutputStream(new FileOutputStream(destination))) {
-                byte[] buffer = new byte[1024];
-                int lengthRead;
-                while ((lengthRead = in.read(buffer)) > 0) {
-                    out.write(buffer,0,lengthRead);
-                    out.flush(); }
-            } 
-        }
+```java
+import java.io.*;
+
+public class CopyBufferFileSample {
+    public static void copy(File source, File destination) throws IOException {
+        try (
+        InputStream in = new BufferedInputStream(new FileInputStream(source)); 
+        OutputStream out = new BufferedOutputStream(new FileOutputStream(destinatio)){
+            byte[] buffer = new byte[1024];
+            int lengthRead;
+            while ((lengthRead = in.read(buffer)) > 0) {
+                out.write(buffer,0,lengthRead);
+                out.flush(); }
+        } 
+    }
 }
 ```
 #### why use the buffered Classes?
@@ -130,8 +189,19 @@ public static void main(String[] args) throws IOException {
 It is also common to choose a power of 2 for the buffer size, since most underlying hardware is structured with file block and cache sizes that are a power of 2.
 
 ### The FileReader and FileWriter classes
+
+- Like the `FileInputStream` and `FileOutputStream` classes, the FileReader and FileWriter classes contain read() and write() methods, respectively. 
+
+These methods read/write char values instead of byte values; although similar to what you saw with streams, the API actually uses an int value to hold the data so that -1 can be returned if the end of the file is detected.
 ### The BufferedReader and BufferedWriter Classes
+- Unlike `FileInputStream` and `FileReader`, where we used -1 to check for file termination of an int value, with `BufferedReader`, we stop reading the file when `readLine()` returns `null`.
+
 ### The ObjectInputStream and ObjectOutputStream Classes
+- The process of converting an in-memory object to a stored data format is referred to as _serialization_, with the reciprocal process of converting stored data into an object, which is known as _deserialization_.
+
+#### The Serializable Interface
+
+
 ### The PrintStream and PrintWriter Classes
 ### Review of Stream Classes 
 
