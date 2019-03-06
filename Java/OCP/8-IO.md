@@ -219,6 +219,14 @@ which will instruct the process serializing the object to skip it and avoid thro
 -  the `ObjectInputStream` class includes a deserialization method that returns an object called `readObject()`.
 
 ```java
+try (ObjectOutputStream out = new ObjectOutputStream(
+new BufferedOutputStream(new FileOutputStream(dataFile)))) {
+    for(Animal animal: animals) 
+        out.writeObject(animal);
+}
+```
+
+```java
 try (ObjectInputStream in = new ObjectInputStream(
 new BufferedInputStream(new FileInputStream(dataFile)))) { 
     while(true) {
