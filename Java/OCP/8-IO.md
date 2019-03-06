@@ -291,3 +291,5 @@ console.writer().format(new Locale("fr", "CA"),"Hello World");
 - retrieves a single line of text from the user, and the user presses the Enter key to terminate it.
 
 ### `readPassword()`
+ -  user does not see the text they are typing.
+ - 
