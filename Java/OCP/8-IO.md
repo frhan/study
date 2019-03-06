@@ -206,11 +206,16 @@ These methods read/write char values instead of byte values; although similar to
 
 - an object will throw a `NotSerializableException` if the class or one of its contained classes does not properly implement the `Serializable` interface. 
 
--  You can use the `transient` keyword on the reference to the object,
+- `transient` keyword on the reference to the object,
 which will instruct the process serializing the object to skip it and avoid throwing a NotSerializableException.
-
+- `static` class members will also be ignored during the serialization and deserialization process.
+- `serialVersionUID` 
+    - certainly not required as part of implementing the `Serializable` interface
+    - is stored with the serialized object and assists during the deserialization process. The serialization process uses the `serialVersionUID` to identify uniquely a version of the class
+    
 #### `Serializing` and `Deserializing` Objects
 - The `ObjectOutputStream` class includes a method to serialize the object to the stream called `void writeObject(Object)`
+    - If the provided object is not `Serializable`, or it contains an embedded reference to a class that is not `Serializable` or not marked `transient`, a `NotSerializableException` will be thrown at runtime.
 -  the `ObjectInputStream` class includes a deserialization method that returns an object called `readObject()`.
 
 ### The `PrintStream` and `PrintWriter` Classes

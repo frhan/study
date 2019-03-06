@@ -174,6 +174,13 @@ Concurrency API includes numerous useful classes that are conceptually the same 
 
 # Using Concurrent Collections
 ### Introducing Concurrent Collections
+* using the concurrent collections is extremely convenient in practice.
+* It also prevents us from introducing mistakes in own custom implementation, such as if we forgot to synchronize one of the accessor methods. 
+* In fact, the concurrent collections often include performance enhancements that avoid unnecessary synchronization.
+
+```java
+private Map<String,Object> foodData = new ConcurrentHashMap<String,Object>();
+```
 ### Understanding Memory Consistency Errors
 ### Working with Concurrent Classes
 ### Obtaining Synchronized Collections
@@ -304,3 +311,48 @@ Identifying Threading Problems
 
 ### Understanding Liveness
 ### Managing Race Conditions
+
+
+## `Class ForkJoinTask<V>`
+- run within a `ForkJoinPool`.
+- `ForkJoinTasks` stems from a set of restrictions (that are only partially statically enforceable) reflecting their main use as computational tasks calculating pure functions or operating on purely isolated objects.
+- The primary coordination mechanisms are `fork()`, that arranges asynchronous execution, 
+    and `join()`, that doesn't proceed until the task's result has been computed.
+-   Method `invoke()` is semantically equivalent to `fork()`; `join()` but always attempts to begin execution in the current thread. 
+ 
+## `Class RecursiveTask<V> extends ForkJoinTask<V>`
+ - A recursive result-bearing `ForkJoinTask`.
+ 
+    `protected abstract V compute()`
+
+## `public abstract class RecursiveAction extends ForkJoinTask<Void> `
+- A recursive resultless `ForkJoinTask`. This class establishes conventions to parameterize resultless actions as `Void ForkJoinTasks`.
+
+    `protected abstract void	compute()`
+
+## `Interface BlockingDeque<E>`
+A `Deque` that additionally supports blocking operations that wait for the deque to become non-empty when retrieving an element, and wait for space to become available in the deque when storing an element.
+
+## `Interface ExecutorService`
+- An `Executor` that provides methods to manage termination and methods that can produce a Future for tracking progress of one or more asynchronous tasks.
+
+    `<T> Future<T>	submit(Callable<T> task)`
+
+    `Future<?>	submit(Runnable task)`
+
+
+## Package `java.util.concurrent.atomic`
+- A small toolkit of classes that support lock-free thread-safe programming on single variables.
+- 
+
+## `Class CyclicBarrier`
+- A synchronization aid that allows a set of threads to all wait for each other to reach a common barrier point.
+- CyclicBarriers are useful in programs involving a fixed sized party of threads that must occasionally wait for each other.
+- The barrier is called cyclic because it can be re-used after the waiting threads are released.
+
+    `CyclicBarrier(int parties)`
+    
+    `CyclicBarrier(int parties, Runnable barrierAction)`
+
+    `int await()`
+    

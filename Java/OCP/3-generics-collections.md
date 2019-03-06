@@ -417,7 +417,7 @@ The _default_ implementation is equivalent to performing the following steps for
 ````
 
 # To Remeber
-* `HashSet` does not guarantee any iteration order, making A and D correct.
+* `HashSet` does not guarantee any iteration order.
 ```java
 Set<Number> set = new HashSet<>();
 set.add(null); //compile successfully

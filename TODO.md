@@ -20,3 +20,24 @@ Project 1:
 
 Project 2: JWT and Spring Boot
 ------------------------------
+
+DEvops
+-------
+https://www.katacoda.com/courses/istio
+
+integration testing and spring boot
+---
+* http://www.springboottutorial.com/integration-testing-for-spring-boot-rest-services
+* 
+
+Jenkins
+-----
+* https://www.tutorialspoint.com/jenkins/jenkins_continuous_deployment.htm
+* https://engineering.riotgames.com/news/jenkins-docker-proxies-and-compose
+* https://www.javacodegeeks.com/2017/02/configure-jenkins-continuous-delivery-spring-boot-application.html
+
+
+
+Spring boot and Docker
+---
+https://dzone.com/articles/buiding-microservice-using-springboot-and-docker
