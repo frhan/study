@@ -215,8 +215,10 @@ which will instruct the process serializing the object to skip it and avoid thro
     
 #### `Serializing` and `Deserializing` Objects
 - The `ObjectOutputStream` class includes a method to serialize the object to the stream called `void writeObject(Object)`
+    - we might get a `ClassCastException` at runtime
     - If the provided object is not `Serializable`, or it contains an embedded reference to a class that is not `Serializable` or not marked `transient`, a `NotSerializableException` will be thrown at runtime.
 -  the `ObjectInputStream` class includes a deserialization method that returns an object called `readObject()`.
+    -  the `readObject()` throws the checked exception, `ClassNotFoundException`,since the class of the deserialized object may not be available to the JRE
 
 ```java
 try (ObjectOutputStream out = new ObjectOutputStream(
@@ -234,8 +236,11 @@ new BufferedInputStream(new FileInputStream(dataFile)))) {
         animals.add((Animal)object); 
     }
 }
-
 ```
+
+### Understanding Object Creation
+ - When you deserialize an object, the constructor of the serialized class is not called.
+- Java calls the first no-arg constructor for the first nonserializable parent class, skipping the constructors of any serialized class in between. Furthermore, any static variables or default initializations are ignored.
 
 ### The `PrintStream` and `PrintWriter` Classes
 
