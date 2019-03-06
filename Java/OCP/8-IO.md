@@ -218,6 +218,17 @@ which will instruct the process serializing the object to skip it and avoid thro
     - If the provided object is not `Serializable`, or it contains an embedded reference to a class that is not `Serializable` or not marked `transient`, a `NotSerializableException` will be thrown at runtime.
 -  the `ObjectInputStream` class includes a deserialization method that returns an object called `readObject()`.
 
+```java
+try (ObjectInputStream in = new ObjectInputStream(
+new BufferedInputStream(new FileInputStream(dataFile)))) { 
+    while(true) {
+        Object object = in.readObject(); if(object instanceof Animal)
+        animals.add((Animal)object); 
+    }
+}
+
+```
+
 ### The `PrintStream` and `PrintWriter` Classes
 
 The `PrintStream` and `PrintWriter` classes are high-level stream classes that write formatted representation of Java objects to a text-based output stream.
