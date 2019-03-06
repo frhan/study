@@ -254,6 +254,8 @@ The `PrintStream` and `PrintWriter` classes are high-level stream classes that w
 
 ### Review of Stream Classes 
 
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-06%20at%2010.45.15%20PM.png)
+
 Interacting with Users
 ---
 ### The Old Way
