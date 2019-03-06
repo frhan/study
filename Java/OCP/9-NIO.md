@@ -60,17 +60,20 @@ Paths.get("/zoo/../home").getParent().normalize().toAbsolutePath();
 ### Interacting with Files
 
 ### Understanding File Attributes
+- the Files class also provides numerous methods accessing file and directory metadata, referred to as file attributes. Put simply, metadata is data that describes other data. In this context, file metadata is data about the file or directory record within the file system and not the contents of the file.
+
 #### Discovering Basic File Attributes
 #### Reading Common Attributes with isDirectory(), isRegularFile(),and isSymbolicLink()
 
 ### Discovering Basic File Attributes
 ### Improving Access with Views
 
-Presenting the New Stream Methods
----
+### Presenting the New Stream Methods
 ### Conceptualizing Directory Walking
-###
-
+### Selecting a Search Strategy
+### Walking a Directory
+### Avoiding Circular Paths
+### Listing Directory Contents
 ### Printing File Contents
 
 Comparing Legacy File and NIO.2 Methods

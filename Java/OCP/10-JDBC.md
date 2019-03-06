@@ -1,6 +1,5 @@
 
-JDBC
----
+# JDBC
 
 Introducing the Interfaces of JDBC
 ---
