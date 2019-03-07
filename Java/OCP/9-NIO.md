@@ -53,7 +53,8 @@ Path path3 = Paths.get(new URI("file:///home/zoodirectory"));
 - retrieving the parent or root directory of a Path object does not require the file to exist, although the JVM may access the underlying file system to know how to process the path information.
 
 ### Providing Optional Arguments
-![Alt text]((https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-07%20at%2012.30.07%20AM.png)
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-07%20at%2012.30.07%20AM.png)
+
 - An _atomic_ operation is any operation that is performed as a single indivisible unit of execution, which appears to the rest of the system as occurring instantaneously.
 ### Using Path Objects
 - Many of the methods in the Path interface transform the path value in some way and return a `new Path` object, allowing the methods to be chained.
