@@ -1,6 +1,6 @@
 # Generics and Collections
 
-# Working with Generics
+## Working with Generics
 _Generics_  allow us to write and use parameterized types.
 
 ```java
