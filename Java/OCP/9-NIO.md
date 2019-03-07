@@ -39,7 +39,12 @@ Path path3 = Paths.get(new URI("file:///home/zoodirectory"));
  ```
 
 ### Using the Paths Class
+
+
 ### Interacting with Paths and Files
+
+#### **Path Object vs. actual file** 
+
 ### Providing Optional Arguments
 - table 9.1
 
@@ -127,6 +132,18 @@ BasicFileAttributes data = Files.readAttributes(path, BasicFileAttributes.class)
 ### Modifying Attributes
 - `Files.readAttributes()` method is useful for reading file data, it does not provide a direct mechanism for modifying file attributes. 
 
+### _BasicFileAttributeView_
+- cannot modify the other basic attributes directly, since this would change the property of the file system object
+```java
+
+BasicFileAttributeView view = Files.getFileAttributeView(path,BasicFileAttributeView.class);
+
+BasicFileAttributes data = view.readAttributes();
+
+FileTime lastModifiedTime = FileTime.fromMillis( data.lastModifiedTime().toMillis()+10_000);
+
+view.setTimes(lastModifiedTime,null,null);
+```
 
 ### Presenting the New Stream Methods
 ### Conceptualizing Directory Walking
