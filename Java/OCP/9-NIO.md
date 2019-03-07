@@ -78,7 +78,8 @@ Paths.get("/zoo/../home").getParent().normalize().toAbsolutePath();
 #### Discovering Basic File Attributes
 
 #### Reading Common Attributes with isDirectory(), isRegularFile(),and isSymbolicLink()
-## table 9.3
+
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-07%20at%2011.33.03%20PM.png)
 
 ### Checking File Visibility with `isHidden()`
 -  In Linux- or Mac-based systems, this is often denoted by file or directory entries that begin with a period character.
@@ -125,7 +126,7 @@ UserPrincipal owner = FileSystems.getDefault()
 
 ### Understanding Views
 - Files.readAttributes(), returns a read-only view of the file attributes
-## table 9.4
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-07%20at%2011.49.21%20PM.png)
 ### Reading Attributes
 ### _BasicFileAttributes_
  - All attributes classes extend from `BasicFileAttributes`; therefore it contains attributes common to all supported file systems.
@@ -206,6 +207,4 @@ try {
 
 
 ### Comparing Legacy File and NIO.2 Methods
-
-## table 9.5
-
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-07%20at%2011.31.54%20PM.png)
