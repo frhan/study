@@ -26,6 +26,8 @@ For example, the following is an absolute path to the `zoo.txt` file.
 System.out.println(System.getProperty("file.separator")); 
 System.out.println(java.io.File.separator)
 ```
+* A `File` object may refer to a path that does not exists within the file system
+ 
 ### Working with a File Object
 
 ![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-02-19%20at%202.55.54%20PM.png)
@@ -202,13 +204,14 @@ These methods read/write char values instead of byte values; although similar to
 #### The Serializable Interface
  - The Serializable interface is a tagging or marker interface, which means that it does not have any methods associated with it.
 
-- The purpose of implementing the `Serializable` interface is to inform any process attempting to serialize the object that you have taken the proper steps to make the object serializable, which involves making sure that the classes of all instance variables within the object are also marked `Serializable`.
+- The purpose of implementing the `Serializable` interface is to inform any process attempting to serialize the object that you have taken the proper steps to make the object serializable, which involves making sure that the classes of all instance variables within the object are also marked `Serializable`. dd
 
 - an object will throw a `NotSerializableException` if the class or one of its contained classes does not properly implement the `Serializable` interface. 
 
-- `transient` keyword on the reference to the object,
-which will instruct the process serializing the object to skip it and avoid throwing a NotSerializableException.
+- `transient` keyword on the reference to the object, which will instruct the process serializing the object to skip it and avoid throwing a `NotSerializableException`.
+
 - `static` class members will also be ignored during the serialization and deserialization process.
+
 - `serialVersionUID` 
     - certainly not required as part of implementing the `Serializable` interface
     - is stored with the serialized object and assists during the deserialization process. The serialization process uses the `serialVersionUID` to identify uniquely a version of the class
