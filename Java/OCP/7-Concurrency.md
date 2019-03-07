@@ -156,8 +156,6 @@ ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
 
 ### Increasing Concurrency with Pools
 
-
-
 # Synchronizing Data Access
 
 ### Protecting Data with Atomic Classes
@@ -306,12 +304,10 @@ The `CyclicBarrier` takes in its constructors a limit value, indicating the numb
 ### Applying the Fork/Join Framework
 
 
-Identifying Threading Problems
----
+### Identifying Threading Problems
 
 ### Understanding Liveness
 ### Managing Race Conditions
-
 
 ## `Class ForkJoinTask<V>`
 - run within a `ForkJoinPool`.

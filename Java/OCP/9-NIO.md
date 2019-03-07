@@ -1,8 +1,9 @@
 # NIO
 
-# Introducing NIO.2
+## Introducing NIO.2
 - the  `java.io` API uses byte streams to interact with file data
 - The `NIO` API introduced the concepts of **buffers** and **channels** in place of `java.io` streams
+- The basic idea is that you load the data from a file channel into a temporary buffer that, unlike byte streams, can be read forward and backward without blocking on the underlying resource.
 
 ### Introducing Path
 - A `Path` object represents a hierarchical path on the storage system to a file or directory
@@ -10,6 +11,10 @@
 - the `Path` interface contains support for symbolic links. A symbolic link is a special file within an operating system that serves as a reference or pointer to another file or directory.
 
 ### Creating Instances with Factory and Helper Classes
+### **why Is Path an Interface?**
+- The advantage of using the factory pattern here is that you can write the same code that will run on a variety of different platforms
+#figure 9.1
+
 ### Creating Paths
 
 ```java
@@ -44,10 +49,12 @@ Path path3 = Paths.get(new URI("file:///home/zoodirectory"));
 ### Interacting with Paths and Files
 
 #### **Path Object vs. actual file** 
+- a Path object is not a file but a representation of a location within the file system. 
+- retrieving the parent or root directory of a Path object does not require the file to exist, although the JVM may access the underlying file system to know how to process the path information.
 
 ### Providing Optional Arguments
-- table 9.1
-
+![Alt text]((https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-07%20at%2012.30.07%20AM.png)
+- An _atomic_ operation is any operation that is performed as a single indivisible unit of execution, which appears to the rest of the system as occurring instantaneously.
 ### Using Path Objects
 - Many of the methods in the Path interface transform the path value in some way and return a `new Path` object, allowing the methods to be chained.
 

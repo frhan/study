@@ -1,6 +1,6 @@
 # IO
 
-# Understanding Files and Directories
+## Understanding Files and Directories
 ### Conceptualizing the File System
  A _file_ is record within a file system that stores user and system data. Files are organized using directories.
  
