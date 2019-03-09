@@ -70,6 +70,76 @@ Paths.get("/zoo/../home").getParent().normalize().toAbsolutePath();
 - `getFileName()`, returns a `Path` instance representing the filename, which is the farthest element from the root.
 - `getParent()`, returns a `Path` instance representing the parent path or `null` if there is no such parent.
 
+### Checking Path Type with `isAbsolute()` and `toAbsolutePath()`
+- `isAbsolute()`, returns `true` if the path the object references is absolute and `false` if the path the object references is relative.
+- `toAbsolutePath()`, converts a relative Path object to an absolute Path object by joining it to the current working directory.
+
+```java
+Path path1 = Paths.get("C:\\birds\\egret.txt"); 
+System.out.println("Path1 is Absolute? "+path1.isAbsolute());
+System.out.println("Absolute Path1: "+path1.toAbsolutePath());
+```
+- if the Path object already represents an absolute path, then the output is a new Path object with the same value.
+
+### Creating a New Path with `subpath()`
+- `subpath(int,int)` returns a relative subpath of the `Path` object, referenced by an inclusive start index and an exclusive end index.
+
+```java
+Path path = Paths.get("/mammal/carnivore/raccoon.image"); 
+System.out.println("Path is: "+path);
+System.out.println("Subpath from 0 to 3 is: "+path.subpath(0,3)); 
+System.out.println("Subpath from 1 to 3 is: "+path.subpath(1,3)); 
+System.out.println("Subpath from 1 to 2 is: "+path.subpath(1,2));
+```
+```
+Path is: /mammal/carnivore/raccoon.image
+Subpath from 0 to 3 is: mammal/carnivore/raccoon.image
+Subpath from 1 to 3 is: carnivore/raccoon.image
+Subpath from 1 to 2 is: carnivore
+```
+- 0-indexed element is mammal in this example and not the root directory; therefore, the maximum index that can be used is 3
+```java
+System.out.println("Subpath from 0 to 4 is: "+path.subpath(0,4)); // THROWS //EXCEPTION AT RUNTIME
+System.out.println("Subpath from 1 to 1 is: "+path.subpath(1,1)); // THROWS //EXCEPTION AT RUNTIME
+```
+### Using Path Symbols
+#table 9.2
+- the path value `../bear.txt` refers to a file named `bear.txt` in the parent of the current directory
+- the path value `./penguin.txt` refers to a file named `penguin.txt` in the current directory
+- `../../lion.data` refers to a file `lion.data` that is two directories up from the current working directory.
+
+### Deriving a Path with `relativize()`
+- `relativize(Path)` for constructing the relative path from one Path object to another
+
+```java
+Path path1 = Paths.get("fish.txt");
+Path path2 = Paths.get("birds.txt"); 
+System.out.println(path1.relativize(path2)); 
+System.out.println(path2.relativize(path1));
+```
+- The `relativize()` method requires that both paths be absolute or both relative, and it will throw an `IllegalArgumentException` if a relative path value is mixed with an absolute path value.
+
+```java
+Path path1 = Paths.get("/primate/chimpanzee");
+Path path2 = Paths.get("bananas.txt"); 
+Path1.relativize(path3); // THROWS EXCEPTION AT RUNTIME
+```
+### Joining Path Objects with `resolve()`
+- a `resolve(Path)` method for creating a new `Path` by joining an existing path to the current path.
+
+```java
+final Path path1 = Paths.get("/cats/../panther"); 
+final Path path2 = Paths.get("food"); 
+System.out.println(path1.resolve(path2));
+```
+### Cleaning Up a Path with `normalize()`
+- The `normalize()` method of the Path interface can normalize a path. 
+- *Normalizing means* that it removes all the `.` and `..` codes in the middle of the path string, and resolves what path the path string refers to
+### Checking for File Existence with `toRealPath()`
+- The `toRealPath(Path)` method takes a `Path` object that may or may not point to an existing file within the file system, and it returns a reference to a real path within the file system.
+- it also verifies that the file referenced by the path actually exists, and thus it throws a checked `IOException` at runtime if the file cannot be located. 
+- The toRealPath() method performs additional steps, such as removing redundant path elements
+
 ### Interacting with Files
 
 ### Understanding File Attributes
