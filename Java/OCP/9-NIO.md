@@ -140,7 +140,16 @@ System.out.println(path1.resolve(path2));
 - it also verifies that the file referenced by the path actually exists, and thus it throws a checked `IOException` at runtime if the file cannot be located. 
 - The toRealPath() method performs additional steps, such as removing redundant path elements
 
-### Interacting with Files
+## Interacting with Files
+
+### Testing a Path with exists()
+- The `Files.exists(Path)` method takes a `Path` object and returns `true` if, and only if, it references a file that exists in the file system.
+
+### Testing Uniqueness with `isSameFile()`
+- The `Files.isSameFile(Path,Path)` method is useful for determining if two Path objects relate to the same file within the file system. 
+- It takes two Path objects as input and follows symbolic links.
+- This `isSameFile()` method does not compare the contents of the file
+
 
 ### Understanding File Attributes
 - the Files class also provides numerous methods accessing file and directory metadata, referred to as file attributes. Put simply, metadata is data that describes other data. In this context, file metadata is data about the file or directory record within the file system and not the contents of the file.
