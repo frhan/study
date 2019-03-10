@@ -1,7 +1,6 @@
-Concurrency
-----
+# Concurrency
 
-# Introducing Threads
+## Introducing Threads
 
 _shared environment_, we mean that the threads in the same process share the same memory space and can communicate directly with one another.
 
@@ -56,7 +55,7 @@ a Thread instance will execute can be done two ways in Java:
 
 `Thread.sleep()` method to implement polling. The `Thread.sleep()` method requests the current thread of execution rest for a specified number of milliseconds.
 
-# Creating Threads with the _ExecutorService_
+## Creating Threads with the _ExecutorService_
 
 ### Introducing the Single-Thread Executor
 
@@ -156,7 +155,7 @@ ScheduledExecutorService service = Executors.newSingleThreadScheduledExecutor();
 
 ### Increasing Concurrency with Pools
 
-# Synchronizing Data Access
+## Synchronizing Data Access
 
 ### Protecting Data with Atomic Classes
 
@@ -170,7 +169,8 @@ Concurrency API includes numerous useful classes that are conceptually the same 
 ### Synchronizing Methods
 ### Understanding the Cost of Synchronization
 
-# Using Concurrent Collections
+## Using Concurrent Collections
+
 ### Introducing Concurrent Collections
 * using the concurrent collections is extremely convenient in practice.
 * It also prevents us from introducing mistakes in own custom implementation, such as if we forgot to synchronize one of the accessor methods. 
@@ -183,7 +183,7 @@ private Map<String,Object> foodData = new ConcurrentHashMap<String,Object>();
 ### Working with Concurrent Classes
 ### Obtaining Synchronized Collections
 
-# Working with Parallel Streams
+## Working with Parallel Streams
 
 A _parallel stream_ is a stream that is capable of processing results concurrently, using multiple threads.
 
@@ -291,7 +291,7 @@ Stream<String> ohMy = Stream.of("lions", "tigers", "bears").parallel(); Concurre
 Collectors.groupingByConcurrent(String::length)); System.out.println(map); // {5=[lions, bears], 6=[tigers]}
 ```
 
-# Managing Concurrent Processes
+## Managing Concurrent Processes
 
 ### Creating a `CyclicBarrier`
 
@@ -303,11 +303,11 @@ The `CyclicBarrier` takes in its constructors a limit value, indicating the numb
 
 ### Applying the Fork/Join Framework
 
-
-### Identifying Threading Problems
+## Identifying Threading Problems
 
 ### Understanding Liveness
 ### Managing Race Conditions
+
 
 ## `Class ForkJoinTask<V>`
 - run within a `ForkJoinPool`.
