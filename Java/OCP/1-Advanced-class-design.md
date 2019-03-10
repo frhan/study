@@ -1,7 +1,6 @@
-Advanced Class Design
----
+# Advanced Class Design
 
-# Reviewing OCA Concepts
+## Reviewing OCA Concepts
 
 ### Using instanceof
 ### Understanding Virtual Method Invocation

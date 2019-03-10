@@ -1,26 +1,26 @@
 # Design Patterns and Principles
 
-# Designing an Interface
+## Designing an Interface
 ### Purpose of an Interface
 
-# Introducing Functional Programming
+## Introducing Functional Programming
 
 ### Defining a Functional Interface
 ### Implementing Functional Interfaces with Lambdas
 ### Applying the Predicate Interface
 
-# Implementing Polymorphism
+## Implementing Polymorphism
 ### Distinguishing between an Object and a Reference
 ### Casting Object References
 
-# Understanding Design Principles
+## Understanding Design Principles
 ### Encapsulating Data
 ### Creating JavaBeans
 ### Applying the Is‐a Relationship
 ### Applying the Has‐a Relationship
 ### Composing Objects
 
-# Working with Design Patterns
+## Working with Design Patterns
 
 ### Applying the Singleton Pattern
 
