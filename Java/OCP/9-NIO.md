@@ -141,7 +141,7 @@ System.out.println(path1.resolve(path2));
 
 ## Interacting with Files
 
-### Testing a Path with exists()
+### Testing a Path with `exists()`
 - The `Files.exists(Path)` method takes a `Path` object and returns `true` if, and only if, it references a file that exists in the file system.
 
 ### Testing Uniqueness with `isSameFile()`
@@ -228,7 +228,7 @@ try {
 ```
 
 ### Understanding File Attributes
-- the Files class also provides numerous methods accessing file and directory metadata, referred to as file attributes. Put simply, metadata is data that describes other data. In this context, file metadata is data about the file or directory record within the file system and not the contents of the file.
+- the Files class also provides numerous methods accessing file and directory metadata, referred to as file _attributes_. Put simply, metadata is data that describes other data. In this context, file metadata is data about the file or directory record within the file system and not the contents of the file.
 
 #### Discovering Basic File Attributes
 
@@ -314,11 +314,12 @@ view.setTimes(lastModifiedTime,null,null);
 - Every record in a file system has exactly one parent, with the exception of the root directory, which sits atop everything
 - A common task in a file system is to iterate over the descendants of a particular file path, either recording information about them or, more commonly, filtering them for a specific set of files
 - _Walking or traversing_ a directory is the process by which you start with a parent directory and iterate over all of its descendants until some condition is met or there are no more elements over which to iterate
-- 
+
 ### Selecting a Search Strategy
 - A _depth-first search_ traverses the structure from the root to an arbitrary leaf and then navigates back up toward the root, traversing fully down any paths it skipped along the way. The search depth is the distance from the root to current node.
 
 - a _breadth-first search_ starts at the root and processes all elements of each particular depth, or distance from the root, before proceeding to the next depth level
+
 ### Walking a Directory
 - The Files.walk(path) method returns a Stream<Path> object that traverses the directory in a depth-first, lazy manner.
 - By lazy, we mean the set of elements is built and read while the directory is being traversed
