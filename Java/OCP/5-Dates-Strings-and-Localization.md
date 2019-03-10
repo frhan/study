@@ -1,7 +1,6 @@
-Dates, Strings, and Localization
-----
-Working with Dates and Times
----
+# Dates, Strings, and Localization
+
+## Working with Dates and Times
 ### Creating Dates and Times
 
 `LocalDate`: Contains just a date—no time and no time zone.
@@ -67,11 +66,9 @@ Period.of(1,2,3); //P1Y2M3D
 
 ### Accounting for Daylight Savings Time
 
-Reviewing the String class
----
+## Reviewing the String class
 
-Adding Internationalization and Localization
----
+## Adding Internationalization and Localization
 
 ### Picking a Locale
 
