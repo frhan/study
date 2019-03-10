@@ -13,7 +13,7 @@
 ### Creating Instances with Factory and Helper Classes
 ### **why Is Path an Interface?**
 - The advantage of using the factory pattern here is that you can write the same code that will run on a variety of different platforms
-![Alt test]()
+![Alt test](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-10%20at%201.09.32%20AM.png)
 ### Creating Paths
 
 ```java
