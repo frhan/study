@@ -150,6 +150,83 @@ System.out.println(path1.resolve(path2));
 - It takes two Path objects as input and follows symbolic links.
 - This `isSameFile()` method does not compare the contents of the file
 
+### Making Directories with `createDirectory()` and `createDirectories()`
+- `Files.createDirectory(Path)` method to create a directory. 
+- `createDirectories()`, which like `mkdirs()` creates the target directory along with any nonexistent parent directories leading up to the target directory in the path.
+- The directory creation methods can throw the checked `IOException`, such as when the directory cannot be created or already exists.
+
+```java
+try {
+    Files.createDirectory(Paths.get("/bison/field"));
+    Files.createDirectories(Paths.get("/bison/field/pasture/green"));
+} catch (IOException e) {
+// Handle file I/O exception...
+}
+```
+
+### Duplicating File Contents with `copy()`
+- `Files.copy(Path,Path)`, which copies a file or directory from one location to another. The `copy()` method throws the checked `IOException`, such as when the file or directory does not exist or cannot be read.
+- Directory copies are shallow rather than deep, meaning that files and subdirectories within the directory are not copied.
+- copying files and directories will traverse symbolic links, although it
+will not overwrite a file or directory if it already exists, nor will it copy file attributes.
+
+```java
+try {
+    Files.copy(Paths.get("/panda"), Paths.get("/panda-save"));
+    Files.copy(Paths.get("/panda/bamboo.txt"), Paths.get("/panda-save/bamboo.txt"));
+} catch (IOException e) {
+// Handle file I/O exception...
+}
+```
+
+### Changing a File Location with `move()`
+The `Files.move(Path,Path)` method moves or renames a file or directory within the file system
+
+```java
+try {
+    Files.move(Paths.get("c:\\zoo"), Paths.get("c:\\zoo-new"));
+    Files.move(Paths.get("c:\\user\\addresses.txt"),
+                 Paths.get("c:\\zoo-new\\addresses.txt"));
+} catch (IOException e) {
+// Handle file I/O exception...
+}
+```
+- the `move()` method will follow links, throw an exception if the file already exists, and not perform an atomic move.
+
+### Removing a File with `delete()` and `deleteIfExists()`
+- The `Files.delete(Path)` method deletes a file or empty directory within the file system.
+- The `delete()` method throws the checked `IOException` under a variety of circumstances. 
+    - if the path represents a non-empty directory, the operation will throw the runtime `DirectoryNotEmptyException`.
+    - If the target of the path is a symbol link, then the symbolic link will be deleted, not the target of the link.
+
+- The `deleteIfExists(Path)` method is identical to the `delete(Path)` method, except that it will not throw an exception if the file or directory does not exist, but instead it will return a `boolean` value of `false`.
+
+### Reading and Writing File Data with `newBufferedReader()` and `newBufferedWriter()`
+- `Files.newBufferedReader(Path,Charset)`, reads the file specified at the `Path` location using a `java.io.BufferedReader` object
+
+```java
+try (BufferedReader reader = Files.newBufferedReader(path, Charset.forName("US-ASCII"))){
+
+}
+```
+
+```java
+try (BufferedWriter writer = Files.newBufferedWriter(path, Charset.forName("UTF-16")) ){
+}
+```
+### Reading Files with readAllLines()
+- The `Files.readAllLines()` method reads all of the lines of a text file and returns the results as an ordered `List` of `String` values. 
+```java
+Path path = Paths.get("/fish/sharks.log");
+
+try {
+    final List<String> lines = Files.readAllLines(path);
+    for(String line: lines) { 
+        System.out.println(line);
+    }
+} catch (IOException e) {
+// Handle file I/O exception... }
+```
 
 ### Understanding File Attributes
 - the Files class also provides numerous methods accessing file and directory metadata, referred to as file attributes. Put simply, metadata is data that describes other data. In this context, file metadata is data about the file or directory record within the file system and not the contents of the file.
