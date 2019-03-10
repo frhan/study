@@ -1,12 +1,12 @@
-Exceptions and Assertions
----
+# Exceptions and Assertions
 
-Creating Custom Exceptions
-----
+## Reviewing Exceptions
 
-Using Try-With-Resources
-------
+## Creating Custom Exceptions
 
+## Using Multi-catch
+
+## Using Try-With-Resources
 
 ```java
 public void newApproach(Path path1, Path path2) throws IOException { 
@@ -24,11 +24,10 @@ public void newApproach(Path path1, Path path2) throws IOException {
 ### Suppressed Exceptions
 ### Putting It Together
 
-Rethrowing Exceptions
----
+## Rethrowing Exceptions
 
-Working with Assertions
----
+## Working with Assertions
+
 ### The assert Statement
 ### Enabling Assertion
 ### Using Assertions
