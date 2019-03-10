@@ -227,7 +227,7 @@ try {
 // Handle file I/O exception... }
 ```
 
-### Understanding File Attributes
+## Understanding File Attributes
 - the Files class also provides numerous methods accessing file and directory metadata, referred to as file _attributes_. Put simply, metadata is data that describes other data. In this context, file metadata is data about the file or directory record within the file system and not the contents of the file.
 
 #### Discovering Basic File Attributes
@@ -309,7 +309,7 @@ FileTime lastModifiedTime = FileTime.fromMillis( data.lastModifiedTime().toMilli
 view.setTimes(lastModifiedTime,null,null);
 ```
 
-### Presenting the New Stream Methods
+## Presenting the New Stream Methods
 ### Conceptualizing Directory Walking
 - Every record in a file system has exactly one parent, with the exception of the root directory, which sits atop everything
 - A common task in a file system is to iterate over the descendants of a particular file path, either recording information about them or, more commonly, filtering them for a specific set of files
