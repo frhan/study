@@ -102,7 +102,7 @@ System.out.println("Subpath from 0 to 4 is: "+path.subpath(0,4)); // THROWS //EX
 System.out.println("Subpath from 1 to 1 is: "+path.subpath(1,1)); // THROWS //EXCEPTION AT RUNTIME
 ```
 ### Using Path Symbols
-#table 9.2
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-09%20at%2011.01.08%20PM.png)
 - the path value `../bear.txt` refers to a file named `bear.txt` in the parent of the current directory
 - the path value `./penguin.txt` refers to a file named `penguin.txt` in the current directory
 - `../../lion.data` refers to a file `lion.data` that is two directories up from the current working directory.
