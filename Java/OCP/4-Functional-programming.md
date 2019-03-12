@@ -497,7 +497,7 @@ OptionalDouble optional = stream.average();
 - The difference is that `OptionalDouble` is for a primitive and `Optional<Double>` is for the `Double` wrapper class.
 - The `sum()` method does not return an optional. If you try to add up an empty stream, you simply get zero. 
 
-![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.18.48%20PM.png)
+![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-12%20at%2010.01.38%20PM.png)
 
 ### Summarizing Statistics
 
