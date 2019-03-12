@@ -2,7 +2,7 @@
 # JDBC
 
 ## Introducing the Interfaces of JDBC
--  figure 10.2
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-10%20at%201.34.46%20AM.png)
 `Driver`: Knows how to get a connection to the database
 
 `Connection`: Knows how to communicate with the database
@@ -14,7 +14,7 @@
 ## Connecting to a Database
 
 ### Building a JDBC URL
-# figure 10.3
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-10%20at%201.37.35%20AM.png)
 ### Getting a Database Connection
 - There are two main ways to get a `Connection`: 
 `DriverManager` or `DataSource`. 
@@ -40,7 +40,7 @@ public static void main(String[] args) throws SQLException {
     Class.forName("not.a.driver");
 ```
 
-# table 10.1 
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-10%20at%201.41.49%20AM.png)
 
 ## Obtaining a Statement
 
@@ -56,13 +56,12 @@ Statement stmt = conn.createStatement(ResultSet.TYPE_FORWARD_ONLY,ResultSet.CONC
 - With `TYPE_ SCROLL_INSENSITIVE`, you have a static view of what the `ResultSet` looked like when you did the query. If the data changed in the table, you will see it as it was when you did the query. 
 - With `TYPE_SCROLL_SENSITIVE`, you would see the latest data when scrolling through the `ResultSet`.
 
-### table 10.2
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-10%20at%206.53.43%20PM.png)
 ### Choosing a `ResultSet` Concurrency Mode
 - By default, a `ResultSet` is in `CONCUR_READ_ONLY` mode.
 - It means that you can’t update the result set  
 - There is one other mode that you can request when creating a Statement.it lets you modify the database through the ResultSet. It is called `CONCUR_UPDATABLE`
-## table 10.3
-
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-10%20at%206.55.33%20PM.png)
 ## Executing a Statement
 - statement that change the data in a table - `executeUpdate()`
 - `SQL UPDATE` statement is not the only statement that uses this method.
@@ -72,9 +71,8 @@ Statement stmt = conn.createStatement();
 int result = stmt.executeUpdate("insert into species values(10, 'Deer', 3)");
 ```
 
-# table 10.4
-#table 10.5
-
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-10%20at%2010.57.29%20PM.png)
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-10%20at%2010.57.34%20PM.png)
 ## Getting Data from a ResultSet
 
 ### Reading a ResultSet
@@ -87,14 +85,14 @@ String name = rs.getString("name"); idToNameMap.put(id, name);
 }
 System.out.println(idToNameMap); // {1=African Elephant, 2=Zebra}
 ```
-# figure 10.4
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-10%20at%2010.59.18%20PM.png)
 - Always use an `if` statement or `while` loop when calling `rs.next()`.
 - Column indexes begin with 1.
 
 ### Getting Data for a Column
 # table 10.6
 ### Scrolling ResultSet
-# figure 10.5
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-10%20at%2011.01.57%20PM.png)
 ## Closing Database Resources
 - Closing a `Connection` also closes the `Statement` and `ResultSet`. 
 - Closing a `Statement` also closes the `ResultSet`.
