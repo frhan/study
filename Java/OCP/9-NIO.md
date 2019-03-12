@@ -280,7 +280,7 @@ UserPrincipal owner = FileSystems.getDefault()
 - more attributes are read than in a single method call, there are fewer roundtrips between Java and the operating system, whereas reading the same attributes with the previously described single method calls would require many such trips.
 
 ### Understanding Views
-- Files.readAttributes(), returns a read-only view of the file attributes
+- `Files.readAttributes()`, returns a read-only view of the file attributes
 ![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-03-07%20at%2011.49.21%20PM.png)
 ### Reading Attributes
 ### _BasicFileAttributes_
