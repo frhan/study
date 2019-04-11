@@ -520,7 +520,7 @@ BooleanSupplier b1 = () -> true;
 System.out.println(b1.getAsBoolean());
 ```
 
-# Functional Interfaces for double, int, and long
+# Functional Interfaces for `double`, `int`, and `long`
 
 ![alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-01-31%20at%2010.54.51%20PM.png)
 
@@ -621,4 +621,6 @@ boolean b2 = stream.anyMatch(predicate);
 * The `Supplier` functional interface normally takes a generic argument, although generic types are not strictly required since they are removed by the compiler.
 * A lambda may be compatible with multiple functional interfaces, but it must be assigned to a functional interface when it is declared or passed as a method argument. 
 * The `return` statement is only allowed inside a set of brackets `{}`.
-*  Java only includes primitive functional interfaces that operate on `double`, `int`, or `long`.
+* Java only includes primitive functional interfaces that operate on `double`, `int`, or `long`.
+* `BooleanSupplier` is the only functional interface that does not involve `double`, `int`, or `long`.
+* 
