@@ -12,6 +12,25 @@ Ubuntu 18.04
 4. 
 
 
+## setup public and private key with SCM
+1. from jenkins server (as root user or add `sudo` if not root user)
+ `su jenkins`
+2. generate `ssh`
+`ssh keygen`
+3.  run and copy the output to SCM access keys
+`cat /var/lib/jenkins/.ssh/id_rsa.pub`
+4. run and copy
+`cat  /var/lib/jenkins/.ssh/id_rsa`
+
+go to the `jenkins` -> `Credentials` -> `System` -> `Global Credential` 
+`Add Credntial` -> change kind to `SSh username with password`
+set `username` as `jenkins`   
+
+
+# setup webhooks for github
+
+#
+
 ### Ref:
 * [How To Install Java with `apt` on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04)
 
