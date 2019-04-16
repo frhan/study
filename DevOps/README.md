@@ -7,6 +7,7 @@
 # Junit
 # Jenkins
 * [How to Setup Jenkins Master and Slave on Ubuntu 18.04 LTS](https://www.howtoforge.com/tutorial/ubuntu-jenkins-master-slave/)
+* [Continuous Integration With Jenkins, Artifactory, and Spring Cloud Contract](https://dzone.com/articles/continuous-integration-with-jenkins-artifactory-an?fromrel=true)
 # Ansible
 # Docker
 # Kubernetes
@@ -15,6 +16,7 @@
 
 # Jenkins + Docker 
 * [Jenkins and Docker tutorial series](https://github.com/maxfields2000/dockerjenkins_tutorial)
+
 # Jenkins + Ansible
 
 # 
