@@ -54,4 +54,5 @@ Arrays.sort(rosterAsArray,
 ```
 
 Because this lambda expression invokes an existing method, you can use a method reference instead of a lambda expression:
-Arrays.sort(rosterAsArray, Person::compareByAge);
+
+`Arrays.sort(rosterAsArray, Person::compareByAge);`
