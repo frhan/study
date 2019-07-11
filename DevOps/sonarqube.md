@@ -1,0 +1,1 @@
+* https://www.howtoforge.com/how-to-install-sonarqube-on-ubuntu-1804/
