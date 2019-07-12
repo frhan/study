@@ -12,3 +12,27 @@
 - Pedestrians must use the footpath or pavement, when present
 - in the absence of such the pedestrian is also allowed to use the pedal cycle path or the combined pedal cycle/moped path
 - When also these are not present the pedestrian is allowed to use the verge or the far side of the carriageway as a last resort.
+
+#### only two exceptions to the rule that the same road user can only be a pedestrian or a driver:
+
+- Category 1: Persons using an invalid carriage,i.e Canta or similar, a manual or powered wheelchair a mobility scooter - are classed as pedestrians when using the pavement or footpath.
+
+- Category 2: roups of pedestrians, e.g. convoys, funeral and other processions, marching columns and parades on foot, must follow the regulations applicable to the drivers of carts
+
+_Fietsers (pedal cyclists), snorfietsers (light moped riders), 
+bromfietsers (moped riders) and drivers of invalid carriages_:
+
+- must use the combined compulsory pedal cycle/moped path
+- when absent, moped riders must use the carriageway
+- pedal cyclists, light moped riders and drivers of invalid carriages use the compulsory pedal cycle path or cycle lanes on the carriageway.
+
+_Equestrians (horse riders)_ must ride on a bridle path (horse track)
+
+- absence of such a path they must ride in the verge or ride on the carriageway.
+
+Drivers of _motorvehicles, e.g. passenger cars, commercial vehicles, vans, light and heavy goods vehicles, buses, coaches, and brommobielen (mobility cars)_ must use the carriageway.
+
+## **Page 2/18**
+
+### Roads
+### Carriageways
