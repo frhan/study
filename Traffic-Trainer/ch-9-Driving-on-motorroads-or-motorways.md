@@ -137,3 +137,95 @@ The following vehicles must not be used on the motorway:
 
 ### Joining or leaving by means of a combined acceleration/deceleration lane
 
+- joining drivers usually have less speed and a better overview, it is safer that they give the right of way to the drivers that want to leave the through carriageway.
+
+- advisable and extremely important to establish a good eye contact with the other driver as soon as possible.
+
+### Following a combined acceleration/deceleration lane and exiting
+
+- You may overtake on the right
+
+- You must not change direction anymore
+
+- You must cancel the direction indicator
+
+## **Page 8/11**
+
+### Getting in lane
+
+- Step 1 - Drivers in the left lane adjust their speed
+
+- Step 2 - Drivers in the right lane or through carriageway create a space as from the sign that says 'ritsen na 300 meter' (merge in turn over 300 meters)
+
+- Step 3 - Drivers in the left lane have to drive all the way to the sign that says 'ritsen vanaf hier' (merge in turn from here on)
+
+### Road works
+
+- Road works are indicated far in advance (usually 2 km)
+
+- do not overtake just before the road works start and let others join safely if necessary
+
+You should be aware of drivers
+
+- suddenly braking
+- queueing traffic
+- men at work crossing the road and construction site traffic.
+
+come across temporary yellow road markings at the scenes of road works; these markings take precedence over white lines on that stretch of road.
+
+### Tidal flow lanes
+
+- traffic may travel in either direction, depending on certain conditions
+
+- commonly found in tunnels on bridges and on the surrounding roadways, even where the lanes or carriageway are not regularly reversed to handle normal changes in traffic flow
+
+### Types of roads
+
+#### E-roads
+
+European motorways. The numbering of these roads is fixed in whole Europe.
+
+#### A-roads
+
+- motorways in the Netherlands. 
+- white figures on a red background.
+
+#### N-roads
+
+- N-roads are non-motorways.
+- black figures on a yellow background
+- N-roads you can come across all sorts of road users.
+
+### Tapers
+
+- The sign (BM10)
+- only find on autosnelwegen (motorways)
+
+There are two types of tapers:
+
+- Tapers for joining, where motorways merge.
+- Tapers for leaving, where motorways diverge.
+
+## **page 9/10**
+
+### Driving in traffic jams
+
+- In traffic jams you are allowed to overtake on the left as well as on the right, meaning that drivers in the right-hand lane are allowed to overtake drivers in the left-hand lane
+
+- motorcyclists are not obliged to join the queueing traffic, but are allowed to drive between the queues
+
+- Driving through queueing traffic is only allowed when the queue is not travelling faster than 40 km/h.
+
+- Motorcyclists will expect that other drivers in the right or middle lane will move evasively to the right, increasing the space between the lanes
+
+### Avoiding queueing traffic and traffic jams
+
+## Aids to regulate queueing traffic and traffic jams
+
+- flow control traffic lights only apply to drivers of passenger cars and can be ignored by other drivers. 
+
+## **Page 10/10**
+
+### The dynamic route information panels "DRIP'S"
+- 
+

@@ -162,4 +162,12 @@ overtaking is allowed on the: **left** and the **right**.
 
 - After coming to a standstill, you must switch your  engine off immediately.
 
-- Before entering a tunnel you must switch on your  dipped beam headlights; this makes you more visible. Don't do this just before entering, because then following drivers might think that you are suddenly braking. 
+- Before entering a tunnel you must switch on your  dipped beam headlights; this makes you more visible. Don't do this just before entering, because then following drivers might think that you are suddenly braking.
+
+## NTK
+
+- When going right, left or a full circle you should already be indicating; indicate right if going right, and left if going left or a full circle. Case in point: this communicates your intention to your fellow road users well in time!
+
+- priority regulated roundabout means that drivers coming in from the right must give the right of way to all drivers approaching from the right and left on the roundabout.
+
+- Roundabouts with two or more lanes are often constructed as turbo roundabouts 
