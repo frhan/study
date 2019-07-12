@@ -227,5 +227,4 @@ There are two types of tapers:
 ## **Page 10/10**
 
 ### The dynamic route information panels "DRIP'S"
-- 
 

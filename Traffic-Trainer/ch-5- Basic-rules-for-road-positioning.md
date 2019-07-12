@@ -12,5 +12,3 @@
 - Pedestrians must use the footpath or pavement, when present
 - in the absence of such the pedestrian is also allowed to use the pedal cycle path or the combined pedal cycle/moped path
 - When also these are not present the pedestrian is allowed to use the verge or the far side of the carriageway as a last resort.
-
-
