@@ -234,3 +234,9 @@ There are two types of tapers:
 - where lanes/carriageways are separated by the white squares, overtaking is allowed on the right and also on the left.
 
 - You must not impede the flow of traffic on a motorway by unnecessarily driving too slow
+
+- changing two lanes at once won't give you enough time to gauge the situation behind you adequately, especially when these following drivers seem far away but are travelling at a high speed
+
+- motorroads can have more than one carriageway, but this is not a condition.
+
+- This sign (BB06) indicates a refuge bay

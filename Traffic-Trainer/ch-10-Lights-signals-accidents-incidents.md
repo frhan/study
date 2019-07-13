@@ -112,6 +112,53 @@ You **may** also switch your dipped beam headlights off and then just drive with
 
 ### Rear Fog lights (one is required/a second is optional)
 
+- One rear fog light is part of your lighting requirements by law
+
+One or two rear fog lights may be used
+
+- visibility is seriously reduced to less than 50 meters
+- Very dense (thick) fog.
+- Heavy snowfall.
+
+When using one or two rear fog lights you **must** always ensure that your rear lights and rear registration plate are lit.
+
+When using one or two rear fog lights, you **must** also always use the dipped beam headlights and the main beam headlights only when permitted
+
+**Note that the yellow warning light on the dashboard warns that you have your rear fog light(s) lit.**
+
+### Hazard warning lights
+
+hazard warning lights should be used to warn 
+
+- vehicle is on tow
+- broken down.
+- vehicle is parked dangerously.
+- stationary where hardly visible.
+- slowing down quickly upon approaching queueing traffic.
+
+### The optional advance red warning triangle
+
+- Drivers using the hazard warning lights may choose not to use triangle.
+
+- If used, this advance red warning triangle should be placed on the road surface at about 30 meters from the obstacle and in the direction of the approaching traffic.
+
+- triangles fold flat - legally obliged to have one though!
+
+Place the triangle 
+
+- On a straight level, road put the triangle at about 30 meters from your vehicle.
+- On a very narrow road put the triangle on the nearside verge or footpath.
+- On a winding or hilly road, put the triangle where drivers will see it before they have to deal with any bend or hump in the road.
+
+### Other optional lights
+
+Drivers of motor vehicles may, when using:
+
+- Dipped beam headlights or
+- Front fog lights
+
+### Direction indicator signals
+
 
 ## **Page 3/7**
 
