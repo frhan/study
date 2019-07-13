@@ -228,3 +228,9 @@ There are two types of tapers:
 
 ### The dynamic route information panels "DRIP'S"
 
+## NTK
+
+- In emergency situations, like during a breakdown, you are allowed to wait for assistance on either a hard shoulder on the right or the left.
+- where lanes/carriageways are separated by the white squares, overtaking is allowed on the right and also on the left.
+
+- You must not impede the flow of traffic on a motorway by unnecessarily driving too slow

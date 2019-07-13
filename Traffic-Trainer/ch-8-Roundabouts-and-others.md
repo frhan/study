@@ -170,4 +170,6 @@ overtaking is allowed on the: **left** and the **right**.
 
 - priority regulated roundabout means that drivers coming in from the right must give the right of way to all drivers approaching from the right and left on the roundabout.
 
-- Roundabouts with two or more lanes are often constructed as turbo roundabouts 
+- Roundabouts with two or more lanes are often constructed as turbo roundabouts
+
+- When you want to leave a roundabout at the second exit you must take up position in the right lane on the approaching road.After passing the first exit you signal to the right and exit.
