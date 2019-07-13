@@ -78,6 +78,41 @@ When using your **_main beam headlights, dipped beam headlights, front sidelight
 
 #### Main beam headlights
 
+use full beam headlights instead of  dipped beam headlights except:
+
+- During daytime.
+- When meeting oncoming road users, including pedestrians.
+- When following another vehicle at a short distance, including pedal cyclists and moped riders.
+
+When driving at night and being dazzled by the main beam headlights
+
+- set your interior mirror to the anti-dazzle mode.
+
+blue warning light on the dashboard warns that you have your main beam headlights lit
+
+### Important
+
+- main beam headlights are only allowed at night
+
+### Fog lights
+
+#### Front fog lights (optional)
+
+Front fog lights may be used when visibility is seriously reduced (generally to less than 200 meters) due to:
+
+- rain
+- fog
+- snowfall
+
+You are allowed to use your front fog lights, either with or without using your dipped beam headlights
+
+When using front fog lights, you **must** also always use the dipped beam headlights and the main beam headlights only when permitted.
+
+You **may** also switch your dipped beam headlights off and then just drive with the front fog lights **together** with the front sidelights, the rear lights and the rear registration plate lighting
+
+### Rear Fog lights (one is required/a second is optional)
+
+
 ## **Page 3/7**
 
 ## **Page 4/7**
