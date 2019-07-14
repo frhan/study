@@ -222,3 +222,9 @@ ADOB -  twin flashing red stop lights and an audible alarm.
 ## **Page 6/7**
 
 ### Road traffic accidents and incidents
+
+the scene of an accident you should assist in accordance with the so called PAMAN rules.
+
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-07-14%20at%207.04.31%20PM.png)
+
+### The Rautek grip
