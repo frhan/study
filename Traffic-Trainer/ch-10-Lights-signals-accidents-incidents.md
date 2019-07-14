@@ -217,6 +217,8 @@ ADOB -  twin flashing red stop lights and an audible alarm.
 
 - Each red diagonal bar represents a distance of 80 meters.
 
+**never stop or park, on, or near a crossing**
+
 ## **Page 6/7**
 
-## **Page 7/7**
+### Road traffic accidents and incidents
