@@ -169,11 +169,53 @@ in general use of the direction indicator will be required.
 
 ![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-07-14%20at%204.27.48%20PM.png)
 
+Snorfietsers (light mopeds) and bromfietsers (mopeds) may also give an audible warning signal by means of a bell.
+
+## Using warning signals
+
 ## **Page 3/7**
+
+### A summary of using the direction indicator and warning signals
+
+### Dashboard warning lights
+
+#### Colour is important
+
+- A **red** warning light indicates either a potentially serious problem or safety issue
+- a red light might also serve as a reminder about service maintenance
+- When a **yellow or orange** light activates, it's usually a signal that a component needs servicing or repair
+- **Green and/or blue** dashboard lights only serve to let you know that a system is active and operating.
 
 ## **Page 4/7**
 
+### About using the direction indicators (commonly referred to as 'signalling')
+
+**Conflicting signals** - a signal with the right indicator means ‘I'm going to turn right’ or ‘I'm going to stop on the right’.
+
+- Wait until you've passed the junction then indicate that you intend to stop.
+- Reduce speed by breaking gently so that your brake lights warn drivers behind you.
+
+- If your vehicle is not fitted with direction indicators, like on some (light) mopeds, you indicate direction with your arm.
+
+- where inside the built-up area a deceleration lane or a lane for positioning is present it will be sufficient to indicate direction at about 50 meters before the exit or junction.
+
+### Hazard warning lights
+
 ## **Page 5/7**
+
+### Signs at level crossings
+
+Level crossings can be divided into the following types:
+
+- Guarded level crossings, warning sign J10.
+- Unguarded level crossings, warning sign J11.
+
+AHOB - automatic half-way protection by barriers
+ADOB -  twin flashing red stop lights and an audible alarm.
+
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-07-14%20at%204.27.48%20PM.png)
+
+- Each red diagonal bar represents a distance of 80 meters.
 
 ## **Page 6/7**
 
