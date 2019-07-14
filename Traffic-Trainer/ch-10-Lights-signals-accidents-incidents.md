@@ -213,7 +213,7 @@ Level crossings can be divided into the following types:
 AHOB - automatic half-way protection by barriers
 ADOB -  twin flashing red stop lights and an audible alarm.
 
-![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-07-14%20at%204.27.48%20PM.png)
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-07-14%20at%206.56.59%20PM.png)
 
 - Each red diagonal bar represents a distance of 80 meters.
 
