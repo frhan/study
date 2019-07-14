@@ -144,7 +144,7 @@ hazard warning lights should be used to warn
 
 - triangles fold flat - legally obliged to have one though!
 
-Place the triangle 
+### Place the triangle
 
 - On a straight level, road put the triangle at about 30 meters from your vehicle.
 - On a very narrow road put the triangle on the nearside verge or footpath.
@@ -159,6 +159,13 @@ Drivers of motor vehicles may, when using:
 
 ### Direction indicator signals
 
+### Using direction indicator signals at priority bends
+
+when following or leaving:
+
+- a priority bend
+- a through carriageway
+in general use of the direction indicator will be required.
 
 ## **Page 3/7**
 
