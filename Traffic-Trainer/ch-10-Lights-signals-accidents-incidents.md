@@ -167,6 +167,8 @@ when following or leaving:
 - a through carriageway
 in general use of the direction indicator will be required.
 
+![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-07-14%20at%204.27.48%20PM.png)
+
 ## **Page 3/7**
 
 ## **Page 4/7**
