@@ -245,3 +245,12 @@ Leaving the scene of an accident, even walking away, in which you are involved o
 
 ### First-Aid on the road
 
+
+
+## NTK
+
+- It is better to switch the lights, e.g. the sidelights and the dipped beam headlights, of your vehicle on after having started the engine; in this case you will not be draining the battery unnecessarily.
+
+- sidelights will not make your vehicle more noticeable to others.
+
+- Drivers of motorvehicles on more than two wheels when stationary (stopping or parking) on the CARRIAGEWAY outside the built-up area during the daytime, under conditions of poor visibility, and at night must use the sidelights (two small front white lights and two small rear or tail lights). This does NOT apply to verges! 

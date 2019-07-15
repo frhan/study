@@ -46,3 +46,28 @@ when present, bromfietsen must use the combined cycle/moped paths (sign G12a).
 ## **page 3/11**
 
 ### Turning left
+
+
+## NTK
+
+- when pulling caravans/trailers with a maximum authorized mass (MAM) of less than 3500 kg, the maximum speed is 90 km/h; if the MAM is more than 3500 kg, the maximum speed is 80 km/h.
+
+- When performing a special manoeuvre, e.g. stopping, parking, turning round, pulling off etc., you may not impede any other road users in the immediate vicinity
+
+- remember that trams may be overtaken on either side. Normally a tram will be overtaken on the right, but when and where this is not possible or suitable overtaking on the left is allowed
+
+- When passengers are still boarding a bus, the bus must remain stationary and cannot drive off; to avoid stemming the flow of traffic you should drive past, i.e. overtake, this bus if there is sufficient room
+
+- Drivers on the extreme right or left lane of their carriageway and closely following another driver, must not overtake that driver when he has made his intention to turn off known and has taken up a position to do so.
+
+- Once you have positioned your vehicle in a lane and are level with the directional arrows showing the direction to be followed, you may not change lanes anymore and follow a different direction. 
+
+- You must not overtake any other vehicle at or near a VOP (Voetgangers Oversteek Plaats = pedestrian crossing). 
+
+- overtaking sight distance or overtaking vision is the minimum distance open to the vision of the driver of a vehicle intending to overtake a slow vehicle ahead safely against the traffic in the opposite direction. This distance is measured along the centre line of the road over which a driver with his eye level 1.2 m above the road surface can see the top of an object 1.2 m above the road surface.
+
+- You should overtake other vehicles on the left. As there was sufficient space here for overtaking safely, it is allowed.
+
+- drivers wanting to overtake a preceding vehicle that has a) indicated the intention to turn left, and b) also taken up a position on the road for this purpose must overtake that vehicle on the right only.
+
+- 

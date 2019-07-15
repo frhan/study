@@ -239,4 +239,7 @@ There are two types of tapers:
 
 - motorroads can have more than one carriageway, but this is not a condition.
 
-- This sign (BB06) indicates a refuge bay
+- sign (BB06) indicates a refuge bay
+
+- Even when the vehicle on your left is driving under the speed limit, passing on the right here is NOT allowed. Passing means OVERTAKING, which must be done on the left. Even when in different lanes this is not legal.
+
