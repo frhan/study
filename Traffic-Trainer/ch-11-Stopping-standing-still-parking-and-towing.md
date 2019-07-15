@@ -29,3 +29,5 @@ When pulling over to stop or park don't forget to:
 - Check your outside (door mirror).
 - Check your blind spot.
 - Indicate direction
+
+## **page 2/8**

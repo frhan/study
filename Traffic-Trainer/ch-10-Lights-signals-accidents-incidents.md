@@ -228,3 +228,20 @@ the scene of an accident you should assist in accordance with the so called PAMA
 ![Alt text](https://github.com/frhan/study/blob/master/images/Screen%20Shot%202019-07-14%20at%207.04.31%20PM.png)
 
 ### The Rautek grip
+
+- There are obvious dangers for victims with spinal injuries or osteoporosis, therefore victims should be moved only if the situation absolutely requires it (e.g., in a fire).
+
+Make sure you have the following information when calling 1-1-2:
+
+- Location of the accident.
+- Sort of accident (possible vehicles).
+- If there are injured people involved, the number of casualties
+
+When you have been **involved** in a road traffic accident, even without having received any damage or injury yourself, you are still not allowed to just drive off.
+
+you are still granted a grace period of up to 12 hours within which you must still supply this information
+
+Leaving the scene of an accident, even walking away, in which you are involved or of which you are partially or wholly the cause is a criminal offence
+
+### First-Aid on the road
+

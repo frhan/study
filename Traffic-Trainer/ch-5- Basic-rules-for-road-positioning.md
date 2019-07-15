@@ -35,4 +35,10 @@ Drivers of _motorvehicles, e.g. passenger cars, commercial vehicles, vans, light
 ## **Page 2/18**
 
 ### Roads
+- The carriageway is a part of the road, but so is the (grass) verge!
+
 ### Carriageways
+
+## **Page 3/18**
+
+### Visibility of the road
