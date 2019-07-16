@@ -192,7 +192,10 @@ The red pedestrian light shown above can be substituted by a yellow flashing lig
 
 ## Flow control traffic light systems
 - allow passenger cars on to the acceleration lane at certain intervals, facilitating joining the through carriageway of the motorway.
-- t only apply to drivers of passenger cars and can be ignored by other drivers!
+- it only apply to drivers of passenger cars and can be ignored by other drivers!
+
+## **page 9/14**
+![Alt text](https://github.com/frhan/study/blob/master/images/TH_02_37.jpg)
 
 
 
