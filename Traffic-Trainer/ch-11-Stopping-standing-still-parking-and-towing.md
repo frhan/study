@@ -46,7 +46,32 @@ A driver that has stopped outside a shop to deliver such goods is not parking bu
 
 ## **page 3/8**
 
+### Where must you not stop?
+
+### Drivers must not stop
+
+- On junctions.
+- On level crossings.
+- On parts of the road which are meant for other road users, such as pavements, footpaths, cycle paths, cycle/moped paths or bridle paths.
+- On or within 5 meters of a pedestrian crossing.
+- On or within 5 meters of a crossing for cyclists and (light)mopeds.
+- On a cycle lane or on the carriageway next to a cycle lane.
+- At a bus stop sign next to the chequered markings, where there are no markings you must not stop within twelve meters of the sign.
+- On the carriageway next to a bus lane.
+- Next to a solid yellow line.
+
+A sub-plate can indicate that this sign:
+
+- Only applies in a certain direction.
+- Only applies to road user(s) shown.
+- Does not (uitgezonderd) apply to road user(s) shown.
+- Only applies to specific times or a specific number of days shown.
+
+## **page 3/8**
+
+## Where must you not park?
 
 
 ## NTK
+
 - Only outside the built-up area must drivers of motor vehicles on more than two wheels use front sidelights and rear lights when stationary at night on the carriageway of a road outside the built-up area and when in parking bays or in parking lanes, on hard shoulders or in refuge bays alongside autowegen (motor roads) and motorways. Case in point: this also applies during daytime when visibility is seriously reduced.

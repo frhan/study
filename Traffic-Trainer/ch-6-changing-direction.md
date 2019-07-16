@@ -63,9 +63,15 @@ when present, bromfietsen must use the combined cycle/moped paths (sign G12a).
 
 - You should give the right of way to traffic continuing straight ahead; this also means you have to give the right of way to those crossing the road that you are turning into, including pedestrians.
 
-when you are between the solid white lines or level with the directional arrows on the road surface you must not change direction anymore. These arrows give you a direction that you must then follow.
+- when you are between the solid white lines or level with the directional arrows on the road surface you must not change direction anymore. These arrows give you a direction that you must then follow.
 
 ## **page 4/11**
+
+### The advanced stop line (OFOS)
+
+- Note that all other drivers, including bromfietsers (moped riders) and brommobielen (mobility cars), may not use this area but must stop at the first white, or yellow if temporary, line reached.
+
+![Alt text](https://github.com/frhan/study/blob/master/images/h5_11.jpg)
 
 
 ## NTK
