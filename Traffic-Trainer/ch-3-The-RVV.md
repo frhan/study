@@ -191,13 +191,51 @@ You’ll often see these 2-coloured traffic lights at places where the right of 
 The red pedestrian light shown above can be substituted by a yellow flashing light, which means that this light then warns of a danger.
 
 ## Flow control traffic light systems
+
 - allow passenger cars on to the acceleration lane at certain intervals, facilitating joining the through carriageway of the motorway.
 - it only apply to drivers of passenger cars and can be ignored by other drivers!
 
 ## **page 9/14**
+
+### Speed limits
+
 ![Alt text](https://github.com/frhan/study/blob/master/images/TH_02_37.jpg)
 
+## **page 10/14**
 
+### Matrix signs
+
+-Where the speed limit on a matrix signs differs from the speed limit on another sign, the lowest speed limit will apply.
+
+### Where the speed limit on a matrix signs differs from the speed limit on another sign, the lowest speed limit will apply
+
+- It is sensible to follow a recommended speed.
+
+## ** **page 11/14**
+What is your speed limit?
+
+### Local roads
+
+- Broken edge lines.
+- No centre lines.
+- All road users may use these local roads where no area has been set aside for certain types of road users, e.g. a cycle lane for pedal cyclists and a pavement for pedestrians etc.
+- The markings on this road indicate that this is a local road within a 60 km/h zon
+
+### Connecting roads
+
+- Broken edge Lines.
+
+- Generally solid centre lines.
+
+- 80 km/h outside the built-up area and 50 km/h or 70 km/h inside the built-up area.
+
+- Sometimes agricultural vehicles and brommobielen are allowed on these roads; in that case the centre lines are broken.
+
+### Through roads
+
+- Solid edge lines.
+- Solid centre lines.
+- Green filling between centre lines.
 
 ## NTK
 
@@ -211,4 +249,8 @@ The red pedestrian light shown above can be substituted by a yellow flashing lig
 
 - Upon leaving this 30 km/h zone, the inside the built-up area default speed limit of 50 km/h will apply again, because 30 km/h speed zones are always inside the built-up area!
 
-- 
+- Only when pedestrians and children are crossing at a school crossing patrol or on a pedestrian crossing are you legally obliged to give them the right of way. 
+
+- drivers of a brommobiel have to follow the rules and regulations that apply to passenger cars: they are obliged to drive on the carriageway and they may not follow a cycle lane, a cycle path or a compulsory combined cycle/moped path!
+
+- Coasting means that although the vehicle is moving, it's not being driven by the engine. 

@@ -42,3 +42,8 @@ Drivers of _motorvehicles, e.g. passenger cars, commercial vehicles, vans, light
 ## **Page 3/18**
 
 ### Visibility of the road
+
+
+## NTK
+
+- Pedal cyclists are permitted to cross both the broken and the solid white or yellow (temporary road markings) lines when wanting to overtaking or needing to divert suddenly. Case in point: remember that this action may only be undertaken if you do not endanger or impede any other road users.

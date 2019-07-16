@@ -31,3 +31,22 @@ When pulling over to stop or park don't forget to:
 - Indicate direction
 
 ## **page 2/8**
+
+### Parking
+
+### How is parking defined?
+
+Parking is defined as stopping other than for:
+- Stopping briefly for picking up or setting down passengers.
+- Stopping briefly to load or unload goods.
+
+A driver that has stopped outside a shop to deliver such goods is not parking but only stopping, providing that the unloading is immediate and on-going.
+
+- 'placing' must always take place on either the pavement, the footpath, the (grass) verge, a cycle/moped garage, and other areas designated for parking by the authorities; this placement must in no way cause other road users hindrance or dange
+
+## **page 3/8**
+
+
+
+## NTK
+- Only outside the built-up area must drivers of motor vehicles on more than two wheels use front sidelights and rear lights when stationary at night on the carriageway of a road outside the built-up area and when in parking bays or in parking lanes, on hard shoulders or in refuge bays alongside autowegen (motor roads) and motorways. Case in point: this also applies during daytime when visibility is seriously reduced.
