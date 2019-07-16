@@ -254,3 +254,6 @@ Leaving the scene of an accident, even walking away, in which you are involved o
 - sidelights will not make your vehicle more noticeable to others.
 
 - Drivers of motorvehicles on more than two wheels when stationary (stopping or parking) on the CARRIAGEWAY outside the built-up area during the daytime, under conditions of poor visibility, and at night must use the sidelights (two small front white lights and two small rear or tail lights). This does NOT apply to verges! 
+
+- YELLOW warning light indicates that you should check the oil level as soon as possible and top up if necessary. Case in point: if a RED warning light shows up whilst driving you should stop as soon as possible and switch the engine off. That red warning light can indicate a too low oil pressure; driving on can seriously damage your engine!
+

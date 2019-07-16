@@ -178,6 +178,34 @@ You’ll often see these 2-coloured traffic lights at places where the right of 
 
 ### Traffic lights at level crossings
 
+- At a level crossing with barriers you must wait as long as the flashing red lights are on, even when the barriers go up.
+- Never stop on or just after the crossing.
+- When traffic is queueing you must not block the crossing.
+
+- The AKI is a level crossing without any physical protection. 
+
+### Lights at bridges
+
+- Bridge lights are single flashing or fixed red lights or twin flashing red lights.
+
+The red pedestrian light shown above can be substituted by a yellow flashing light, which means that this light then warns of a danger.
+
+## Flow control traffic light systems
+- allow passenger cars on to the acceleration lane at certain intervals, facilitating joining the through carriageway of the motorway.
+- t only apply to drivers of passenger cars and can be ignored by other drivers!
+
+
+
 ## NTK
 
 - The risk of an accident on a moped increases by 25% compared to when driving a passenger car.
+
+- Because the priority road sign (B1) is placed after the junction you are driving outside the built-up area; on such roads your speed limit is 80 km/h. Case in point: INSIDE the built-up area these signs are placed BEFORE a junction where priority is regulated and OUTSIDE the built-up area AFTER such a junction; this is done because you must not PARK on the CARRIAGEWAY of a PRIORITY road OUTSIDE the built-up area!
+
+- At a speed of 30 km/h the distance covered during the time that you are actually braking is about (30 : 10) X 3 = 9 : 2 = 4.5 meters. Case in point: the OVERALL stopping distance will be 13.5 meters; this is the sum of the distance covered during the response time and the distance covered during the braking action. The distance covered during the response time will be approximately (30 : 10) x 3 = 9 meters; this means that the OVERALL stopping distance will be about 4.5 PLUS 9 = 13.5 meters here.
+
+- Motorways are always outside the built-up area where the rule that drivers must give way to a bus that signals its intention to pull away does not apply
+
+- Upon leaving this 30 km/h zone, the inside the built-up area default speed limit of 50 km/h will apply again, because 30 km/h speed zones are always inside the built-up area!
+
+- 

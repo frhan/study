@@ -47,6 +47,26 @@ when present, bromfietsen must use the combined cycle/moped paths (sign G12a).
 
 ### Turning left
 
+### Road position
+
+- Position yourself as close to the centre of the road as is safe, so that other drivers can overtake on your right if there’s enough space.
+- In a one-way street, where there is no vehicle contra-flow, move to the left-hand side of the road when appropriate.
+
+### Observation technique
+
+- Look
+- Indicate left
+- Look again
+- Take up a position on the road
+
+### Oncoming traffic
+
+- You should give the right of way to traffic continuing straight ahead; this also means you have to give the right of way to those crossing the road that you are turning into, including pedestrians.
+
+when you are between the solid white lines or level with the directional arrows on the road surface you must not change direction anymore. These arrows give you a direction that you must then follow.
+
+## **page 4/11**
+
 
 ## NTK
 

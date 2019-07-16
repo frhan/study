@@ -243,3 +243,6 @@ There are two types of tapers:
 
 - Even when the vehicle on your left is driving under the speed limit, passing on the right here is NOT allowed. Passing means OVERTAKING, which must be done on the left. Even when in different lanes this is not legal.
 
+- The hard shoulder is one of the most dangerous places to be! Walk along the grass verge instead; although it is not obliged to walk on the (grass) verge it is advisable for your own safety.
+
+- all motor vehicles on more than two wheels, brommobielen (mobility cars) and trailers that are stationary and cause a poorly visible obstacle, must be indicated by a red warning triangle. This red warning triangle should be placed on the road surface at about 30 meters from the obstacle and in the direction of the approaching traffic. Drivers do not have to place this triangle when the hazard warning lights are being used; drivers may also use the hazard warning lights together with the red warning triangle.
