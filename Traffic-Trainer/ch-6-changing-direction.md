@@ -73,6 +73,10 @@ when present, bromfietsen must use the combined cycle/moped paths (sign G12a).
 
 ![Alt text](https://github.com/frhan/study/blob/master/images/h5_11.jpg)
 
+## page 5/11
+
+
+
 ### The priority bends
 
 - sub-plate the thick black bar represents the direction in which the priority continues and the smaller black bars represent the side roads leading into this priority bend.
@@ -80,8 +84,6 @@ when present, bromfietsen must use the combined cycle/moped paths (sign G12a).
 - when driving on a priority road and reaching a junction or a crossing a tram approaching from your right or left must give way to you!
 
 - a tram approaching you from your front or rear - i.e. also travelling on the priority road - and turning to its left or right does have priority.
-
-
 
 ## NTK
 
