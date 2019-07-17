@@ -211,7 +211,7 @@ The red pedestrian light shown above can be substituted by a yellow flashing lig
 
 - It is sensible to follow a recommended speed.
 
-## ** **page 11/14**
+## **page 11/14**
 
 What is your speed limit?
 
@@ -238,6 +238,8 @@ What is your speed limit?
 - Solid centre lines.
 - Green filling between centre lines.
 
+## **page 12/14**
+
 ## NTK
 
 - The risk of an accident on a moped increases by 25% compared to when driving a passenger car.
@@ -255,3 +257,5 @@ What is your speed limit?
 - drivers of a brommobiel have to follow the rules and regulations that apply to passenger cars: they are obliged to drive on the carriageway and they may not follow a cycle lane, a cycle path or a compulsory combined cycle/moped path!
 
 - Coasting means that although the vehicle is moving, it's not being driven by the engine. 
+
+- U-turn - pay attention to the fact that the spoiler or bumper does not touch the edge of the pavement. 

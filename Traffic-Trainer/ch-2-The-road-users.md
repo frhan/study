@@ -12,3 +12,5 @@
 - All persons participating in the traffic on foot.
 
 ## **Page 2/16**
+
+### Road placement for pedestrians
