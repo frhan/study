@@ -240,6 +240,32 @@ What is your speed limit?
 
 ## **page 12/14**
 
+### Following Distance
+
+- Approx. 2s from the vehicle ahead
+
+**Fd = velocity / 2 + 10%**
+50 km/h, 50/2 = 25 + 2.5 = 27.5m
+
+### Stopping Distance
+
+**Stopping Distance = Reaction Distance + Braking Disatnce**
+
+### Reaction Distance
+
+- Driver recieves a singal to break , until the moment the driver presses the break
+- 1s
+
+**Rd =  (speed / 10) * 3**
+
+## Breaking Distance
+
+**Bd = {(speed / 10) * (spped / 10)} / 2**
+
+- When you drive as fast, the breaking distance quadruples
+
+## page 14/14
+
 ## NTK
 
 - The risk of an accident on a moped increases by 25% compared to when driving a passenger car.
@@ -258,4 +284,8 @@ What is your speed limit?
 
 - Coasting means that although the vehicle is moving, it's not being driven by the engine. 
 
-- U-turn - pay attention to the fact that the spoiler or bumper does not touch the edge of the pavement. 
+- U-turn - pay attention to the fact that the spoiler or bumper does not touch the edge of the pavement
+
+- driving a brommobiel (mobility car); when the police physically stops you for speeding when driving a snorfiets (light moped), bromfiets (moped) or a brommobiel at a speed of 30 kilometers or more above the maximum speed limit
+
+- 
