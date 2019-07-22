@@ -228,6 +228,8 @@ There are two types of tapers:
 
 ### The dynamic route information panels "DRIP'S"
 
+### Dynamic routing
+
 ## NTK
 
 - In emergency situations, like during a breakdown, you are allowed to wait for assistance on either a hard shoulder on the right or the left.
@@ -246,3 +248,7 @@ There are two types of tapers:
 - The hard shoulder is one of the most dangerous places to be! Walk along the grass verge instead; although it is not obliged to walk on the (grass) verge it is advisable for your own safety.
 
 - all motor vehicles on more than two wheels, brommobielen (mobility cars) and trailers that are stationary and cause a poorly visible obstacle, must be indicated by a red warning triangle. This red warning triangle should be placed on the road surface at about 30 meters from the obstacle and in the direction of the approaching traffic. Drivers do not have to place this triangle when the hazard warning lights are being used; drivers may also use the hazard warning lights together with the red warning triangle.
+
+- For all motorvehicles towing a caravan with a maximum authorized mass (MAM) of less than 3500 kg, the maximum speed is 90 km/h. Case in point: if the MAM is more than 3500 kg, the maximum speed is 80 km/h. 
+
+- Only on autosnelwegen (motorways) you'll always have junctions with roads at different levels. On autowegen (motorroads) this is also possible, but not a condition. On connecting roads you'll seldom come across junctions with roads at different levels. Case in point: motorways will always have separate carriageways and crossings at different levels. Motorways are statistically known to be the safest roads to drive on because these roads will always only have traffic flowing in one and the same direction preventing head-on collisions.

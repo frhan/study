@@ -70,7 +70,7 @@ A sub-plate can indicate that this sign:
 - Does not (uitgezonderd) apply to road user(s) shown.
 - Only applies to specific times or a specific number of days shown.
 
-## **page 3/8**
+## **page 4/8**
 
 ## Where must you not park?
 
@@ -93,6 +93,59 @@ Note that here you may only:
 
 ## page 5/8
 
+### Signs regulating parking
+### More information about the parking disc zones
+- The blue boundary line to the left of the car shows that you are in a parking disc zone.
+-  all motorvehicles on more than two wheels are obliged to display this disc.
+
+### The parking permit for disabled persons
+
+### Parking management and paid parking further highlighted
+
+## page 6/8
+-  within 5 meters from a junction, where you must not park.
+- No parking in front of an entrance or exit; not even not in front of your own driveway.
+- No parking on the carriageway of a priority road outside the built-up area.
+- No parking alongside a broken yellow line. 
+- double parking is never allowed. 
+
+##  page 7/8
+
+## Page 8/8
+
+### Towing regulations
+
+We can divide towing into two categories:
+
+- Towing a broken down motor vehicle.
+- Towing or pulling  a trailer.
+
+regulations apply and which actions you might need to take:
+- Drivers of motor vehicles may only tow another motor vehicle if the distance between the two vehicles does not exceed 5 meter
+- When the MAM of the trailer exceeds 750 kg, you may still drive this combination of vehicles providing that the total MAM does not exceed 3.500 kg.
+
+## Towing a trailer with a category B driving licence
+
+- always tow a trailer where the maximum authorized mass (MAM) does not exceed 750 kg. 
+
+## Sign C10 indicates that the road is closed to motor vehicles towing trailers.
+
+
+## The handbrake
+- All trailers with a MAM (maximum authorized mass) over 750 kg must be fitted with a handbrake
+
+The safety breakaway cable and safety coupling
+If you are towing another vehicle or a trailer (including a boat trailer or a caravan) remember the following points:
+
+- Trailers with a MAM under 750 kg don't need to be fitted with either a safety breakaway cable or a safety coupling, but if present it must be fitted and used properly. You can be fined when failing to do so;
+
+- Trailers with a MAM between 750 kg and 1.500 kg not fitted with a safety breakaway cable, must be fitted with a safety coupling; this must be properly attached and must not be deformed, torn, broken or show signs of considerable wear;
+
+- Safety couplings fitted to trailers with a MAM under 1500 kg must either be attached to a solid part of the pulling vehicle or to a special attachment fitted to the tow bar, so that it will only become effective when the trailer’s coupling fails, whereby the trailer’s drawbar or coupling does not touch the ground;
+
+- Trailers with a MAM between 1.500 kg and 3.500 kg must be fitted with a safety breakaway cable;
+
+- In all case a safety breakaway cable must not be combined with a safety coupling.
 
 ## NTK
 
