@@ -59,6 +59,9 @@ A driver that has stopped outside a shop to deliver such goods is not parking bu
 - At a bus stop sign next to the chequered markings, where there are no markings you must not stop within twelve meters of the sign.
 - On the carriageway next to a bus lane.
 - Next to a solid yellow line.
+- On a hard shoulder, refuge bay or an emergency lay-by except in case of an emergency.
+- On acceleration and deceleration lanes and carriageways of motorroads and motorways.
+- On the side of the road where sign E2 is placed.
 
 A sub-plate can indicate that this sign:
 
@@ -70,6 +73,25 @@ A sub-plate can indicate that this sign:
 ## **page 3/8**
 
 ## Where must you not park?
+
+Drivers must not park:
+
+- Within a distance of 5 meters from a junction.
+- In front of an entrance or exit to a property; not even not in front of your own driveway!
+- On the carriageway of a priority road outside the built-up area.
+- On the carriageway of a “fietsstraat” (cycle street).
+- In a parking space reserved for specific users or vehicles, unless entitled to do so; also applies to parking spaces, where the sub-sign sign shows it is not allowed to park during that day or those hours.
+- Next to a broken yellow line.
+- Next to a vehicle which is already parked.
+- Where you may not stop.
+- On the side of the road where sign E1 (no parking) is placed.
+
+Note that here you may only:
+
+- Stop briefly for picking up or setting down passengers.
+- Stop briefly to load or unload goods.
+
+## page 5/8
 
 
 ## NTK

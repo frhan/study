@@ -107,4 +107,6 @@ when present, bromfietsen must use the combined cycle/moped paths (sign G12a).
 
 - drivers wanting to overtake a preceding vehicle that has a) indicated the intention to turn left, and b) also taken up a position on the road for this purpose must overtake that vehicle on the right only.
 
-- 
+- When we talk about a filter traffic light, reference is made to a traffic light with an arrow for the direction into which you are turning; this means that you should not have to give the right of way to road users continuing ahead on the same road, even when they are at a pedestrian crossing!
+
+- When either following or leaving a priority bend or a through carriageway it is advisable to use the direction indicator
