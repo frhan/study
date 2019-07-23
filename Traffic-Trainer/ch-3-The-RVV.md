@@ -288,4 +288,16 @@ What is your speed limit?
 
 - driving a brommobiel (mobility car); when the police physically stops you for speeding when driving a snorfiets (light moped), bromfiets (moped) or a brommobiel at a speed of 30 kilometers or more above the maximum speed limit
 
+- a main traffic artery is a road designed for higher speeds, e.g. a motorroad or a motorway. Case in point: an access road to inhabited areas, inside or outside the built-up area, can be recognized by the absence of a centre line and the suggested cycle lanes with a different coloured road surface. A connecting road will have a single or double centre line and broken or solid side lines; these roads often have adjacent farms, houses and other amenities.
+
+- An EBSL is an Expanded Bicycle Streaming Lane, also referred to as an advanced stop line for cyclists, light mopeds and invalid carriages at junctions. Case in point: in Dutch this is called an OFOS (Opgeblazen Fiets Opstel Strook); this the advanced stop line for cyclists. Some signal-controlled junctions have an advanced stop line to allow fietsers (pedal cyclists), snorfietsers (light moped riders), invalid carriages and riders of the special types of mopeds, i.e. Segway, Stint, Swing, Trikke and Zappy3, to be positioned ahead of other traffic. All other drivers, including bromfietsers (moped riders) and brommobielen (mobility cars), may not use this area but must stop at the first white, or yellow if temporary, line reached. If the lights are yellow or red you should avoid blocking the way or encroaching on the marked area at other times, e.g. if the junction ahead is blocked.
+
+- The 60 km/h zone signs indicate that this is outside the built-up area; inside the built-up area there would have been a 30 km/h zone. Case in point: the type of road can be recognized by the absence of a centre line and the suggested cycle lanes, often with a different coloured road surface. These roads often have adjacent farms, houses and other amenities.
+
+- At higher revolutions the engine will have more power (torque), but a smaller speed range. This means that at lower gears the engine will deliver more power to the wheels, but that the speed that you will be able to reach will be limited. Case in point: lower revolutions mean less power, but a wider range of speed. Lower revolutions also mean more fuel efficiency, but less control over the vehicle.
+
+- An "ABRI" is defined as a shelter, a small enclosed waiting area, that provides shelter against the elements for bus and tram passengers. Case in point: these are often found in public transportation, like a bus, a tram or a bus or train station. The word "abri" is derived from the French verb "abrier", which means "to shelter"; due to the European marketing monopoly of the French "Abribus" by the French company J.C. Decaux, the same word is used to define these shelters in most mainland European countrie
+
+- Only on access roads to inhabited areas, autowegen (motorroads) and connecting roads can you expect junctions with roads on the same level. Case in point: only on autosnelwegen (motorways) you'll always have junctions with roads at different levels; on autowegen (motorroads) this is also possible, but not a condition. On access roads to inhabited areas and connecting roads you'll seldom come across junctions with roads at different levels
+
 - 
