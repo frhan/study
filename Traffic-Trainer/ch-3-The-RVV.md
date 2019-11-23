@@ -300,4 +300,8 @@ What is your speed limit?
 
 - Only on access roads to inhabited areas, autowegen (motorroads) and connecting roads can you expect junctions with roads on the same level. Case in point: only on autosnelwegen (motorways) you'll always have junctions with roads at different levels; on autowegen (motorroads) this is also possible, but not a condition. On access roads to inhabited areas and connecting roads you'll seldom come across junctions with roads at different levels
 
+- This is an articulated lorry, also called an "artic"; this is a combination of a tractor unit pulling a semi-trailer. You can recognize an artic by the registration plate starting with the letter"O", which stands for "oplegger", which is Dutch for semi-trailer. The maximum permitted length of a single lorry, also called a "rigid" is 12 meters. For a lorry pulling a trailer, recognizable by the registration plate on the trailer starting with the letter "W" for "wagen" (an abbreviation of "aanhangwagen", which is Dutch for trailer), the maximum permitted length is 18,75 meters. Case in point: overtaking such a vehicle will require a longer overtaking distance and time!
+
+- Outside the built-up area, the maximum speed limit can be 130 km/h. Case in point: this maximum speed limit applies on autosnelwegen (motorways); although this is the default maximum speed on motorways, the highway authority can determine that a lower maximum speed limit on a particular road or stretch of road is more in line with the environment (open road) and more beneficial for the flow of traffic.
+
 - 
