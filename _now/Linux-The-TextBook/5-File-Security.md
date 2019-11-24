@@ -15,15 +15,14 @@
 - Comprise the three types of users of a Linux file: _user, group, and others_.
 - The login name for the superuser is root and the user ID is 0.
 
-![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.06.20.png)
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-1.png)
 
 The first field specifies the group name, the second specifies some information about the group, the third specifies the group ID as a number, and the last specifies a comma-separated list of users who are mem- bers of the group.
 
 - The default group mem- bership of a user is specified in the user’s entry in the `/etc/passwd` file
 
-![Alt Text](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.07.49.png)
-
-![Alt Text](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.07.54.png)
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-2.png)
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-3.png)
 
 ## Types of File Operations/Access Permissions
 
@@ -35,13 +34,15 @@ The first field specifies the group name, the second specifies some information 
 
 ### Determining File Access Privileges
 
-![Alt Text](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.19.56.png)
-
-![Alt Text](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.20.04.png)
-
-![Alt Text](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.20.12.png)
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-4.png)
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-5.png)
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-6.png)
 
 - If an argument of the `ls -l` command is a directory, the command displays the long list of all the files and directories in it.
 - the ls -ld command to display the long list of directories only.
 
 ### Changing File Access Privileges
+
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-7.png)
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-8.png)
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-9.png)
