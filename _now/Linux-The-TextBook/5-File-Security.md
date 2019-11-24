@@ -39,7 +39,7 @@ The first field specifies the group name, the second specifies some information 
 ![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-6.png)
 
 - If an argument of the `ls -l` command is a directory, the command displays the long list of all the files and directories in it.
-- the ls -ld command to display the long list of directories only.
+- the `ls -ld` command to display the long list of directories only.
 
 ### Changing File Access Privileges
 
@@ -93,3 +93,23 @@ A = B AND C' = 110 000 000 = 600 (octal) = 110000000 (binary)
 ```
 
 ## Special Access Bits
+
+### SUID Bit
+
+we want users to be able to change their passwords, but at the same time, they must not have write access to the `/etc/passwd` file to keep information about other users in this file from being compromised.
+
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-13.png)
+
+Every Linux file has an additional protection bit, called the SUID bit, associated with it. If this bit is set for a file containing an executable program, the program takes on the privileges of the owner of the file when it executes. Thus, if a file is owned by root and has its SUID bit set, it runs with superuser privileges. This bit is set, for example, for the passwd command. So, when you run the passwd command, it can write to the `/etc/passwd` file (replacing your existing password with the new password), even though you do not have access privileges to write to the file.
+
+### SGID Bit
+
+The SGID bit works in the same manner in which the SUID bit does, but it causes the access permissions of the process to take the group identity of the group to which the owner of the file belongs.
+
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-14.png)
+
+### Sticky Bit
+
+The last of the 12 access bits, the sticky bit, is on if the execute bit for others is t (or T), as in the case / tmp given as follows:
+
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-15.png)
