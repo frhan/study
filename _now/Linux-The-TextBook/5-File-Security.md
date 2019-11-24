@@ -34,3 +34,14 @@ The first field specifies the group name, the second specifies some information 
 - The execute permission for a directory is permission to search the directory but not to read from or write to it.
 
 ### Determining File Access Privileges
+
+![Alt Text](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.19.56.png)
+
+![Alt Text](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.20.04.png)
+
+![Alt Text](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.20.12.png)
+
+- If an argument of the `ls -l` command is a directory, the command displays the long list of all the files and directories in it.
+- the ls -ld command to display the long list of directories only.
+
+### Changing File Access Privileges
