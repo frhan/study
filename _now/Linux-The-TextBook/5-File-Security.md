@@ -46,3 +46,13 @@ The first field specifies the group name, the second specifies some information 
 ![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-7.png)
 ![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-8.png)
 ![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-9.png)
+
+The access permissions for all the files and directories under one or more directories can be set by using the chmod command with the `-R` option.
+
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-10.png)
+
+### Default File Access Privileges
+
+When a new file or directory is created, Linux sets its access privileges based on the current mask value. On Linux systems, the default access privileges for the newly created files and directories are `777` for executable files and directories and `666` for text files.
+
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-11.png)
