@@ -24,3 +24,13 @@ The first field specifies the group name, the second specifies some information 
 ![Alt Text](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.07.49.png)
 
 ![Alt Text](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.07.54.png)
+
+## Types of File Operations/Access Permissions
+
+### Access Permissions for Directories
+
+- The read permission for a directory allows you to read the contents of the directory; recall that the contents of a directory are the names of files and directories in it. Thus, the ls command can be used to list its con- tents.
+- The write permission for a directory allows you to create a new directory or a file in it or to remove an existing entry from it
+- The execute permission for a directory is permission to search the directory but not to read from or write to it.
+
+### Determining File Access Privileges
