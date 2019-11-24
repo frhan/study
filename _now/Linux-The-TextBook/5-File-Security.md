@@ -15,6 +15,6 @@
 - Comprise the three types of users of a Linux file: _user, group, and others_.
 - The login name for the superuser is root and the user ID is 0.
 
-![Drag Racing](Dragster.jpg)
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.06.20.png)
 
 The first field specifies the group name, the second specifies some information about the group, the third specifies the group ID as a number, and the last specifies a comma-separated list of users who are mem- bers of the group.
