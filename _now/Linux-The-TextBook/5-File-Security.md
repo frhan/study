@@ -18,3 +18,9 @@
 ![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.06.20.png)
 
 The first field specifies the group name, the second specifies some information about the group, the third specifies the group ID as a number, and the last specifies a comma-separated list of users who are mem- bers of the group.
+
+- The default group mem- bership of a user is specified in the user’s entry in the `/etc/passwd` file
+
+![Alt Text](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.07.49.png)
+
+![Alt Text](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/Screenshot%202019-11-24%2001.07.54.png)
