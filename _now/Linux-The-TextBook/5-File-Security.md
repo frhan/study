@@ -56,3 +56,40 @@ The access permissions for all the files and directories under one or more direc
 When a new file or directory is created, Linux sets its access privileges based on the current mask value. On Linux systems, the default access privileges for the newly created files and directories are `777` for executable files and directories and `666` for text files.
 
 ![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-11.png)
+
+The argument of umask is a bit mask, specified in octal, that identifies the permission bits that are to be turned off when a new file is created. The values of other access permission bits are computed by the Boolean expression:
+
+`A = B AND C' = BC'`
+
+![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-12.png)
+
+We now show a few examples how Linux assigns file access permissions to newly created files and directories for a given mask. We determine the access permissions for a newly created directory or executable file for the mask value 022 by using the earlier Boolean expression.
+
+```
+C = 022
+C'
+B = 777
+A = B AND C' = 111 101 101 = 755 (octal) = 111101101 (binary)
+                                           rwxr-xr-x (symbolic)
+```
+
+Thus, file access permissions are 755 (read, write, execute for user, read and execute for group and others). For a text file, B is 666. Thus, access permissions for a newly created text file would be 644 as follows:
+
+```
+C' = 111 101 101
+B = 666 = 110 110 110
+A = B AND C' = 110 100 100 = 644 (octal) = 110100100 (binary)
+                                           rw-r--r-- (symbolic)
+```
+
+The access permissions for a newly created text file for the mask value 077 would be 600, as follows:
+
+```
+C = 077      = 000 111 111
+C'           = 111 000 000
+B = 666      = 110 110 110
+A = B AND C' = 110 000 000 = 600 (octal) = 110000000 (binary)
+                                           rw------- (symbolic)
+```
+
+## Special Access Bits
