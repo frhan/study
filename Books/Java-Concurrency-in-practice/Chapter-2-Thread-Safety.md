@@ -1,6 +1,6 @@
 # Chapter 2 Thread Safety
 
-- Writing thread-safe code is, at its core, about managing access to state, and in particular to shared, mutable state.
+Writing thread-safe code is, at its core, about managing access to state, and in particular to shared, mutable state.
 
 If multiple threads access the same mutable state variable without appropriate synchronization, your program is broken. There are three ways to fix it:
 
