@@ -106,10 +106,10 @@ Every Linux file has an additional protection bit, called the SUID bit, associat
 
 The SGID bit works in the same manner in which the SUID bit does, but it causes the access permissions of the process to take the group identity of the group to which the owner of the file belongs.
 
-![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-14.png)
+![Drag Racing](https://github.com/frhan/study/blob/master/images/Linux-The-TextBook/5-14.png)
 
 ### Sticky Bit
 
 The last of the 12 access bits, the sticky bit, is on if the execute bit for others is t (or T), as in the case / tmp given as follows:
 
-![Drag Racing](https://github.com/frhan/study/blob/master/_now/Linux-The-TextBook/Images/5-15.png)
+![Drag Racing](https://github.com/frhan/study/blob/master/images/Linux-The-TextBook/5-15.png)
